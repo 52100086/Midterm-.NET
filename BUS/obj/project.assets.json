@@ -2933,19 +2933,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\phuho\\.nuget\\packages\\": {}
+    "C:\\Users\\Hieu Pham\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programming\\Web\\ASP.NET\\Mid\\BUS\\BUS.csproj",
+      "projectUniqueName": "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\BUS\\BUS.csproj",
       "projectName": "BUS",
-      "projectPath": "C:\\Programming\\Web\\ASP.NET\\Mid\\BUS\\BUS.csproj",
-      "packagesPath": "C:\\Users\\phuho\\.nuget\\packages\\",
-      "outputPath": "C:\\Programming\\Web\\ASP.NET\\Mid\\BUS\\obj\\",
+      "projectPath": "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\BUS\\BUS.csproj",
+      "packagesPath": "C:\\Users\\Hieu Pham\\.nuget\\packages\\",
+      "outputPath": "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\BUS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\phuho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2959,11 +2959,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Programming\\Web\\ASP.NET\\Mid\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Programming\\Web\\ASP.NET\\Mid\\DAL\\DAL.csproj"
+            "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\DAL\\DAL.csproj": {
+              "projectPath": "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\DAL\\DAL.csproj"
             },
-            "C:\\Programming\\Web\\ASP.NET\\Mid\\DTO\\DTO.csproj": {
-              "projectPath": "C:\\Programming\\Web\\ASP.NET\\Mid\\DTO\\DTO.csproj"
+            "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\DTO\\DTO.csproj": {
+              "projectPath": "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\DTO\\DTO.csproj"
             }
           }
         }
@@ -3009,7 +3009,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
