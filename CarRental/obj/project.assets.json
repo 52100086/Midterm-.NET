@@ -46,6 +46,36 @@
           }
         }
       },
+      "FontAwesome/4.7.0": {
+        "type": "package"
+      },
+      "FontAwesome.Sharp/6.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      },
+      "FontAwesome.Sharp.Pro/6.3.0": {
+        "type": "package",
+        "dependencies": {
+          "FontAwesome.Sharp": "6.3.0"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/FontAwesome.Sharp.Pro.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/FontAwesome.Sharp.Pro.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -57,6 +87,15 @@
           "lib/net6.0/Humanizer.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "MaterialSkin/0.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/MaterialSkin.dll": {}
+        },
+        "runtime": {
+          "lib/MaterialSkin.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -610,7 +649,7 @@
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
@@ -628,6 +667,21 @@
             "rid": "win"
           }
         }
+      },
+      "ModernUI/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "4.7.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/MetroFramework.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       },
       "Mono.TextTemplating/2.2.1": {
         "type": "package",
@@ -697,7 +751,7 @@
           "Microsoft.Win32.SystemEvents": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Drawing.Common.dll": {
             "related": ".xml"
           }
         },
@@ -1147,6 +1201,57 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
+    "FontAwesome/4.7.0": {
+      "sha512": "n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
+      "type": "package",
+      "path": "fontawesome/4.7.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/font-awesome.css",
+        "Content/Content/font-awesome.min.css",
+        "Content/fonts/FontAwesome.otf",
+        "Content/fonts/fontawesome-webfont.eot",
+        "Content/fonts/fontawesome-webfont.svg",
+        "Content/fonts/fontawesome-webfont.ttf",
+        "Content/fonts/fontawesome-webfont.woff",
+        "Content/fonts/fontawesome-webfont.woff2",
+        "fontawesome.4.7.0.nupkg.sha512",
+        "fontawesome.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "FontAwesome.Sharp/6.3.0": {
+      "sha512": "3/Fb0N04yYK8An07oox5ISlUyNgsnWildHfoP69uqTEOsemQemRyciphMkXZOcdBupjUD+lVsRE3FqG41/dzPA==",
+      "type": "package",
+      "path": "fontawesome.sharp/6.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fontawesome.sharp.6.3.0.nupkg.sha512",
+        "fontawesome.sharp.nuspec",
+        "lib/net472/FontAwesome.Sharp.dll",
+        "lib/net48/FontAwesome.Sharp.dll",
+        "lib/net6.0-windows7.0/FontAwesome.Sharp.dll",
+        "lib/netcoreapp3.1/FontAwesome.Sharp.dll"
+      ]
+    },
+    "FontAwesome.Sharp.Pro/6.3.0": {
+      "sha512": "OnocgtWLmfGsQYP6yazZSYixYU01VY0NMLsUTDBJV6y7e6aVjWMu/RrNa4otcF7j9Wo1T6xtatg6bSOCPlKo5g==",
+      "type": "package",
+      "path": "fontawesome.sharp.pro/6.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fontawesome.sharp.pro.6.3.0.nupkg.sha512",
+        "fontawesome.sharp.pro.nuspec",
+        "lib/net472/FontAwesome.Sharp.Pro.dll",
+        "lib/net48/FontAwesome.Sharp.Pro.dll",
+        "lib/net6.0-windows7.0/FontAwesome.Sharp.Pro.dll",
+        "lib/netcoreapp3.1/FontAwesome.Sharp.Pro.dll"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -1163,6 +1268,18 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "MaterialSkin/0.2.1": {
+      "sha512": "/6AEh6qIeNKbxsha7IHBb5s50tyvB0iZuGQPB9mjyR+mRdfQ7vnKTklwI26Y/DbrymTcg+aBHSgCgAT7/qLIrQ==",
+      "type": "package",
+      "path": "materialskin/0.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MaterialSkin.dll",
+        "materialskin.0.2.1.nupkg.sha512",
+        "materialskin.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -2022,6 +2139,20 @@
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "ModernUI/2.0.0": {
+      "sha512": "uFs5caxyT0YXJ08jXI80LlP7TE7LpMUXB2duD1TU697zUl+QCJAFCiu+b9wmzwUFkjsNvmed7okNK94yKv6pVA==",
+      "type": "package",
+      "path": "modernui/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/MetroFramework.dll",
+        "lib/netcoreapp3.0/MetroFramework.dll",
+        "lib/netcoreapp3.1/MetroFramework.dll",
+        "modernui.2.0.0.nupkg.sha512",
+        "modernui.nuspec"
       ]
     },
     "Mono.TextTemplating/2.2.1": {
@@ -2948,25 +3079,29 @@
     "net6.0-windows7.0": [
       "BUS >= 1.0.0",
       "DTO >= 1.0.0",
+      "FontAwesome >= 4.7.0",
+      "FontAwesome.Sharp.Pro >= 6.3.0",
+      "MaterialSkin >= 0.2.1",
       "Microsoft.EntityFrameworkCore >= 7.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.12",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.12"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.12",
+      "ModernUI >= 2.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\phuho\\.nuget\\packages\\": {}
+    "C:\\Users\\Hieu Pham\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programming\\Web\\ASP.NET\\Mid\\CarRental\\CarRental.csproj",
+      "projectUniqueName": "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\CarRental\\CarRental.csproj",
       "projectName": "CarRental",
-      "projectPath": "C:\\Programming\\Web\\ASP.NET\\Mid\\CarRental\\CarRental.csproj",
-      "packagesPath": "C:\\Users\\phuho\\.nuget\\packages\\",
-      "outputPath": "C:\\Programming\\Web\\ASP.NET\\Mid\\CarRental\\obj\\",
+      "projectPath": "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\CarRental\\CarRental.csproj",
+      "packagesPath": "C:\\Users\\Hieu Pham\\.nuget\\packages\\",
+      "outputPath": "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\CarRental\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\phuho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2980,11 +3115,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Programming\\Web\\ASP.NET\\Mid\\BUS\\BUS.csproj": {
-              "projectPath": "C:\\Programming\\Web\\ASP.NET\\Mid\\BUS\\BUS.csproj"
+            "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\BUS\\BUS.csproj": {
+              "projectPath": "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\BUS\\BUS.csproj"
             },
-            "C:\\Programming\\Web\\ASP.NET\\Mid\\DTO\\DTO.csproj": {
-              "projectPath": "C:\\Programming\\Web\\ASP.NET\\Mid\\DTO\\DTO.csproj"
+            "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\DTO\\DTO.csproj": {
+              "projectPath": "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\DTO\\DTO.csproj"
             }
           }
         }
@@ -2999,6 +3134,18 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
+          "FontAwesome": {
+            "target": "Package",
+            "version": "[4.7.0, )"
+          },
+          "FontAwesome.Sharp.Pro": {
+            "target": "Package",
+            "version": "[6.3.0, )"
+          },
+          "MaterialSkin": {
+            "target": "Package",
+            "version": "[0.2.1, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.12, )"
@@ -3012,6 +3159,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.12, )"
+          },
+          "ModernUI": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           }
         },
         "imports": [
@@ -3033,8 +3184,20 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MaterialSkin 0.2.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "MaterialSkin",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }
