@@ -67,35 +67,43 @@ namespace CarRental
         private void btn_OtoManagement_Click(object sender, EventArgs e)
         {
             Activate_Btn(sender, Color.FromArgb(0, 255, 0));
+            Open_Form_Inside(new Admin.AdminOtoManagement());
         }
 
         private void btn_Customer_Click(object sender, EventArgs e)
         {
             Activate_Btn(sender, Color.FromArgb(0, 255, 0));
+            Open_Form_Inside(new Admin.AdminCustomerManagement());
 
         }
 
         private void btn_Orders_Click(object sender, EventArgs e)
         {
             Activate_Btn(sender, Color.FromArgb(0, 255, 0));
+            Open_Form_Inside(new Admin.AdminOrdersManagement());
+
 
         }
 
         private void btn_Schedule_Click(object sender, EventArgs e)
         {
             Activate_Btn(sender, Color.FromArgb(0, 255, 0));
+            Open_Form_Inside(new Admin.AdminScheduleManagement());
 
         }
 
         private void btn_Statistic_Report_Click(object sender, EventArgs e)
         {
             Activate_Btn(sender, Color.FromArgb(0, 255, 0));
+            Open_Form_Inside(new Admin.AdminStatistics_Report());
 
         }
 
         private void btn_Employee_Click(object sender, EventArgs e)
         {
             Activate_Btn(sender, Color.FromArgb(0, 255, 0));
+            Open_Form_Inside(new Admin.AdminEmployeeManagement());
+
 
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
