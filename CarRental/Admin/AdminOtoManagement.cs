@@ -16,5 +16,11 @@ namespace CarRental.Admin
         {
             InitializeComponent();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            Form form = new Admin.FormAddOto();
+            form.ShowDialog();
+        }
     }
 }

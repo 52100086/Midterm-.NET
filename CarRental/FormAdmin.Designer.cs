@@ -66,7 +66,7 @@
             panel_Nav.Dock = DockStyle.Left;
             panel_Nav.Location = new Point(0, 0);
             panel_Nav.Name = "panel_Nav";
-            panel_Nav.Size = new Size(223, 609);
+            panel_Nav.Size = new Size(223, 745);
             panel_Nav.TabIndex = 2;
             // 
             // btn_Employee
@@ -193,7 +193,7 @@
             panel_Header.Dock = DockStyle.Top;
             panel_Header.Location = new Point(223, 0);
             panel_Header.Name = "panel_Header";
-            panel_Header.Size = new Size(1000, 83);
+            panel_Header.Size = new Size(1048, 83);
             panel_Header.TabIndex = 3;
             panel_Header.MouseDown += panel_Header_MouseDown;
             // 
@@ -237,7 +237,7 @@
             btn_Exit.IconColor = SystemColors.ControlText;
             btn_Exit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_Exit.IconSize = 40;
-            btn_Exit.Location = new Point(868, 0);
+            btn_Exit.Location = new Point(916, 0);
             btn_Exit.Name = "btn_Exit";
             btn_Exit.Size = new Size(40, 40);
             btn_Exit.TabIndex = 4;
@@ -253,7 +253,7 @@
             btn_Maximize.IconColor = SystemColors.ControlText;
             btn_Maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_Maximize.IconSize = 40;
-            btn_Maximize.Location = new Point(914, 0);
+            btn_Maximize.Location = new Point(962, 0);
             btn_Maximize.Name = "btn_Maximize";
             btn_Maximize.Size = new Size(40, 40);
             btn_Maximize.TabIndex = 3;
@@ -269,7 +269,7 @@
             btn_Minimize.IconColor = SystemColors.ControlText;
             btn_Minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btn_Minimize.IconSize = 40;
-            btn_Minimize.Location = new Point(960, 0);
+            btn_Minimize.Location = new Point(1008, 0);
             btn_Minimize.Name = "btn_Minimize";
             btn_Minimize.Size = new Size(40, 40);
             btn_Minimize.TabIndex = 2;
@@ -281,14 +281,14 @@
             panel_Main.Dock = DockStyle.Fill;
             panel_Main.Location = new Point(223, 83);
             panel_Main.Name = "panel_Main";
-            panel_Main.Size = new Size(1000, 526);
+            panel_Main.Size = new Size(1048, 662);
             panel_Main.TabIndex = 4;
             // 
             // FormAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1223, 609);
+            ClientSize = new Size(1271, 745);
             Controls.Add(panel_Main);
             Controls.Add(panel_Header);
             Controls.Add(panel_Nav);

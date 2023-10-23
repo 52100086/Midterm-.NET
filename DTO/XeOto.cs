@@ -13,6 +13,7 @@ namespace DTO
         public string Model { get; set; }
         public string TrangThai { get; set; }
         public decimal GiaThue { get; set; }
+        public string NhienLieu { get; set; }
         public int LoaiXeId { get; set; }
 
         // Navigation Property
