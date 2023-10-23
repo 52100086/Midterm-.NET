@@ -142,3 +142,9 @@ E:\Student\HK5\ASP\midterm\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\refin
 E:\Student\HK5\ASP\midterm\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.pdb
 E:\Student\HK5\ASP\midterm\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.genruntimeconfig.cache
 E:\Student\HK5\ASP\midterm\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\ref\CarRental.dll
+E:\Student\HK5\ASP\midterm\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.AdminCustomerManagement.resources
+E:\Student\HK5\ASP\midterm\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.AdminEmployeeManagement.resources
+E:\Student\HK5\ASP\midterm\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.AdminOrdersManagement.resources
+E:\Student\HK5\ASP\midterm\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.AdminScheduleManagement.resources
+E:\Student\HK5\ASP\midterm\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.AdminStatistics_Report.resources
+E:\Student\HK5\ASP\midterm\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormAddOto.resources

@@ -136,7 +136,7 @@ namespace CarRental
         }
         private void Open_Form_Inside(Form insideForm)
         {
-            if (img_Content != null)
+            if (img_Content.IconChar == IconChar.Home)
             {
                 insideFormCurrent.Close();
             }

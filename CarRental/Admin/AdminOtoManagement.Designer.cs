@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "AdminOtoManagement";
+            iconButton1 = new FontAwesome.Sharp.IconButton();
+            SuspendLayout();
+            // 
+            // iconButton1
+            // 
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton1.IconColor = Color.Black;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.Location = new Point(501, 298);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(172, 34);
+            iconButton1.TabIndex = 0;
+            iconButton1.Text = "iconButton1";
+            iconButton1.UseVisualStyleBackColor = true;
+            iconButton1.Click += iconButton1_Click;
+            // 
+            // AdminOtoManagement
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(982, 479);
+            Controls.Add(iconButton1);
+            Name = "AdminOtoManagement";
+            Text = "AdminOtoManagement";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
