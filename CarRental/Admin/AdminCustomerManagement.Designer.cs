@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            iconButton4 = new FontAwesome.Sharp.IconButton();
+            metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            iconButton3 = new FontAwesome.Sharp.IconButton();
+            iconButton2 = new FontAwesome.Sharp.IconButton();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             metroPanel2 = new MetroFramework.Controls.MetroPanel();
             dataGridView1 = new DataGridView();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            iconButton4 = new FontAwesome.Sharp.IconButton();
             metroPanel1.SuspendLayout();
             metroPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -65,6 +65,70 @@
             metroPanel1.VerticalScrollbarBarColor = true;
             metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // iconButton4
+            // 
+            iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton4.IconColor = Color.Black;
+            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton4.Location = new Point(850, 43);
+            iconButton4.Name = "iconButton4";
+            iconButton4.Size = new Size(94, 29);
+            iconButton4.TabIndex = 6;
+            iconButton4.Text = "Tìm kiếm";
+            iconButton4.UseVisualStyleBackColor = true;
+            // 
+            // metroTextBox1
+            // 
+            metroTextBox1.FontSize = MetroFramework.MetroTextBoxSize.Small;
+            metroTextBox1.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
+            metroTextBox1.Location = new Point(709, 43);
+            metroTextBox1.Multiline = false;
+            metroTextBox1.Name = "metroTextBox1";
+            metroTextBox1.SelectedText = "";
+            metroTextBox1.Size = new Size(94, 29);
+            metroTextBox1.Style = MetroFramework.MetroColorStyle.Blue;
+            metroTextBox1.StyleManager = null;
+            metroTextBox1.TabIndex = 5;
+            metroTextBox1.Text = "metroTextBox1";
+            metroTextBox1.Theme = MetroFramework.MetroThemeStyle.Light;
+            metroTextBox1.UseStyleColors = false;
+            // 
+            // iconButton3
+            // 
+            iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton3.IconColor = Color.Black;
+            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton3.Location = new Point(574, 37);
+            iconButton3.Name = "iconButton3";
+            iconButton3.Size = new Size(94, 29);
+            iconButton3.TabIndex = 4;
+            iconButton3.Text = "Cập nhật";
+            iconButton3.UseVisualStyleBackColor = true;
+            // 
+            // iconButton2
+            // 
+            iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton2.IconColor = Color.Black;
+            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton2.Location = new Point(432, 37);
+            iconButton2.Name = "iconButton2";
+            iconButton2.Size = new Size(94, 29);
+            iconButton2.TabIndex = 3;
+            iconButton2.Text = "Xóa";
+            iconButton2.UseVisualStyleBackColor = true;
+            // 
+            // iconButton1
+            // 
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton1.IconColor = Color.Black;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.Location = new Point(290, 37);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(94, 29);
+            iconButton1.TabIndex = 2;
+            iconButton1.Text = "Thêm";
+            iconButton1.UseVisualStyleBackColor = true;
             // 
             // metroPanel2
             // 
@@ -97,70 +161,6 @@
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(982, 354);
             dataGridView1.TabIndex = 2;
-            // 
-            // iconButton1
-            // 
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton1.IconColor = Color.Black;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.Location = new Point(290, 37);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(94, 29);
-            iconButton1.TabIndex = 2;
-            iconButton1.Text = "iconButton1";
-            iconButton1.UseVisualStyleBackColor = true;
-            // 
-            // iconButton2
-            // 
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton2.IconColor = Color.Black;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.Location = new Point(432, 37);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(94, 29);
-            iconButton2.TabIndex = 3;
-            iconButton2.Text = "iconButton2";
-            iconButton2.UseVisualStyleBackColor = true;
-            // 
-            // iconButton3
-            // 
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton3.IconColor = Color.Black;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.Location = new Point(574, 37);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(94, 29);
-            iconButton3.TabIndex = 4;
-            iconButton3.Text = "iconButton3";
-            iconButton3.UseVisualStyleBackColor = true;
-            // 
-            // metroTextBox1
-            // 
-            metroTextBox1.FontSize = MetroFramework.MetroTextBoxSize.Small;
-            metroTextBox1.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
-            metroTextBox1.Location = new Point(709, 43);
-            metroTextBox1.Multiline = false;
-            metroTextBox1.Name = "metroTextBox1";
-            metroTextBox1.SelectedText = "";
-            metroTextBox1.Size = new Size(94, 29);
-            metroTextBox1.Style = MetroFramework.MetroColorStyle.Blue;
-            metroTextBox1.StyleManager = null;
-            metroTextBox1.TabIndex = 5;
-            metroTextBox1.Text = "metroTextBox1";
-            metroTextBox1.Theme = MetroFramework.MetroThemeStyle.Light;
-            metroTextBox1.UseStyleColors = false;
-            // 
-            // iconButton4
-            // 
-            iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton4.IconColor = Color.Black;
-            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.Location = new Point(850, 43);
-            iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(94, 29);
-            iconButton4.TabIndex = 6;
-            iconButton4.Text = "iconButton4";
-            iconButton4.UseVisualStyleBackColor = true;
             // 
             // AdminCustomerManagement
             // 

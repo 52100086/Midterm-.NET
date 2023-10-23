@@ -107,7 +107,7 @@
             iconButton4.Name = "iconButton4";
             iconButton4.Size = new Size(94, 29);
             iconButton4.TabIndex = 6;
-            iconButton4.Text = "iconButton4";
+            iconButton4.Text = "Tìm kiếm";
             iconButton4.UseVisualStyleBackColor = true;
             // 
             // metroTextBox1
@@ -122,7 +122,7 @@
             metroTextBox1.Style = MetroFramework.MetroColorStyle.Blue;
             metroTextBox1.StyleManager = null;
             metroTextBox1.TabIndex = 5;
-            metroTextBox1.Text = "metroTextBox1";
+            metroTextBox1.Text = "Tìm kiếm";
             metroTextBox1.Theme = MetroFramework.MetroThemeStyle.Light;
             metroTextBox1.UseStyleColors = false;
             // 
@@ -135,7 +135,7 @@
             iconButton3.Name = "iconButton3";
             iconButton3.Size = new Size(94, 29);
             iconButton3.TabIndex = 4;
-            iconButton3.Text = "iconButton3";
+            iconButton3.Text = "Cập nhật";
             iconButton3.UseVisualStyleBackColor = true;
             // 
             // iconButton2
@@ -147,7 +147,7 @@
             iconButton2.Name = "iconButton2";
             iconButton2.Size = new Size(94, 29);
             iconButton2.TabIndex = 3;
-            iconButton2.Text = "iconButton2";
+            iconButton2.Text = "Xóa";
             iconButton2.UseVisualStyleBackColor = true;
             // 
             // iconButton1
@@ -159,7 +159,7 @@
             iconButton1.Name = "iconButton1";
             iconButton1.Size = new Size(94, 29);
             iconButton1.TabIndex = 2;
-            iconButton1.Text = "iconButton1";
+            iconButton1.Text = "Thêm";
             iconButton1.UseVisualStyleBackColor = true;
             // 
             // AdminOrdersManagement
