@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zZoX1Bq6q2k0RZeVScicvQRl+NIJ6pLo9/GnBOgZen0FQQUZVcai1VadEQjX1Z+c39/6qQCxAk672mgJUMga8g==",
+  "dgSpecHash": "/+RMdC5v8xNvCtZe/bMXVr5PSZlaC1B4BBNe9h54yusqxGebEQTns/2qXRK8jVtJIxcpzOj0YWGw7g8tJAF88A==",
   "success": true,
   "projectFilePath": "E:\\Student\\HK5\\ASP\\midterm\\Midterm-.NET\\CarRental\\CarRental.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Hieu Pham\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
     "C:\\Users\\Hieu Pham\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
     "C:\\Users\\Hieu Pham\\.nuget\\packages\\fontawesome.sharp.pro\\6.3.0\\fontawesome.sharp.pro.6.3.0.nupkg.sha512",
+    "C:\\Users\\Hieu Pham\\.nuget\\packages\\hic.system.windows.forms.datavisualization\\1.0.1\\hic.system.windows.forms.datavisualization.1.0.1.nupkg.sha512",
     "C:\\Users\\Hieu Pham\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Hieu Pham\\.nuget\\packages\\materialskin\\0.2.1\\materialskin.0.2.1.nupkg.sha512",
     "C:\\Users\\Hieu Pham\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
@@ -68,7 +69,8 @@
     "C:\\Users\\Hieu Pham\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Hieu Pham\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\Hieu Pham\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\Hieu Pham\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+    "C:\\Users\\Hieu Pham\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Hieu Pham\\.nuget\\packages\\winforms.datavisualization\\1.9.0\\winforms.datavisualization.1.9.0.nupkg.sha512"
   ],
   "logs": [
     {

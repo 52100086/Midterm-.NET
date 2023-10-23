@@ -76,6 +76,18 @@
           "Microsoft.WindowsDesktop.App"
         ]
       },
+      "HIC.System.Windows.Forms.DataVisualization/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "3.0.0"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/System.Windows.Forms.DataVisualization.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/System.Windows.Forms.DataVisualization.dll": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1115,6 +1127,25 @@
           }
         }
       },
+      "WinForms.DataVisualization/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/WinForms.DataVisualization.Utilities.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/WinForms.DataVisualization.dll": {
+            "related": ".pdb;.Utilities.pdb;.Utilities.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/WinForms.DataVisualization.Utilities.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net6.0-windows7.0/WinForms.DataVisualization.dll": {
+            "related": ".pdb;.Utilities.pdb;.Utilities.xml;.xml"
+          }
+        }
+      },
       "BUS/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1250,6 +1281,18 @@
         "lib/net48/FontAwesome.Sharp.Pro.dll",
         "lib/net6.0-windows7.0/FontAwesome.Sharp.Pro.dll",
         "lib/netcoreapp3.1/FontAwesome.Sharp.Pro.dll"
+      ]
+    },
+    "HIC.System.Windows.Forms.DataVisualization/1.0.1": {
+      "sha512": "2iErCJov37VIGLATCcI8tAaFemn8KJW/b4686foj+CslKTSGa2NcQgvVCYF+kR4+6d9cg09X1xrcoIgnVlznsA==",
+      "type": "package",
+      "path": "hic.system.windows.forms.datavisualization/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "hic.system.windows.forms.datavisualization.1.0.1.nupkg.sha512",
+        "hic.system.windows.forms.datavisualization.nuspec",
+        "lib/net5.0-windows7.0/System.Windows.Forms.DataVisualization.dll"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -3059,6 +3102,43 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "WinForms.DataVisualization/1.9.0": {
+      "sha512": "lRhRPS40V3o5dY38NwaIZyOPrD+bbFq+UjNCa/eAucMICrSFVUE9rO6H2G73xx65mZ94Q7lYw4BSaZRPlcxhxQ==",
+      "type": "package",
+      "path": "winforms.datavisualization/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "NuGetReadme.md",
+        "lib/net6.0-windows7.0/Design/WinForms/Server/WinForms.DataVisualization.Designer.ClientServerProtocol.dll",
+        "lib/net6.0-windows7.0/Design/WinForms/Server/WinForms.DataVisualization.Designer.Server.dll",
+        "lib/net6.0-windows7.0/Design/WinForms/Server/WinForms.DataVisualization.Utilities.dll",
+        "lib/net6.0-windows7.0/Design/WinForms/WinForms.DataVisualization.Designer.Client.dll",
+        "lib/net6.0-windows7.0/Design/WinForms/WinForms.DataVisualization.Designer.ClientServerProtocol.dll",
+        "lib/net6.0-windows7.0/Design/WinForms/WinForms.DataVisualization.Utilities.dll",
+        "lib/net6.0-windows7.0/WinForms.DataVisualization.Utilities.dll",
+        "lib/net6.0-windows7.0/WinForms.DataVisualization.Utilities.pdb",
+        "lib/net6.0-windows7.0/WinForms.DataVisualization.Utilities.xml",
+        "lib/net6.0-windows7.0/WinForms.DataVisualization.dll",
+        "lib/net6.0-windows7.0/WinForms.DataVisualization.pdb",
+        "lib/net6.0-windows7.0/WinForms.DataVisualization.xml",
+        "lib/net7.0-windows7.0/Design/WinForms/Server/WinForms.DataVisualization.Designer.ClientServerProtocol.dll",
+        "lib/net7.0-windows7.0/Design/WinForms/Server/WinForms.DataVisualization.Designer.Server.dll",
+        "lib/net7.0-windows7.0/Design/WinForms/Server/WinForms.DataVisualization.Utilities.dll",
+        "lib/net7.0-windows7.0/Design/WinForms/WinForms.DataVisualization.Designer.Client.dll",
+        "lib/net7.0-windows7.0/Design/WinForms/WinForms.DataVisualization.Designer.ClientServerProtocol.dll",
+        "lib/net7.0-windows7.0/Design/WinForms/WinForms.DataVisualization.Utilities.dll",
+        "lib/net7.0-windows7.0/WinForms.DataVisualization.Utilities.dll",
+        "lib/net7.0-windows7.0/WinForms.DataVisualization.Utilities.pdb",
+        "lib/net7.0-windows7.0/WinForms.DataVisualization.Utilities.xml",
+        "lib/net7.0-windows7.0/WinForms.DataVisualization.dll",
+        "lib/net7.0-windows7.0/WinForms.DataVisualization.pdb",
+        "lib/net7.0-windows7.0/WinForms.DataVisualization.xml",
+        "winforms.datavisualization.1.9.0.nupkg.sha512",
+        "winforms.datavisualization.nuspec"
+      ]
+    },
     "BUS/1.0.0": {
       "type": "project",
       "path": "../BUS/BUS.csproj",
@@ -3081,11 +3161,13 @@
       "DTO >= 1.0.0",
       "FontAwesome >= 4.7.0",
       "FontAwesome.Sharp.Pro >= 6.3.0",
+      "HIC.System.Windows.Forms.DataVisualization >= 1.0.1",
       "MaterialSkin >= 0.2.1",
       "Microsoft.EntityFrameworkCore >= 7.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.12",
-      "ModernUI >= 2.0.0"
+      "ModernUI >= 2.0.0",
+      "WinForms.DataVisualization >= 1.9.0"
     ]
   },
   "packageFolders": {
@@ -3142,6 +3224,10 @@
             "target": "Package",
             "version": "[6.3.0, )"
           },
+          "HIC.System.Windows.Forms.DataVisualization": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "MaterialSkin": {
             "target": "Package",
             "version": "[0.2.1, )"
@@ -3163,6 +3249,10 @@
           "ModernUI": {
             "target": "Package",
             "version": "[2.0.0, )"
+          },
+          "WinForms.DataVisualization": {
+            "target": "Package",
+            "version": "[1.9.0, )"
           }
         },
         "imports": [

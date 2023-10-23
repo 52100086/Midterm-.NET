@@ -72,21 +72,21 @@ namespace CarRental.Admin
             metroLabel7 = new MetroFramework.Controls.MetroLabel();
             metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
-            this.pic_6 = new PictureBox();
-            this.pic_7 = new PictureBox();
-            this.pic_4 = new PictureBox();
-            this.pic_3 = new PictureBox();
-            this.pic_2 = new PictureBox();
-            this.pic_1 = new PictureBox();
             pic_5 = new PictureBox();
+            pic_7 = new PictureBox();
+            pic_4 = new PictureBox();
+            pic_3 = new PictureBox();
+            pic2 = new PictureBox();
+            pic_6 = new PictureBox();
+            pic_1 = new PictureBox();
             metroPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)this.pic_6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)this.pic_7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)this.pic_4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)this.pic_3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)this.pic_2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)this.pic_1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pic_5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_1).BeginInit();
             SuspendLayout();
             // 
             // metroPanel1
@@ -660,66 +660,6 @@ namespace CarRental.Admin
             metroComboBox2.TabIndex = 44;
             metroComboBox2.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // pic_6
-            // 
-            this.pic_6.Image = Properties.Resources.mpv;
-            this.pic_6.Location = new Point(168, 255);
-            this.pic_6.Name = "pic_6";
-            this.pic_6.Size = new Size(95, 92);
-            this.pic_6.SizeMode = PictureBoxSizeMode.StretchImage;
-            this.pic_6.TabIndex = 45;
-            this.pic_6.TabStop = false;
-            // 
-            // pic_7
-            // 
-            this.pic_7.Image = Properties.Resources.pickup_truck;
-            this.pic_7.Location = new Point(305, 255);
-            this.pic_7.Name = "pic_7";
-            this.pic_7.Size = new Size(95, 92);
-            this.pic_7.SizeMode = PictureBoxSizeMode.StretchImage;
-            this.pic_7.TabIndex = 46;
-            this.pic_7.TabStop = false;
-            // 
-            // pic_4
-            // 
-            this.pic_4.Image = Properties.Resources.car_suv_5_seats;
-            this.pic_4.Location = new Point(442, 127);
-            this.pic_4.Name = "pic_4";
-            this.pic_4.Size = new Size(95, 92);
-            this.pic_4.SizeMode = PictureBoxSizeMode.StretchImage;
-            this.pic_4.TabIndex = 47;
-            this.pic_4.TabStop = false;
-            // 
-            // pic_3
-            // 
-            this.pic_3.Image = Properties.Resources.car_sedan_4_seats;
-            this.pic_3.Location = new Point(305, 127);
-            this.pic_3.Name = "pic_3";
-            this.pic_3.Size = new Size(95, 92);
-            this.pic_3.SizeMode = PictureBoxSizeMode.StretchImage;
-            this.pic_3.TabIndex = 48;
-            this.pic_3.TabStop = false;
-            // 
-            // pic_2
-            // 
-            this.pic_2.Image = Properties.Resources.car_hatchback_4_seats;
-            this.pic_2.Location = new Point(168, 127);
-            this.pic_2.Name = "pic_2";
-            this.pic_2.Size = new Size(95, 92);
-            this.pic_2.SizeMode = PictureBoxSizeMode.StretchImage;
-            this.pic_2.TabIndex = 49;
-            this.pic_2.TabStop = false;
-            // 
-            // pic_1
-            // 
-            this.pic_1.Image = Properties.Resources.car_mini_4_seats;
-            this.pic_1.Location = new Point(30, 127);
-            this.pic_1.Name = "pic_1";
-            this.pic_1.Size = new Size(95, 92);
-            this.pic_1.SizeMode = PictureBoxSizeMode.StretchImage;
-            this.pic_1.TabIndex = 50;
-            this.pic_1.TabStop = false;
-            // 
             // pic_5
             // 
             pic_5.Image = Properties.Resources.car_cuv_5_seats;
@@ -730,11 +670,77 @@ namespace CarRental.Admin
             pic_5.TabIndex = 51;
             pic_5.TabStop = false;
             // 
+            // pic_7
+            // 
+            pic_7.Image = Properties.Resources.pickup_truck;
+            pic_7.Location = new Point(305, 255);
+            pic_7.Name = "pic_7";
+            pic_7.Size = new Size(95, 92);
+            pic_7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_7.TabIndex = 52;
+            pic_7.TabStop = false;
+            // 
+            // pic_4
+            // 
+            pic_4.Image = Properties.Resources.car_suv_5_seats;
+            pic_4.Location = new Point(442, 127);
+            pic_4.Name = "pic_4";
+            pic_4.Size = new Size(95, 92);
+            pic_4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_4.TabIndex = 53;
+            pic_4.TabStop = false;
+            // 
+            // pic_3
+            // 
+            pic_3.Image = Properties.Resources.car_hatchback_4_seats;
+            pic_3.Location = new Point(305, 127);
+            pic_3.Name = "pic_3";
+            pic_3.Size = new Size(95, 92);
+            pic_3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_3.TabIndex = 54;
+            pic_3.TabStop = false;
+            // 
+            // pic2
+            // 
+            pic2.Image = Properties.Resources.car_sedan_4_seats;
+            pic2.Location = new Point(168, 127);
+            pic2.Name = "pic2";
+            pic2.Size = new Size(95, 92);
+            pic2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic2.TabIndex = 55;
+            pic2.TabStop = false;
+            // 
+            // pic_6
+            // 
+            pic_6.Image = Properties.Resources.mpv;
+            pic_6.Location = new Point(168, 255);
+            pic_6.Name = "pic_6";
+            pic_6.Size = new Size(95, 92);
+            pic_6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_6.TabIndex = 56;
+            pic_6.TabStop = false;
+            // 
+            // pic_1
+            // 
+            pic_1.Image = Properties.Resources.car_mini_4_seats;
+            pic_1.Location = new Point(30, 127);
+            pic_1.Name = "pic_1";
+            pic_1.Size = new Size(95, 92);
+            pic_1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_1.TabIndex = 57;
+            pic_1.TabStop = false;
+            // 
             // FormAddOto
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1000, 642);
+            Controls.Add(pic_1);
+            Controls.Add(pic_6);
+            Controls.Add(pic2);
+            Controls.Add(pic_3);
+            Controls.Add(pic_4);
+            Controls.Add(pic_7);
             Controls.Add(metroComboBox2);
             Controls.Add(metroTextBox1);
             Controls.Add(metroLabel7);
@@ -767,22 +773,16 @@ namespace CarRental.Admin
             Controls.Add(metroLabel1);
             Controls.Add(metroPanel1);
             Controls.Add(pic_5);
-            Controls.Add(this.pic_1);
-            Controls.Add(this.pic_2);
-            Controls.Add(this.pic_3);
-            Controls.Add(this.pic_4);
-            Controls.Add(this.pic_7);
-            Controls.Add(this.pic_6);
             Name = "FormAddOto";
             Text = "FormAddOto";
             metroPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)this.pic_6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)this.pic_7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)this.pic_4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)this.pic_3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)this.pic_2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)this.pic_1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pic_5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -837,5 +837,11 @@ namespace CarRental.Admin
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox pic_5;
+        private PictureBox pic_7;
+        private PictureBox pic_4;
+        private PictureBox pic_3;
+        private PictureBox pic2;
+        private PictureBox pic_6;
+        private PictureBox pic_1;
     }
 }

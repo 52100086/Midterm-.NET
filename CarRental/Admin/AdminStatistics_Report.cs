@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Windows.Forms.DataVisualization.Charting;
 namespace CarRental.Admin
 {
     public partial class AdminStatistics_Report : Form
