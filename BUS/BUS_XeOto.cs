@@ -29,7 +29,20 @@ namespace BUS
         {
             return _dalXeOto.CreateXeOtoAsync(xeOto);
         }
+        public Task<List<LoaiXe>> GetAllLoaiXesAsync()
+        {
+            return _dalXeOto.GetAllLoaiXesAsync();
+        }
 
+        public Task<List<MauXe>> GetAllMauXesAsync()
+        {
+            return _dalXeOto.GetAllMauXesAsync();
+        }
+
+        public Task<List<HangXe>> GetAllHangXesAsync()
+        {
+            return _dalXeOto.GetAllHangXesAsync();
+        }
         public Task<XeOto> UpdateXeOtoAsync(XeOto xeOto)
         {
             return _dalXeOto.UpdateXeOtoAsync(xeOto);
@@ -45,10 +58,6 @@ namespace BUS
             return _dalXeOto.SearchByBrandAsync(brand);
         }
 
-        public Task<List<XeOto>> SearchByModelAsync(string model)
-        {
-            return _dalXeOto.SearchByModelAsync(model);
-        }
 
         public Task<List<XeOto>> SearchByTypeAsync(string type)
         {

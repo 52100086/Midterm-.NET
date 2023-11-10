@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAL.Migrations
 {
     [DbContext(typeof(CarRentalDBContext))]
-    [Migration("20231104024418_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20231110141336_initdb")]
+    partial class initdb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,18 +58,30 @@ namespace DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DonDatXeId"));
 
-                    b.Property<decimal>("GiaThue")
-                        .HasColumnType("decimal(18, 2)");
+                    b.Property<double>("GiaThue")
+                        .HasColumnType("float");
 
                     b.Property<int>("KhachHangId")
                         .HasColumnType("int");
 
-                    b.Property<string>("NhienLieu")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("NgayLap")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("NgayThanhToan")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("NhienLieuId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("ThoiGianThue")
                         .HasColumnType("datetime2");
+
+                    b.Property<double>("Thue")
+                        .HasColumnType("float");
+
+                    b.Property<string>("TrangThai")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("XeOtoId")
                         .HasColumnType("int");
@@ -77,6 +89,8 @@ namespace DAL.Migrations
                     b.HasKey("DonDatXeId");
 
                     b.HasIndex("KhachHangId");
+
+                    b.HasIndex("NhienLieuId");
 
                     b.HasIndex("XeOtoId");
 
@@ -96,6 +110,23 @@ namespace DAL.Migrations
                     b.HasIndex("TinhNangId");
 
                     b.ToTable("DonDatXe_TinhNangs");
+                });
+
+            modelBuilder.Entity("DTO.HangXe", b =>
+                {
+                    b.Property<int>("HangXeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HangXeId"));
+
+                    b.Property<string>("TenHangXe")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("HangXeId");
+
+                    b.ToTable("HangXes");
                 });
 
             modelBuilder.Entity("DTO.KhachHang", b =>
@@ -144,6 +175,40 @@ namespace DAL.Migrations
                     b.ToTable("LoaiXes");
                 });
 
+            modelBuilder.Entity("DTO.MauXe", b =>
+                {
+                    b.Property<int>("MauXeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MauXeId"));
+
+                    b.Property<string>("TenMauXe")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("MauXeId");
+
+                    b.ToTable("MauXes");
+                });
+
+            modelBuilder.Entity("DTO.NhienLieu", b =>
+                {
+                    b.Property<int>("NhienLieuId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NhienLieuId"));
+
+                    b.Property<string>("NhienLieuName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NhienLieuId");
+
+                    b.ToTable("NhienLieus");
+                });
+
             modelBuilder.Entity("DTO.TinhNangXe", b =>
                 {
                     b.Property<int>("TinhNangId")
@@ -151,6 +216,9 @@ namespace DAL.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TinhNangId"));
+
+                    b.Property<double>("GiaThue")
+                        .HasColumnType("float");
 
                     b.Property<string>("TenTinhNang")
                         .IsRequired()
@@ -169,23 +237,17 @@ namespace DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("XeOtoId"));
 
-                    b.Property<decimal>("GiaThue")
-                        .HasColumnType("decimal(18, 2)");
+                    b.Property<double>("GiaThue")
+                        .HasColumnType("float");
 
-                    b.Property<string>("HangXe")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("HangXeId")
+                        .HasColumnType("int");
 
                     b.Property<int>("LoaiXeId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Model")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NhienLieu")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("MauXeId")
+                        .HasColumnType("int");
 
                     b.Property<string>("TrangThai")
                         .IsRequired()
@@ -193,7 +255,11 @@ namespace DAL.Migrations
 
                     b.HasKey("XeOtoId");
 
+                    b.HasIndex("HangXeId");
+
                     b.HasIndex("LoaiXeId");
+
+                    b.HasIndex("MauXeId");
 
                     b.ToTable("XeOtos");
                 });
@@ -203,16 +269,24 @@ namespace DAL.Migrations
                     b.HasOne("DTO.KhachHang", "KhachHang")
                         .WithMany("DonDatXes")
                         .HasForeignKey("KhachHangId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("DTO.NhienLieu", "NhienLieu")
+                        .WithMany("DonDatXes")
+                        .HasForeignKey("NhienLieuId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("DTO.XeOto", "XeOto")
                         .WithMany("DonDatXes")
                         .HasForeignKey("XeOtoId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("KhachHang");
+
+                    b.Navigation("NhienLieu");
 
                     b.Navigation("XeOto");
                 });
@@ -238,18 +312,39 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("DTO.XeOto", b =>
                 {
+                    b.HasOne("DTO.HangXe", "HangXe")
+                        .WithMany("XeOtos")
+                        .HasForeignKey("HangXeId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("DTO.LoaiXe", "LoaiXe")
                         .WithMany("XeOtos")
                         .HasForeignKey("LoaiXeId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("DTO.MauXe", "MauXe")
+                        .WithMany("XeOtos")
+                        .HasForeignKey("MauXeId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("HangXe");
+
                     b.Navigation("LoaiXe");
+
+                    b.Navigation("MauXe");
                 });
 
             modelBuilder.Entity("DTO.DonDatXe", b =>
                 {
                     b.Navigation("DonDatXe_TinhNangs");
+                });
+
+            modelBuilder.Entity("DTO.HangXe", b =>
+                {
+                    b.Navigation("XeOtos");
                 });
 
             modelBuilder.Entity("DTO.KhachHang", b =>
@@ -260,6 +355,16 @@ namespace DAL.Migrations
             modelBuilder.Entity("DTO.LoaiXe", b =>
                 {
                     b.Navigation("XeOtos");
+                });
+
+            modelBuilder.Entity("DTO.MauXe", b =>
+                {
+                    b.Navigation("XeOtos");
+                });
+
+            modelBuilder.Entity("DTO.NhienLieu", b =>
+                {
+                    b.Navigation("DonDatXes");
                 });
 
             modelBuilder.Entity("DTO.TinhNangXe", b =>

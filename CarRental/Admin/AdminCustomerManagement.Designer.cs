@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            iconButton4 = new FontAwesome.Sharp.IconButton();
-            metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
+            btn_Search = new FontAwesome.Sharp.IconButton();
+            txt_Search = new MetroFramework.Controls.MetroTextBox();
+            btn_Update = new FontAwesome.Sharp.IconButton();
+            btn_Delete = new FontAwesome.Sharp.IconButton();
+            btn_Add = new FontAwesome.Sharp.IconButton();
             metroPanel2 = new MetroFramework.Controls.MetroPanel();
             dataGridView1 = new DataGridView();
             metroPanel1.SuspendLayout();
@@ -43,11 +43,11 @@
             // 
             // metroPanel1
             // 
-            metroPanel1.Controls.Add(iconButton4);
-            metroPanel1.Controls.Add(metroTextBox1);
-            metroPanel1.Controls.Add(iconButton3);
-            metroPanel1.Controls.Add(iconButton2);
-            metroPanel1.Controls.Add(iconButton1);
+            metroPanel1.Controls.Add(btn_Search);
+            metroPanel1.Controls.Add(txt_Search);
+            metroPanel1.Controls.Add(btn_Update);
+            metroPanel1.Controls.Add(btn_Delete);
+            metroPanel1.Controls.Add(btn_Add);
             metroPanel1.CustomBackground = false;
             metroPanel1.Dock = DockStyle.Top;
             metroPanel1.HorizontalScrollbar = false;
@@ -66,69 +66,68 @@
             metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // iconButton4
+            // btn_Search
             // 
-            iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton4.IconColor = Color.Black;
-            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.Location = new Point(850, 43);
-            iconButton4.Name = "iconButton4";
-            iconButton4.Size = new Size(94, 29);
-            iconButton4.TabIndex = 6;
-            iconButton4.Text = "Tìm kiếm";
-            iconButton4.UseVisualStyleBackColor = true;
+            btn_Search.IconChar = FontAwesome.Sharp.IconChar.None;
+            btn_Search.IconColor = Color.Black;
+            btn_Search.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_Search.Location = new Point(850, 43);
+            btn_Search.Name = "btn_Search";
+            btn_Search.Size = new Size(94, 29);
+            btn_Search.TabIndex = 6;
+            btn_Search.Text = "Tìm kiếm";
+            btn_Search.UseVisualStyleBackColor = true;
             // 
-            // metroTextBox1
+            // txt_Search
             // 
-            metroTextBox1.FontSize = MetroFramework.MetroTextBoxSize.Small;
-            metroTextBox1.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
-            metroTextBox1.Location = new Point(709, 43);
-            metroTextBox1.Multiline = false;
-            metroTextBox1.Name = "metroTextBox1";
-            metroTextBox1.SelectedText = "";
-            metroTextBox1.Size = new Size(94, 29);
-            metroTextBox1.Style = MetroFramework.MetroColorStyle.Blue;
-            metroTextBox1.StyleManager = null;
-            metroTextBox1.TabIndex = 5;
-            metroTextBox1.Text = "metroTextBox1";
-            metroTextBox1.Theme = MetroFramework.MetroThemeStyle.Light;
-            metroTextBox1.UseStyleColors = false;
+            txt_Search.FontSize = MetroFramework.MetroTextBoxSize.Small;
+            txt_Search.FontWeight = MetroFramework.MetroTextBoxWeight.Regular;
+            txt_Search.Location = new Point(709, 43);
+            txt_Search.Multiline = false;
+            txt_Search.Name = "txt_Search";
+            txt_Search.SelectedText = "";
+            txt_Search.Size = new Size(94, 29);
+            txt_Search.Style = MetroFramework.MetroColorStyle.Blue;
+            txt_Search.StyleManager = null;
+            txt_Search.TabIndex = 5;
+            txt_Search.Theme = MetroFramework.MetroThemeStyle.Light;
+            txt_Search.UseStyleColors = false;
             // 
-            // iconButton3
+            // btn_Update
             // 
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton3.IconColor = Color.Black;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.Location = new Point(574, 37);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Size = new Size(94, 29);
-            iconButton3.TabIndex = 4;
-            iconButton3.Text = "Cập nhật";
-            iconButton3.UseVisualStyleBackColor = true;
+            btn_Update.IconChar = FontAwesome.Sharp.IconChar.None;
+            btn_Update.IconColor = Color.Black;
+            btn_Update.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_Update.Location = new Point(574, 37);
+            btn_Update.Name = "btn_Update";
+            btn_Update.Size = new Size(94, 29);
+            btn_Update.TabIndex = 4;
+            btn_Update.Text = "Cập nhật";
+            btn_Update.UseVisualStyleBackColor = true;
             // 
-            // iconButton2
+            // btn_Delete
             // 
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton2.IconColor = Color.Black;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.Location = new Point(432, 37);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Size = new Size(94, 29);
-            iconButton2.TabIndex = 3;
-            iconButton2.Text = "Xóa";
-            iconButton2.UseVisualStyleBackColor = true;
+            btn_Delete.IconChar = FontAwesome.Sharp.IconChar.None;
+            btn_Delete.IconColor = Color.Black;
+            btn_Delete.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_Delete.Location = new Point(432, 37);
+            btn_Delete.Name = "btn_Delete";
+            btn_Delete.Size = new Size(94, 29);
+            btn_Delete.TabIndex = 3;
+            btn_Delete.Text = "Xóa";
+            btn_Delete.UseVisualStyleBackColor = true;
             // 
-            // iconButton1
+            // btn_Add
             // 
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            iconButton1.IconColor = Color.Black;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.Location = new Point(290, 37);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(94, 29);
-            iconButton1.TabIndex = 2;
-            iconButton1.Text = "Thêm";
-            iconButton1.UseVisualStyleBackColor = true;
+            btn_Add.IconChar = FontAwesome.Sharp.IconChar.None;
+            btn_Add.IconColor = Color.Black;
+            btn_Add.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_Add.Location = new Point(290, 37);
+            btn_Add.Name = "btn_Add";
+            btn_Add.Size = new Size(94, 29);
+            btn_Add.TabIndex = 2;
+            btn_Add.Text = "Thêm";
+            btn_Add.UseVisualStyleBackColor = true;
             // 
             // metroPanel2
             // 
@@ -181,11 +180,11 @@
 
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroPanel metroPanel2;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btn_Update;
+        private FontAwesome.Sharp.IconButton btn_Delete;
+        private FontAwesome.Sharp.IconButton btn_Add;
         private DataGridView dataGridView1;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private FontAwesome.Sharp.IconButton btn_Search;
+        private MetroFramework.Controls.MetroTextBox txt_Search;
     }
 }

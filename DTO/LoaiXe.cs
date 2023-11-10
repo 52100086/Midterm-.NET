@@ -10,7 +10,6 @@ namespace DTO
     {
         public int LoaiXeId { get; set; }
         public string TenLoaiXe { get; set; }
-
         public ICollection<XeOto> XeOtos { get; set; }
     }
 

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class initdb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -24,6 +24,19 @@ namespace DAL.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Accounts", x => x.AccountId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "HangXes",
+                columns: table => new
+                {
+                    HangXeId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    TenHangXe = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_HangXes", x => x.HangXeId);
                 });
 
             migrationBuilder.CreateTable(
@@ -56,12 +69,39 @@ namespace DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "MauXes",
+                columns: table => new
+                {
+                    MauXeId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    TenMauXe = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MauXes", x => x.MauXeId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "NhienLieus",
+                columns: table => new
+                {
+                    NhienLieuId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NhienLieuName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_NhienLieus", x => x.NhienLieuId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "TinhNangXes",
                 columns: table => new
                 {
                     TinhNangId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    TenTinhNang = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    TenTinhNang = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    GiaThue = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -74,22 +114,33 @@ namespace DAL.Migrations
                 {
                     XeOtoId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    HangXe = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Model = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TrangThai = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    GiaThue = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    NhienLieu = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LoaiXeId = table.Column<int>(type: "int", nullable: false)
+                    GiaThue = table.Column<double>(type: "float", nullable: false),
+                    LoaiXeId = table.Column<int>(type: "int", nullable: false),
+                    HangXeId = table.Column<int>(type: "int", nullable: false),
+                    MauXeId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_XeOtos", x => x.XeOtoId);
                     table.ForeignKey(
+                        name: "FK_XeOtos_HangXes_HangXeId",
+                        column: x => x.HangXeId,
+                        principalTable: "HangXes",
+                        principalColumn: "HangXeId",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
                         name: "FK_XeOtos_LoaiXes_LoaiXeId",
                         column: x => x.LoaiXeId,
                         principalTable: "LoaiXes",
                         principalColumn: "LoaiXeId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_XeOtos_MauXes_MauXeId",
+                        column: x => x.MauXeId,
+                        principalTable: "MauXes",
+                        principalColumn: "MauXeId",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -100,9 +151,13 @@ namespace DAL.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     KhachHangId = table.Column<int>(type: "int", nullable: false),
                     XeOtoId = table.Column<int>(type: "int", nullable: false),
-                    GiaThue = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    NhienLieu = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ThoiGianThue = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    GiaThue = table.Column<double>(type: "float", nullable: false),
+                    Thue = table.Column<double>(type: "float", nullable: false),
+                    NhienLieuId = table.Column<int>(type: "int", nullable: false),
+                    ThoiGianThue = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    NgayLap = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    NgayThanhToan = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    TrangThai = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -112,13 +167,19 @@ namespace DAL.Migrations
                         column: x => x.KhachHangId,
                         principalTable: "KhachHangs",
                         principalColumn: "KhachHangId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_DonDatXes_NhienLieus_NhienLieuId",
+                        column: x => x.NhienLieuId,
+                        principalTable: "NhienLieus",
+                        principalColumn: "NhienLieuId",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_DonDatXes_XeOtos_XeOtoId",
                         column: x => x.XeOtoId,
                         principalTable: "XeOtos",
                         principalColumn: "XeOtoId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -156,14 +217,29 @@ namespace DAL.Migrations
                 column: "KhachHangId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_DonDatXes_NhienLieuId",
+                table: "DonDatXes",
+                column: "NhienLieuId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_DonDatXes_XeOtoId",
                 table: "DonDatXes",
                 column: "XeOtoId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_XeOtos_HangXeId",
+                table: "XeOtos",
+                column: "HangXeId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_XeOtos_LoaiXeId",
                 table: "XeOtos",
                 column: "LoaiXeId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_XeOtos_MauXeId",
+                table: "XeOtos",
+                column: "MauXeId");
         }
 
         /// <inheritdoc />
@@ -185,10 +261,19 @@ namespace DAL.Migrations
                 name: "KhachHangs");
 
             migrationBuilder.DropTable(
+                name: "NhienLieus");
+
+            migrationBuilder.DropTable(
                 name: "XeOtos");
 
             migrationBuilder.DropTable(
+                name: "HangXes");
+
+            migrationBuilder.DropTable(
                 name: "LoaiXes");
+
+            migrationBuilder.DropTable(
+                name: "MauXes");
         }
     }
 }

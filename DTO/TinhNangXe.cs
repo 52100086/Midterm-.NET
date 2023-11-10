@@ -10,7 +10,7 @@ namespace DTO
     {
         public int TinhNangId { get; set; }
         public string TenTinhNang { get; set; }
-
+        public double GiaThue { get; set; }
         public ICollection<DonDatXe_TinhNang> DonDatXe_TinhNangs { get; set; }
     }
 

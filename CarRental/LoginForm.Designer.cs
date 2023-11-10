@@ -51,7 +51,7 @@
             metroPanel1.Size = new Size(250, 450);
             metroPanel1.Style = MetroFramework.MetroColorStyle.Blue;
             metroPanel1.StyleManager = null;
-            metroPanel1.TabIndex = 0;
+            metroPanel1.TabIndex = 7;
             metroPanel1.Theme = MetroFramework.MetroThemeStyle.Light;
             metroPanel1.VerticalScrollbar = false;
             metroPanel1.VerticalScrollbarBarColor = true;
@@ -76,7 +76,7 @@
             metroPanel2.Size = new Size(550, 450);
             metroPanel2.Style = MetroFramework.MetroColorStyle.Blue;
             metroPanel2.StyleManager = null;
-            metroPanel2.TabIndex = 1;
+            metroPanel2.TabIndex = 6;
             metroPanel2.Theme = MetroFramework.MetroThemeStyle.Light;
             metroPanel2.VerticalScrollbar = false;
             metroPanel2.VerticalScrollbarBarColor = true;
@@ -95,7 +95,7 @@
             metroLabel2.Size = new Size(66, 20);
             metroLabel2.Style = MetroFramework.MetroColorStyle.Blue;
             metroLabel2.StyleManager = null;
-            metroLabel2.TabIndex = 6;
+            metroLabel2.TabIndex = 5;
             metroLabel2.Text = "Mật khẩu";
             metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
             metroLabel2.UseStyleColors = false;
@@ -112,7 +112,7 @@
             metroLabel1.Size = new Size(67, 20);
             metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
             metroLabel1.StyleManager = null;
-            metroLabel1.TabIndex = 5;
+            metroLabel1.TabIndex = 4;
             metroLabel1.Text = "Tài khoản";
             metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
             metroLabel1.UseStyleColors = false;
@@ -128,8 +128,7 @@
             txt_password.Size = new Size(180, 29);
             txt_password.Style = MetroFramework.MetroColorStyle.Blue;
             txt_password.StyleManager = null;
-            txt_password.TabIndex = 4;
-            txt_password.Text = "metroTextBox2";
+            txt_password.TabIndex = 2;
             txt_password.Theme = MetroFramework.MetroThemeStyle.Light;
             txt_password.UseStyleColors = false;
             // 
@@ -144,8 +143,7 @@
             txt_username.Size = new Size(180, 29);
             txt_username.Style = MetroFramework.MetroColorStyle.Blue;
             txt_username.StyleManager = null;
-            txt_username.TabIndex = 3;
-            txt_username.Text = "metroTextBox1";
+            txt_username.TabIndex = 1;
             txt_username.Theme = MetroFramework.MetroThemeStyle.Light;
             txt_username.UseStyleColors = false;
             // 
@@ -157,7 +155,7 @@
             btn_Login.Location = new Point(178, 285);
             btn_Login.Name = "btn_Login";
             btn_Login.Size = new Size(94, 29);
-            btn_Login.TabIndex = 2;
+            btn_Login.TabIndex = 3;
             btn_Login.Text = "Đăng nhập";
             btn_Login.UseVisualStyleBackColor = true;
             btn_Login.Click += btn_Login_Click;

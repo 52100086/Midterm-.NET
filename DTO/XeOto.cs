@@ -9,16 +9,16 @@ namespace DTO
     public class XeOto
     {
         public int XeOtoId { get; set; }
-        public string HangXe { get; set; }
-        public string Model { get; set; }
         public string TrangThai { get; set; }
-        public decimal GiaThue { get; set; }
-        public string NhienLieu { get; set; }
+        public double GiaThue { get; set; }
         public int LoaiXeId { get; set; }
+        public int HangXeId { get; set; }
+        public int MauXeId { get; set; }
 
         // Navigation Property
         public virtual LoaiXe LoaiXe { get; set; } 
-
+        public virtual HangXe HangXe { get; set; }
+        public virtual MauXe MauXe { get; set; }
         public ICollection<DonDatXe> DonDatXes { get; set; }
     }
 

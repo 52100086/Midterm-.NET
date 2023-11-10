@@ -18,7 +18,11 @@ namespace DAL
 
         public async Task<List<XeOto>> GetAllXeOtosAsync()
         {
-            return await _context.XeOtos.ToListAsync();
+            return await _context.XeOtos
+                .Include(x => x.LoaiXe)
+                .Include(x => x.HangXe)
+                .Include(x => x.MauXe)
+                .ToListAsync();
         }
 
         public async Task<XeOto> GetXeOtoByIdAsync(int id)
@@ -32,7 +36,20 @@ namespace DAL
             await _context.SaveChangesAsync();
             return xeOto;
         }
+        public async Task<List<LoaiXe>> GetAllLoaiXesAsync()
+        {
+            return await _context.LoaiXes.ToListAsync();
+        }
 
+        public async Task<List<MauXe>> GetAllMauXesAsync()
+        {
+            return await _context.MauXes.ToListAsync();
+        }
+
+        public async Task<List<HangXe>> GetAllHangXesAsync()
+        {
+            return await _context.HangXes.ToListAsync();
+        }
         public async Task<XeOto> UpdateXeOtoAsync(XeOto xeOto)
         {
             _context.Entry(xeOto).State = EntityState.Modified;
@@ -50,13 +67,9 @@ namespace DAL
 
         public async Task<List<XeOto>> SearchByBrandAsync(string brand)
         {
-            return await _context.XeOtos.Where(x => x.HangXe == brand).ToListAsync();
+            return await _context.XeOtos.Where(x => x.HangXe.TenHangXe == brand).ToListAsync();
         }
 
-        public async Task<List<XeOto>> SearchByModelAsync(string model)
-        {
-            return await _context.XeOtos.Where(x => x.Model == model).ToListAsync();
-        }
 
         public async Task<List<XeOto>> SearchByTypeAsync(string type)
         {

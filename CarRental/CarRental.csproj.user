@@ -16,7 +16,13 @@
     <Compile Update="Admin\AdminScheduleManagement.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Admin\FormAddCarOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Admin\FormAddOto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Admin\FormUpdateOto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormAdmin.cs">
