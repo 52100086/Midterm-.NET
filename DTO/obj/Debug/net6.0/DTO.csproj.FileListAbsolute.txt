@@ -26,3 +26,17 @@ E:\Student\HK5\ASP\midterm\Midterm-.NET\DTO\obj\Debug\net6.0\refint\DTO.dll
 E:\Student\HK5\ASP\midterm\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.pdb
 E:\Student\HK5\ASP\midterm\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.genruntimeconfig.cache
 E:\Student\HK5\ASP\midterm\Midterm-.NET\DTO\obj\Debug\net6.0\ref\DTO.dll
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\bin\Debug\net6.0\DTO.deps.json
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\bin\Debug\net6.0\DTO.runtimeconfig.json
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\bin\Debug\net6.0\DTO.dll
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\bin\Debug\net6.0\DTO.pdb
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.dll
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\obj\Debug\net6.0\refint\DTO.dll
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.pdb
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.genruntimeconfig.cache
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\DTO\obj\Debug\net6.0\ref\DTO.dll

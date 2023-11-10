@@ -78,6 +78,7 @@ namespace DAL.Migrations
                     Model = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TrangThai = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     GiaThue = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    NhienLieu = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LoaiXeId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

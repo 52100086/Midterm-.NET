@@ -37,7 +37,7 @@ namespace DAL
 
             modelBuilder.Entity<TinhNangXe>()
                 .HasKey(t => t.TinhNangId);
-
+                
             modelBuilder.Entity<DonDatXe_TinhNang>()
                 .HasKey(d => new { d.DonDatXeId, d.TinhNangId });
 

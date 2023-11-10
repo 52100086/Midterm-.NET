@@ -4,6 +4,8 @@ using System.Data;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using BUS;
+using DAL;
 
 namespace CarRental
 {
@@ -67,8 +69,14 @@ namespace CarRental
         private void btn_OtoManagement_Click(object sender, EventArgs e)
         {
             Activate_Btn(sender, Color.FromArgb(0, 255, 0));
-            Open_Form_Inside(new Admin.AdminOtoManagement());
+
+            var context = new CarRentalDBContext();
+            var dalXeOto = new DAL_XeOto(context);
+            var busXeOto = new BUS_XeOto(dalXeOto);
+
+            Open_Form_Inside(new Admin.AdminOtoManagement(busXeOto));
         }
+
 
         private void btn_Customer_Click(object sender, EventArgs e)
         {
@@ -92,12 +100,12 @@ namespace CarRental
 
         }
 
-        private void btn_Statistic_Report_Click(object sender, EventArgs e)
+/*        private void btn_Statistic_Report_Click(object sender, EventArgs e)
         {
             Activate_Btn(sender, Color.FromArgb(0, 255, 0));
             Open_Form_Inside(new Admin.AdminStatistics_Report());
 
-        }
+        }*/
 
         private void btn_Employee_Click(object sender, EventArgs e)
         {

@@ -35,10 +35,10 @@
             iconButton3 = new FontAwesome.Sharp.IconButton();
             iconButton2 = new FontAwesome.Sharp.IconButton();
             metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            dataGridView1 = new DataGridView();
+            dgv_car = new DataGridView();
             metroPanel1.SuspendLayout();
             metroPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_car).BeginInit();
             SuspendLayout();
             // 
             // iconButton1
@@ -133,7 +133,7 @@
             // 
             // metroPanel2
             // 
-            metroPanel2.Controls.Add(dataGridView1);
+            metroPanel2.Controls.Add(dgv_car);
             metroPanel2.CustomBackground = false;
             metroPanel2.Dock = DockStyle.Fill;
             metroPanel2.HorizontalScrollbar = false;
@@ -152,16 +152,16 @@
             metroPanel2.VerticalScrollbarHighlightOnWheel = false;
             metroPanel2.VerticalScrollbarSize = 10;
             // 
-            // dataGridView1
+            // dgv_car
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(982, 354);
-            dataGridView1.TabIndex = 2;
+            dgv_car.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_car.Dock = DockStyle.Fill;
+            dgv_car.Location = new Point(0, 0);
+            dgv_car.Name = "dgv_car";
+            dgv_car.RowHeadersWidth = 51;
+            dgv_car.RowTemplate.Height = 29;
+            dgv_car.Size = new Size(982, 354);
+            dgv_car.TabIndex = 2;
             // 
             // AdminOtoManagement
             // 
@@ -172,9 +172,10 @@
             Controls.Add(metroPanel1);
             Name = "AdminOtoManagement";
             Text = "AdminOtoManagement";
+            Load += AdminOtoManagement_Load;
             metroPanel1.ResumeLayout(false);
             metroPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_car).EndInit();
             ResumeLayout(false);
         }
 
@@ -187,6 +188,6 @@
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton2;
         private MetroFramework.Controls.MetroPanel metroPanel2;
-        private DataGridView dataGridView1;
+        private DataGridView dgv_car;
     }
 }

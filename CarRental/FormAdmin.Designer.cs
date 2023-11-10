@@ -97,7 +97,6 @@
             btn_Statistic_Report.TabIndex = 2;
             btn_Statistic_Report.Text = "Báo cáo và thống kê";
             btn_Statistic_Report.UseVisualStyleBackColor = true;
-            btn_Statistic_Report.Click += btn_Statistic_Report_Click;
             // 
             // btn_Schedule
             // 

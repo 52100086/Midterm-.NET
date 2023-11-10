@@ -12,11 +12,13 @@
           "DTO": "1.0.0",
           "FontAwesome": "4.7.0",
           "FontAwesome.Sharp.Pro": "6.3.0",
+          "HIC.System.Windows.Forms.DataVisualization": "1.0.1",
           "MaterialSkin": "0.2.1",
           "Microsoft.EntityFrameworkCore": "7.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.12",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.12",
-          "ModernUI": "2.0.0"
+          "ModernUI": "2.0.0",
+          "WinForms.DataVisualization": "1.9.0"
         },
         "runtime": {
           "CarRental.dll": {}
@@ -73,6 +75,17 @@
           "lib/net6.0-windows7.0/FontAwesome.Sharp.Pro.dll": {
             "assemblyVersion": "6.3.0.0",
             "fileVersion": "6.3.0.0"
+          }
+        }
+      },
+      "HIC.System.Windows.Forms.DataVisualization/1.0.1": {
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.1.1"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/System.Windows.Forms.DataVisualization.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -606,6 +619,18 @@
           "System.Drawing.Common": "6.0.0"
         }
       },
+      "WinForms.DataVisualization/1.9.0": {
+        "runtime": {
+          "lib/net6.0-windows7.0/WinForms.DataVisualization.Utilities.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.9.0.0"
+          },
+          "lib/net6.0-windows7.0/WinForms.DataVisualization.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.9.0.0"
+          }
+        }
+      },
       "BUS/1.0.0": {
         "dependencies": {
           "DAL": "1.0.0",
@@ -678,6 +703,13 @@
       "sha512": "sha512-OnocgtWLmfGsQYP6yazZSYixYU01VY0NMLsUTDBJV6y7e6aVjWMu/RrNa4otcF7j9Wo1T6xtatg6bSOCPlKo5g==",
       "path": "fontawesome.sharp.pro/6.3.0",
       "hashPath": "fontawesome.sharp.pro.6.3.0.nupkg.sha512"
+    },
+    "HIC.System.Windows.Forms.DataVisualization/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2iErCJov37VIGLATCcI8tAaFemn8KJW/b4686foj+CslKTSGa2NcQgvVCYF+kR4+6d9cg09X1xrcoIgnVlznsA==",
+      "path": "hic.system.windows.forms.datavisualization/1.0.1",
+      "hashPath": "hic.system.windows.forms.datavisualization.1.0.1.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -1098,6 +1130,13 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "WinForms.DataVisualization/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lRhRPS40V3o5dY38NwaIZyOPrD+bbFq+UjNCa/eAucMICrSFVUE9rO6H2G73xx65mZ94Q7lYw4BSaZRPlcxhxQ==",
+      "path": "winforms.datavisualization/1.9.0",
+      "hashPath": "winforms.datavisualization.1.9.0.nupkg.sha512"
     },
     "BUS/1.0.0": {
       "type": "project",

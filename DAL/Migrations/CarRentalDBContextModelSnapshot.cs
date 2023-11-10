@@ -56,7 +56,7 @@ namespace DAL.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DonDatXeId"));
 
                     b.Property<decimal>("GiaThue")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(18, 2)");
 
                     b.Property<int>("KhachHangId")
                         .HasColumnType("int");
@@ -167,7 +167,7 @@ namespace DAL.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("XeOtoId"));
 
                     b.Property<decimal>("GiaThue")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(18, 2)");
 
                     b.Property<string>("HangXe")
                         .IsRequired()
@@ -177,6 +177,10 @@ namespace DAL.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Model")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NhienLieu")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
