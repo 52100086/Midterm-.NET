@@ -1,6 +1,7 @@
 ﻿using BUS;
 using DAL;
 using DTO;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -43,17 +44,21 @@ namespace BUS
         {
             return _dalXeOto.GetAllHangXesAsync();
         }
-        public Task<XeOto> UpdateXeOtoAsync(XeOto xeOto)
-        {
-            return _dalXeOto.UpdateXeOtoAsync(xeOto);
-        }
+		public XeOto UpdateXeOto(XeOto xeOto)
+		{
+			return _dalXeOto.UpdateXeOto(xeOto);
+		}
+		public List<XeOto> GetXeOtosByType(int id)
+		{
+            return _dalXeOto.GetXeOtosByType(id);
+		}
 
-        public Task DeleteXeOtoAsync(int id)
-        {
-            return _dalXeOto.DeleteXeOtoAsync(id);
-        }
+		public void DeleteXeOto(int id)
+		{
+			_dalXeOto.DeleteXeOto(id);
+		}
 
-        public Task<List<XeOto>> SearchByBrandAsync(string brand)
+		public Task<List<XeOto>> SearchByBrandAsync(string brand)
         {
             return _dalXeOto.SearchByBrandAsync(brand);
         }

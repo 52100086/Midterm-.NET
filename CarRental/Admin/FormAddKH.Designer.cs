@@ -199,7 +199,6 @@
 			Controls.Add(btn_add);
 			Name = "FormAddKH";
 			Text = "FormAddKH";
-			Load += FormAddKH_Load;
 			ResumeLayout(false);
 			PerformLayout();
 		}

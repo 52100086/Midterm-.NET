@@ -14,9 +14,8 @@ using System.Windows.Forms;
 
 namespace CarRental
 {
-	public partial class FormAddOto : MaterialForm
+	public partial class FormAddOto : Form
 	{
-		readonly MaterialSkin.MaterialSkinManager materialSkinManager;
 		private readonly BUS_XeOto _busXeOto;
 
 		private PictureBox selectedPictureBox; // Biến tham chiếu đến PictureBox được chọn
@@ -24,11 +23,6 @@ namespace CarRental
 		public FormAddOto(BUS_XeOto bus_XeOto)
 		{
 			InitializeComponent();
-			materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
-			materialSkinManager.EnforceBackcolorOnAllComponents = true;
-			materialSkinManager.AddFormToManage(this);
-			materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-			materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
 			_busXeOto = bus_XeOto;
 			selectedPictureBox = pictureBox1;
 			selectedMaterialLabel = txt_1;
@@ -53,7 +47,7 @@ namespace CarRental
 		}
 		private MaterialLabel GetLabelForPictureBox(PictureBox pictureBox)
 		{
-			
+
 			if (pictureBox == pictureBox1)
 			{
 				return txt_1;
@@ -62,7 +56,7 @@ namespace CarRental
 			{
 				return txt_2;
 			}
-			else if ( pictureBox == pictureBox3)
+			else if (pictureBox == pictureBox3)
 			{
 				return txt_3;
 			}

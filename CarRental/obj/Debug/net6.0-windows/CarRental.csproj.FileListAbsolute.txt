@@ -78,3 +78,166 @@ E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormChart.resources
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormOrderManagement.resources
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormSchedulerManagement.resources
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\CarRental.exe
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\CarRental.deps.json
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\CarRental.runtimeconfig.json
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\CarRental.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\CarRental.pdb
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Azure.Core.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Azure.Identity.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Humanizer.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\MaterialSkin.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.Memory.Data.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.Text.Json.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\BUS.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\DAL.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\DTO.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\BUS.pdb
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\DAL.pdb
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\DTO.pdb
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.csproj.AssemblyReference.cache
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.FormAddOto.resources
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.FormAdminLayout.resources
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormChart.resources
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormOrderManagement.resources
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormSchedulerManagement.resources
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.FormUpdateOto.resources
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.KhachHangManagement.resources
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.OtoManagement.resources
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.FormAddKH.resources
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.FormLogin.resources
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Properties.Resources.resources
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.csproj.GenerateResource.cache
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.AssemblyInfoInputs.cache
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.AssemblyInfo.cs
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.csproj.CoreCompileInputs.cache
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.csproj.CopyComplete
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\refint\CarRental.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.pdb
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.genruntimeconfig.cache
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\ref\CarRental.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\CarRental.exe
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\CarRental.deps.json
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\CarRental.runtimeconfig.json
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\CarRental.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\CarRental.pdb
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Humanizer.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\MaterialSkin.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\BUS.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\DAL.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\DTO.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\BUS.pdb
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\DAL.pdb
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\DTO.pdb
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.csproj.AssemblyReference.cache
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.FormAddOto.resources
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.FormAdminLayout.resources
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormChart.resources
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormOrderManagement.resources
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormSchedulerManagement.resources
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.FormUpdateOto.resources
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.KhachHangManagement.resources
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.OtoManagement.resources
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.FormAddKH.resources
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.FormLogin.resources
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Properties.Resources.resources
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.csproj.GenerateResource.cache
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.AssemblyInfoInputs.cache
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.AssemblyInfo.cs
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.csproj.CoreCompileInputs.cache
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.csproj.CopyComplete
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\refint\CarRental.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.pdb
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.genruntimeconfig.cache
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\ref\CarRental.dll
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormRentCar.resources
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormCarType.resources
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormListCarType.resources

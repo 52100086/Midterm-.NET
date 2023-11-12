@@ -121,71 +121,71 @@ namespace CarRental
 			await PopulateComboBoxes();
 		}
 
-		private async void btn_Update_Click(object sender, EventArgs e)
+		private void btn_Update_Click(object sender, EventArgs e)
 		{
-			//string trangThai = hy.Text;
-			string trangThai = cbx_TrangThai.SelectedItem?.ToString();
-			int giaThue;
-			if (!Int32.TryParse(txt_GiaThue.Text, out giaThue))
-			{
-				MessageBox.Show("Giá thuê không hợp lệ");
-				return;
-			}
-			int loaiXeId;
-			if (selectedPictureBox == pictureBox1)
-			{
-				loaiXeId = 1;
-			}
-			else if (selectedPictureBox == pictureBox2)
-			{
-				loaiXeId = 2;
-			}
-			else if (selectedPictureBox == pictureBox3)
-			{
-				loaiXeId = 3;
-			}
-			else if (selectedPictureBox == pictureBox4)
-			{
-				loaiXeId = 4;
-			}
-			else if (selectedPictureBox == pictureBox5)
-			{
-				loaiXeId = 5;
-			}
-			else if (selectedPictureBox == pictureBox6)
-			{
-				loaiXeId = 6;
-			}
-			else
-			{
-				loaiXeId = 7;
-			}
+			////string trangThai = hy.Text;
+			//string trangThai = cbx_TrangThai.SelectedItem?.ToString();
+			//int giaThue;
+			//if (!Int32.TryParse(txt_GiaThue.Text, out giaThue))
+			//{
+			//	MessageBox.Show("Giá thuê không hợp lệ");
+			//	return;
+			//}
+			//int loaiXeId;
+			//if (selectedPictureBox == pictureBox1)
+			//{
+			//	loaiXeId = 1;
+			//}
+			//else if (selectedPictureBox == pictureBox2)
+			//{
+			//	loaiXeId = 2;
+			//}
+			//else if (selectedPictureBox == pictureBox3)
+			//{
+			//	loaiXeId = 3;
+			//}
+			//else if (selectedPictureBox == pictureBox4)
+			//{
+			//	loaiXeId = 4;
+			//}
+			//else if (selectedPictureBox == pictureBox5)
+			//{
+			//	loaiXeId = 5;
+			//}
+			//else if (selectedPictureBox == pictureBox6)
+			//{
+			//	loaiXeId = 6;
+			//}
+			//else
+			//{
+			//	loaiXeId = 7;
+			//}
 
-			int hangXeId = (int)cbx_hangxe.SelectedValue;
-			int mauXeId = (int)cbx_model.SelectedValue;
+			//int hangXeId = (int)cbx_hangxe.SelectedValue;
+			//int mauXeId = (int)cbx_model.SelectedValue;
 
-			// Cập nhật thông tin của xeOto
-			_xeOto.TrangThai = trangThai;
-			_xeOto.GiaThue = giaThue;
-			_xeOto.LoaiXeId = loaiXeId;
-			_xeOto.HangXeId = hangXeId;
-			_xeOto.MauXeId = mauXeId;
+			//// Cập nhật thông tin của xeOto
+			//_xeOto.TrangThai = trangThai;
+			//_xeOto.GiaThue = giaThue;
+			//_xeOto.LoaiXeId = loaiXeId;
+			//_xeOto.HangXeId = hangXeId;
+			//_xeOto.MauXeId = mauXeId;
 
-			try
-			{
-				// Gọi phương thức cập nhật xe từ BUS
-				await _busXeOto.UpdateXeOtoAsync(_xeOto);
+			//try
+			//{
+			//	// Gọi phương thức cập nhật xe từ BUS
+			//	await _busXeOto.UpdateXeOtoAsync(_xeOto);
 
-				// Gọi sự kiện OtoUpdated để thông báo cập nhật thành công
-				OnOtoUpdated();
+			//	// Gọi sự kiện OtoUpdated để thông báo cập nhật thành công
+			//	OnOtoUpdated();
 
-				// Đóng form cập nhật
-				this.Close();
-			}
-			catch (Exception ex)
-			{
-				MessageBox.Show("Lỗi cập nhật xe: " + ex.Message);
-			}
+			//	// Đóng form cập nhật
+			//	this.Close();
+			//}
+			//catch (Exception ex)
+			//{
+			//	MessageBox.Show("Lỗi cập nhật xe: " + ex.Message);
+			//}
 		}
 		private void OnOtoUpdated()
 		{

@@ -33,22 +33,29 @@ namespace DAL
             return khachHang;
         }
 
-        public async Task<KhachHang> UpdateKhachHangAsync(KhachHang khachHang)
-        {
-            _context.Entry(khachHang).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-            return khachHang;
-        }
+		public KhachHang UpdateKhachHang(KhachHang khachHang)
+		{
+			var existingKhachHang = _context.KhachHangs.Find(khachHang.KhachHangId);
+			if (existingKhachHang != null)
+			{
+				_context.Entry(existingKhachHang).CurrentValues.SetValues(khachHang);
+				_context.SaveChanges();
+			}
+			return khachHang;
+		}
 
-        public async Task DeleteKhachHangAsync(int id)
-        {
-            var khachHang = await _context.KhachHangs.FindAsync(id);
-            _context.KhachHangs.Remove(khachHang);
-            await _context.SaveChangesAsync();
-        }
+		public void DeleteKhachHang(int id)
+		{
+			var khachHang = _context.KhachHangs.Find(id);
+			if (khachHang != null)
+			{
+				_context.KhachHangs.Remove(khachHang);
+				_context.SaveChanges();
+			}
+		}
 
 
-        public async Task<List<KhachHang>> SearchByNameAsync(string name)
+		public async Task<List<KhachHang>> SearchByNameAsync(string name)
         {
             return await _context.KhachHangs.Where(k => k.Ten == name).ToListAsync();
         }

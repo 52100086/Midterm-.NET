@@ -50,22 +50,38 @@ namespace DAL
         {
             return await _context.HangXes.ToListAsync();
         }
-        public async Task<XeOto> UpdateXeOtoAsync(XeOto xeOto)
-        {
-            _context.Entry(xeOto).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-            return xeOto;
-        }
+		public XeOto UpdateXeOto(XeOto xeOto)
+		{
+			var existingXeOto = _context.XeOtos.Find(xeOto.XeOtoId);
+			if (existingXeOto != null)
+			{
+				_context.Entry(existingXeOto).CurrentValues.SetValues(xeOto);
+				_context.SaveChanges();
+			}
+			return xeOto;
+		}
 
-        public async Task DeleteXeOtoAsync(int id)
-        {
-            var xeOto = await _context.XeOtos.FindAsync(id);
-            _context.XeOtos.Remove(xeOto);
-            await _context.SaveChangesAsync();
-        }
+		public void DeleteXeOto(int id)
+		{
+			var xeOto = _context.XeOtos.Find(id);
+			if (xeOto != null)
+			{
+				_context.XeOtos.Remove(xeOto);
+				_context.SaveChanges();
+			}
+		}
 
+		public List<XeOto> GetXeOtosByType(int id)
+		{
+			return _context.XeOtos
+				.Where(x => x.LoaiXeId == id)
+				.Include(x => x.LoaiXe)
+				.Include(x => x.HangXe)
+				.Include(x => x.MauXe)
+				.ToList();
+		}
 
-        public async Task<List<XeOto>> SearchByBrandAsync(string brand)
+		public async Task<List<XeOto>> SearchByBrandAsync(string brand)
         {
             return await _context.XeOtos.Where(x => x.HangXe.TenHangXe == brand).ToListAsync();
         }

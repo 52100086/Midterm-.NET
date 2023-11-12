@@ -12,3 +12,31 @@ E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\DTO\obj\Debug\net6.0\refint\DTO.dl
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.pdb
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.genruntimeconfig.cache
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\DTO\obj\Debug\net6.0\ref\DTO.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\bin\Debug\net6.0\DTO.deps.json
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\bin\Debug\net6.0\DTO.runtimeconfig.json
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\bin\Debug\net6.0\DTO.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\bin\Debug\net6.0\DTO.pdb
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\obj\Debug\net6.0\refint\DTO.dll
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.pdb
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.genruntimeconfig.cache
+D:\University\2023-2024Term1\dotNet\Midterm-.NET\DTO\obj\Debug\net6.0\ref\DTO.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\bin\Debug\net6.0\DTO.deps.json
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\bin\Debug\net6.0\DTO.runtimeconfig.json
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\bin\Debug\net6.0\DTO.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\bin\Debug\net6.0\DTO.pdb
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\obj\Debug\net6.0\refint\DTO.dll
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.pdb
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\obj\Debug\net6.0\DTO.genruntimeconfig.cache
+C:\Users\Hieu Pham\Downloads\Midterm-.NET\DTO\obj\Debug\net6.0\ref\DTO.dll

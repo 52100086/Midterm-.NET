@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace CarRental.Admin
 {
-	public partial class FormOrderManagement : MaterialForm
+	public partial class FormOrderManagement : Form
 	{
 		public FormOrderManagement()
 		{

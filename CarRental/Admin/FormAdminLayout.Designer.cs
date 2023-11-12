@@ -30,120 +30,128 @@
 		{
 			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdminLayout));
-			materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
-			tab_Home = new TabPage();
-			tab_Car = new TabPage();
-			tab_Customer = new TabPage();
-			tab_Order = new TabPage();
-			tab_Schedule = new TabPage();
-			tab_Chart = new TabPage();
-			imageList1 = new ImageList(components);
-			materialTabControl1.SuspendLayout();
+			imageList = new ImageList(components);
+			tabControl = new MaterialSkin.Controls.MaterialTabControl();
+			tabPage_Home = new TabPage();
+			tabPage_QLXe = new TabPage();
+			tabPage_QLKhachHang = new TabPage();
+			tabPage_QLDonHang = new TabPage();
+			tabPage_QLLichTrinh = new TabPage();
+			tabPage_ThongKe = new TabPage();
+			tabControl.SuspendLayout();
 			SuspendLayout();
 			// 
-			// materialTabControl1
+			// imageList
 			// 
-			materialTabControl1.Controls.Add(tab_Home);
-			materialTabControl1.Controls.Add(tab_Car);
-			materialTabControl1.Controls.Add(tab_Customer);
-			materialTabControl1.Controls.Add(tab_Order);
-			materialTabControl1.Controls.Add(tab_Schedule);
-			materialTabControl1.Controls.Add(tab_Chart);
-			materialTabControl1.Depth = 0;
-			materialTabControl1.Dock = DockStyle.Fill;
-			materialTabControl1.ImageList = imageList1;
-			materialTabControl1.Location = new Point(3, 64);
-			materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
-			materialTabControl1.Multiline = true;
-			materialTabControl1.Name = "materialTabControl1";
-			materialTabControl1.SelectedIndex = 0;
-			materialTabControl1.Size = new Size(1086, 501);
-			materialTabControl1.TabIndex = 1;
+			imageList.ColorDepth = ColorDepth.Depth32Bit;
+			imageList.ImageStream = (ImageListStreamer)resources.GetObject("imageList.ImageStream");
+			imageList.TransparentColor = Color.Transparent;
+			imageList.Images.SetKeyName(0, "car.png");
+			imageList.Images.SetKeyName(1, "chartline.png");
+			imageList.Images.SetKeyName(2, "customer.png");
+			imageList.Images.SetKeyName(3, "home.png");
+			imageList.Images.SetKeyName(4, "order.png");
+			imageList.Images.SetKeyName(5, "schedule.png");
 			// 
-			// tab_Home
+			// tabControl
 			// 
-			tab_Home.BackColor = Color.White;
-			tab_Home.ImageKey = "Home.png";
-			tab_Home.Location = new Point(4, 29);
-			tab_Home.Name = "tab_Home";
-			tab_Home.Padding = new Padding(3);
-			tab_Home.Size = new Size(1078, 468);
-			tab_Home.TabIndex = 0;
-			tab_Home.Text = "Trang chủ";
+			tabControl.Controls.Add(tabPage_Home);
+			tabControl.Controls.Add(tabPage_QLXe);
+			tabControl.Controls.Add(tabPage_QLKhachHang);
+			tabControl.Controls.Add(tabPage_QLDonHang);
+			tabControl.Controls.Add(tabPage_QLLichTrinh);
+			tabControl.Controls.Add(tabPage_ThongKe);
+			tabControl.Depth = 0;
+			tabControl.Dock = DockStyle.Fill;
+			tabControl.ImageList = imageList;
+			tabControl.Location = new Point(3, 64);
+			tabControl.Margin = new Padding(3, 4, 3, 4);
+			tabControl.MouseState = MaterialSkin.MouseState.HOVER;
+			tabControl.Multiline = true;
+			tabControl.Name = "tabControl";
+			tabControl.SelectedIndex = 0;
+			tabControl.Size = new Size(1087, 501);
+			tabControl.TabIndex = 0;
+			tabControl.SelectedIndexChanged += tabControl_SelectedIndexChanged;
 			// 
-			// tab_Car
+			// tabPage_Home
 			// 
-			tab_Car.BackColor = Color.White;
-			tab_Car.ImageKey = "car.png";
-			tab_Car.Location = new Point(4, 29);
-			tab_Car.Name = "tab_Car";
-			tab_Car.Padding = new Padding(3);
-			tab_Car.Size = new Size(1078, 468);
-			tab_Car.TabIndex = 1;
-			tab_Car.Text = "Quản lý xe";
+			tabPage_Home.BackColor = Color.White;
+			tabPage_Home.ImageKey = "home.png";
+			tabPage_Home.Location = new Point(4, 39);
+			tabPage_Home.Margin = new Padding(3, 4, 3, 4);
+			tabPage_Home.Name = "tabPage_Home";
+			tabPage_Home.Padding = new Padding(3, 4, 3, 4);
+			tabPage_Home.Size = new Size(1079, 458);
+			tabPage_Home.TabIndex = 0;
+			tabPage_Home.Text = "Trang chủ";
 			// 
-			// tab_Customer
+			// tabPage_QLXe
 			// 
-			tab_Customer.BackColor = Color.White;
-			tab_Customer.ImageKey = "Customer.png";
-			tab_Customer.Location = new Point(4, 29);
-			tab_Customer.Name = "tab_Customer";
-			tab_Customer.Size = new Size(1078, 468);
-			tab_Customer.TabIndex = 2;
-			tab_Customer.Text = "Quản lý khách hàng";
+			tabPage_QLXe.BackColor = Color.White;
+			tabPage_QLXe.ImageKey = "car.png";
+			tabPage_QLXe.Location = new Point(4, 39);
+			tabPage_QLXe.Margin = new Padding(3, 4, 3, 4);
+			tabPage_QLXe.Name = "tabPage_QLXe";
+			tabPage_QLXe.Padding = new Padding(3, 4, 3, 4);
+			tabPage_QLXe.Size = new Size(1079, 458);
+			tabPage_QLXe.TabIndex = 1;
+			tabPage_QLXe.Text = "Quản lý xe";
 			// 
-			// tab_Order
+			// tabPage_QLKhachHang
 			// 
-			tab_Order.BackColor = Color.White;
-			tab_Order.ImageKey = "Order.png";
-			tab_Order.Location = new Point(4, 29);
-			tab_Order.Name = "tab_Order";
-			tab_Order.Size = new Size(1078, 468);
-			tab_Order.TabIndex = 3;
-			tab_Order.Text = "Quản lý đơn hàng";
+			tabPage_QLKhachHang.BackColor = Color.White;
+			tabPage_QLKhachHang.ImageKey = "customer.png";
+			tabPage_QLKhachHang.Location = new Point(4, 39);
+			tabPage_QLKhachHang.Margin = new Padding(3, 4, 3, 4);
+			tabPage_QLKhachHang.Name = "tabPage_QLKhachHang";
+			tabPage_QLKhachHang.Size = new Size(1079, 458);
+			tabPage_QLKhachHang.TabIndex = 2;
+			tabPage_QLKhachHang.Text = "Quản lý khách hàng";
 			// 
-			// tab_Schedule
+			// tabPage_QLDonHang
 			// 
-			tab_Schedule.BackColor = Color.White;
-			tab_Schedule.ImageKey = "schedule.png";
-			tab_Schedule.Location = new Point(4, 29);
-			tab_Schedule.Name = "tab_Schedule";
-			tab_Schedule.Size = new Size(1078, 468);
-			tab_Schedule.TabIndex = 4;
-			tab_Schedule.Text = "Quản lý lịch trình";
+			tabPage_QLDonHang.BackColor = Color.White;
+			tabPage_QLDonHang.ImageKey = "order.png";
+			tabPage_QLDonHang.Location = new Point(4, 39);
+			tabPage_QLDonHang.Margin = new Padding(3, 4, 3, 4);
+			tabPage_QLDonHang.Name = "tabPage_QLDonHang";
+			tabPage_QLDonHang.Size = new Size(1079, 458);
+			tabPage_QLDonHang.TabIndex = 3;
+			tabPage_QLDonHang.Text = "Quản lý đơn hàng";
 			// 
-			// tab_Chart
+			// tabPage_QLLichTrinh
 			// 
-			tab_Chart.BackColor = Color.White;
-			tab_Chart.ImageKey = "chartline.png";
-			tab_Chart.Location = new Point(4, 29);
-			tab_Chart.Name = "tab_Chart";
-			tab_Chart.Size = new Size(1078, 468);
-			tab_Chart.TabIndex = 5;
-			tab_Chart.Text = "Thống kê";
+			tabPage_QLLichTrinh.BackColor = Color.White;
+			tabPage_QLLichTrinh.ImageKey = "schedule.png";
+			tabPage_QLLichTrinh.Location = new Point(4, 39);
+			tabPage_QLLichTrinh.Margin = new Padding(3, 4, 3, 4);
+			tabPage_QLLichTrinh.Name = "tabPage_QLLichTrinh";
+			tabPage_QLLichTrinh.Size = new Size(1079, 458);
+			tabPage_QLLichTrinh.TabIndex = 4;
+			tabPage_QLLichTrinh.Text = "Quản lý lịch trình";
 			// 
-			// imageList1
+			// tabPage_ThongKe
 			// 
-			imageList1.ColorDepth = ColorDepth.Depth32Bit;
-			imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
-			imageList1.TransparentColor = Color.Transparent;
-			imageList1.Images.SetKeyName(0, "car.png");
-			imageList1.Images.SetKeyName(1, "chartline.png");
-			imageList1.Images.SetKeyName(2, "Customer.png");
-			imageList1.Images.SetKeyName(3, "Home.png");
-			imageList1.Images.SetKeyName(4, "Order.png");
-			imageList1.Images.SetKeyName(5, "schedule.png");
+			tabPage_ThongKe.BackColor = Color.White;
+			tabPage_ThongKe.ImageKey = "chartline.png";
+			tabPage_ThongKe.Location = new Point(4, 39);
+			tabPage_ThongKe.Margin = new Padding(3, 4, 3, 4);
+			tabPage_ThongKe.Name = "tabPage_ThongKe";
+			tabPage_ThongKe.Size = new Size(1079, 458);
+			tabPage_ThongKe.TabIndex = 5;
+			tabPage_ThongKe.Text = "Thống kê";
 			// 
 			// FormAdminLayout
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(1092, 568);
-			Controls.Add(materialTabControl1);
+			ClientSize = new Size(1093, 568);
+			Controls.Add(tabControl);
 			DrawerShowIconsWhenHidden = true;
-			DrawerTabControl = materialTabControl1;
+			DrawerTabControl = tabControl;
 			Name = "FormAdminLayout";
-			materialTabControl1.ResumeLayout(false);
+			tabControl.ResumeLayout(false);
 			ResumeLayout(false);
 		}
 
@@ -152,10 +160,17 @@
 		private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
 		private TabPage tab_Home;
 		private TabPage tab_Car;
-		private ImageList imageList1;
+		private ImageList imageList;
 		private TabPage tab_Customer;
 		private TabPage tab_Order;
 		private TabPage tab_Schedule;
 		private TabPage tab_Chart;
+		private MaterialSkin.Controls.MaterialTabControl tabControl;
+		private TabPage tabPage_Home;
+		private TabPage tabPage_QLXe;
+		private TabPage tabPage_QLKhachHang;
+		private TabPage tabPage_QLDonHang;
+		private TabPage tabPage_QLLichTrinh;
+		private TabPage tabPage_ThongKe;
 	}
 }

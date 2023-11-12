@@ -30,11 +30,6 @@ namespace CarRental
 			_busKhachHang = bus_KhachHang;
 		}
 
-		private void FormAddKH_Load(object sender, EventArgs e)
-		{
-
-		}
-
 		private void btn_add_Click(object sender, EventArgs e)
 		{
 			try

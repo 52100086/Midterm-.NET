@@ -30,17 +30,17 @@ namespace BUS
             return _dalKhachHang.CreateKhachHangAsync(khachHang);
         }
 
-        public Task<KhachHang> UpdateKhachHangAsync(KhachHang khachHang)
-        {
-            return _dalKhachHang.UpdateKhachHangAsync(khachHang);
-        }
+		public KhachHang UpdateKhachHang(KhachHang khachHang)
+		{
+			return _dalKhachHang.UpdateKhachHang(khachHang);
+		}
 
-        public Task DeleteKhachHangAsync(int id)
-        {
-            return _dalKhachHang.DeleteKhachHangAsync(id);
-        }
+		public void DeleteKhachHang(int id)
+		{
+			_dalKhachHang.DeleteKhachHang(id);
+		}
 
-        public Task<List<KhachHang>> SearchByNameAsync(string name)
+		public Task<List<KhachHang>> SearchByNameAsync(string name)
         {
             return _dalKhachHang.SearchByNameAsync(name);
         }

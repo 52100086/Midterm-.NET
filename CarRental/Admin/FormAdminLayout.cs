@@ -18,8 +18,6 @@ namespace CarRental
 	public partial class FormAdminLayout : MaterialForm
 	{
 		readonly MaterialSkin.MaterialSkinManager materialSkinManager;
-		private Dictionary<TabPage, Panel> tabPagePanels;
-		private MaterialForm? childForm;
 		private readonly BUS_XeOto _busXeOto;
 		private readonly BUS_KhachHang _busKhachHang;
 
@@ -30,80 +28,66 @@ namespace CarRental
 			materialSkinManager.EnforceBackcolorOnAllComponents = true;
 			materialSkinManager.AddFormToManage(this);
 			materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-			materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+			materialSkinManager.ColorScheme = new ColorScheme(
+				Primary.BlueGrey800,
+				Primary.BlueGrey900,
+				Primary.BlueGrey500,
+				Accent.LightBlue200,
+				TextShade.WHITE);
+			FormCarType formCarType = new FormCarType();
+			openForm(formCarType, tabPage_Home);
 			_busXeOto = bus_XeOto;
 			_busKhachHang = bus_KhachHang;
-			tabPagePanels = new Dictionary<TabPage, Panel>();
-			foreach (TabPage tabPage in materialTabControl1.TabPages)
-			{
-				tabPage.Click += TabPage_Click;
-				Panel panelFormContainer = new Panel();
-				panelFormContainer.Dock = DockStyle.Fill;
-				tabPage.Controls.Add(panelFormContainer);
-				tabPagePanels.Add(tabPage, panelFormContainer);
-			}
 		}
 
-		private void openForm(MaterialForm form)
+		private void openForm(Form form, TabPage tab)
 		{
-			// Đóng và giải phóng form con hiện tại (nếu có)
-			if (childForm != null && !childForm.IsDisposed)
-			{
-				childForm.Close();
-				childForm.Dispose();
-			}
+			form.TopLevel = false;
+			form.FormBorderStyle = FormBorderStyle.None;
+			form.Dock = DockStyle.Fill;
+			form.ControlBox = false;
+			tab.Controls.Clear();
 
-			// Lấy TabPage hiện tại
-			TabPage currentTabPage = materialTabControl1.SelectedTab;
+			tab.Controls.Add(form);
 
-			// Lấy Panel tương ứng với TabPage
-			Panel panelFormContainer = tabPagePanels[currentTabPage];
-
-			// Gán form con mới
-			childForm = form;
-			childForm.TopLevel = false;
-			childForm.FormBorderStyle = FormBorderStyle.None;
-			childForm.Dock = DockStyle.Fill;
-			childForm.ControlBox = false;
-			childForm.Text = "";
-
-			// Xóa tất cả các control trong panel
-			panelFormContainer.Controls.Clear();
-
-			// Thêm form con vào panel
-			panelFormContainer.Controls.Add(childForm);
-
-			// Hiển thị form con
-			childForm.Show();
+			form.Show();
 		}
-
-		private void TabPage_Click(object? sender, EventArgs e)
+		public void startFormCarTypeList(int id)
 		{
-			if (sender is TabPage clickedTabPage)
+			FormListCarType formListCarType = new FormListCarType(_busXeOto, id);
+			openForm(formListCarType, tabPage_Home);
+		}
+		private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			switch (tabControl.SelectedIndex)
 			{
-				// Xử lý sự kiện khi TabPage được nhấp
-				switch (clickedTabPage.Name)
-				{
-					case "tab_Car":
-						openForm(new OtoManagement(_busXeOto));
-						break;
-					case "tab_Customer":
-						openForm(new KhachHangManagement(_busKhachHang));
-						break;
-					case "tab_Order":
-						openForm(new FormOrderManagement());
-						break;
-					case "tab_Schedule":
-						openForm(new FormSchedulerManagement());
-						break;
-					case "tab_Chart":
-						openForm(new FormChart());
-						break;
-					default:
-						break;
-				}
+				case 0:
+					Form form0 = new FormCarType();
+					openForm(form0, tabPage_Home);
+					break;
+				case 1:
+					Form form1 = new OtoManagement(_busXeOto);
+					openForm(form1, tabPage_QLXe);
+					break;
+				case 2:
+					Form form2 = new KhachHangManagement(_busKhachHang);
+					openForm(form2, tabPage_QLKhachHang);
+					break;
+				case 3:
+					Form form3 = new FormOrderManagement();
+					openForm(form3, tabPage_QLDonHang);
+					break;
+				case 4:
+					Form form4 = new FormSchedulerManagement();
+					openForm(form4, tabPage_QLLichTrinh);
+					break;
+				case 5:
+					Form form5 = new FormChart();
+					openForm(form5, tabPage_ThongKe);
+					break;
+				default:
+					break;
 			}
 		}
-
 	}
 }

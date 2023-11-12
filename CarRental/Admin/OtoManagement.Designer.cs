@@ -28,29 +28,73 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+			DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
 			panel1 = new Panel();
+			panel3 = new Panel();
+			dgv_car = new DataGridView();
 			panel2 = new Panel();
 			txt_search = new MaterialSkin.Controls.MaterialTextBox();
 			btn_search = new FontAwesome.Sharp.IconButton();
 			btn_update = new FontAwesome.Sharp.IconButton();
 			btn_delete = new FontAwesome.Sharp.IconButton();
 			btn_add = new FontAwesome.Sharp.IconButton();
-			materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-			dgv_car = new DataGridView();
 			panel1.SuspendLayout();
-			panel2.SuspendLayout();
+			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)dgv_car).BeginInit();
+			panel2.SuspendLayout();
 			SuspendLayout();
 			// 
 			// panel1
 			// 
+			panel1.Controls.Add(panel3);
 			panel1.Controls.Add(panel2);
-			panel1.Controls.Add(dgv_car);
 			panel1.Dock = DockStyle.Fill;
-			panel1.Location = new Point(3, 64);
+			panel1.Location = new Point(0, 0);
 			panel1.Name = "panel1";
-			panel1.Size = new Size(985, 500);
+			panel1.Size = new Size(991, 567);
 			panel1.TabIndex = 0;
+			// 
+			// panel3
+			// 
+			panel3.Controls.Add(dgv_car);
+			panel3.Dock = DockStyle.Fill;
+			panel3.Location = new Point(0, 96);
+			panel3.Name = "panel3";
+			panel3.Size = new Size(991, 471);
+			panel3.TabIndex = 2;
+			// 
+			// dgv_car
+			// 
+			dgv_car.BackgroundColor = SystemColors.ActiveCaption;
+			dgv_car.BorderStyle = BorderStyle.None;
+			dgv_car.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+			dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle1.BackColor = SystemColors.MenuHighlight;
+			dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+			dataGridViewCellStyle1.ForeColor = Color.White;
+			dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+			dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+			dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+			dgv_car.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			dgv_car.ColumnHeadersHeight = 29;
+			dgv_car.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+			dgv_car.Dock = DockStyle.Fill;
+			dgv_car.EnableHeadersVisualStyles = false;
+			dgv_car.GridColor = Color.DeepSkyBlue;
+			dgv_car.Location = new Point(0, 0);
+			dgv_car.Name = "dgv_car";
+			dgv_car.RowHeadersVisible = false;
+			dgv_car.RowHeadersWidth = 51;
+			dataGridViewCellStyle2.BackColor = SystemColors.ActiveCaption;
+			dataGridViewCellStyle2.ForeColor = Color.White;
+			dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = Color.White;
+			dgv_car.RowsDefaultCellStyle = dataGridViewCellStyle2;
+			dgv_car.RowTemplate.Height = 29;
+			dgv_car.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+			dgv_car.Size = new Size(991, 471);
+			dgv_car.TabIndex = 0;
 			// 
 			// panel2
 			// 
@@ -59,11 +103,10 @@
 			panel2.Controls.Add(btn_update);
 			panel2.Controls.Add(btn_delete);
 			panel2.Controls.Add(btn_add);
-			panel2.Controls.Add(materialLabel1);
 			panel2.Dock = DockStyle.Top;
 			panel2.Location = new Point(0, 0);
 			panel2.Name = "panel2";
-			panel2.Size = new Size(985, 96);
+			panel2.Size = new Size(991, 96);
 			panel2.TabIndex = 1;
 			// 
 			// txt_search
@@ -106,6 +149,7 @@
 			btn_update.TabIndex = 3;
 			btn_update.Text = "Cập nhật";
 			btn_update.UseVisualStyleBackColor = true;
+			btn_update.Click += btn_update_Click;
 			// 
 			// btn_delete
 			// 
@@ -118,6 +162,7 @@
 			btn_delete.TabIndex = 2;
 			btn_delete.Text = "Xóa xe";
 			btn_delete.UseVisualStyleBackColor = true;
+			btn_delete.Click += btn_delete_Click;
 			// 
 			// btn_add
 			// 
@@ -132,29 +177,6 @@
 			btn_add.UseVisualStyleBackColor = true;
 			btn_add.Click += btn_add_Click;
 			// 
-			// materialLabel1
-			// 
-			materialLabel1.AutoSize = true;
-			materialLabel1.Depth = 0;
-			materialLabel1.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-			materialLabel1.Location = new Point(18, 17);
-			materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-			materialLabel1.Name = "materialLabel1";
-			materialLabel1.Size = new Size(102, 19);
-			materialLabel1.TabIndex = 0;
-			materialLabel1.Text = "Quản lý xe oto";
-			// 
-			// dgv_car
-			// 
-			dgv_car.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			dgv_car.Dock = DockStyle.Fill;
-			dgv_car.Location = new Point(0, 0);
-			dgv_car.Name = "dgv_car";
-			dgv_car.RowHeadersWidth = 51;
-			dgv_car.RowTemplate.Height = 29;
-			dgv_car.Size = new Size(985, 500);
-			dgv_car.TabIndex = 2;
-			// 
 			// OtoManagement
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
@@ -164,10 +186,11 @@
 			Name = "OtoManagement";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "OtoManagement";
+			Load += OtoManagement_Load;
 			panel1.ResumeLayout(false);
-			panel2.ResumeLayout(false);
-			panel2.PerformLayout();
+			panel3.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)dgv_car).EndInit();
+			panel2.ResumeLayout(false);
 			ResumeLayout(false);
 		}
 
@@ -180,7 +203,7 @@
 		private FontAwesome.Sharp.IconButton btn_update;
 		private FontAwesome.Sharp.IconButton btn_delete;
 		private FontAwesome.Sharp.IconButton btn_add;
-		private MaterialSkin.Controls.MaterialLabel materialLabel1;
+		private Panel panel3;
 		private DataGridView dgv_car;
 	}
 }
