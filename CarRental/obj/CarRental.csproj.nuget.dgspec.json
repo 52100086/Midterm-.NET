@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\CarRental\\CarRental.csproj": {}
+    "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\CarRental\\CarRental.csproj": {}
   },
   "projects": {
-    "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\BUS\\BUS.csproj": {
+    "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\BUS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\BUS\\BUS.csproj",
+        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\BUS.csproj",
         "projectName": "BUS",
-        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\BUS\\BUS.csproj",
+        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\BUS.csproj",
         "packagesPath": "C:\\Users\\Hieu Pham\\.nuget\\packages\\",
-        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\BUS\\obj\\",
+        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DAL\\DAL.csproj": {
-                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DAL\\DAL.csproj"
+              "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj": {
+                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj"
               },
-              "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\DTO.csproj": {
-                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\DTO.csproj"
+              "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj": {
+                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj"
               }
             }
           }
@@ -47,19 +47,19 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "MaterialSkin.2": {
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[2.3.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.13, )"
             }
           },
           "imports": [
@@ -82,14 +82,14 @@
         }
       }
     },
-    "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\CarRental\\CarRental.csproj": {
+    "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\CarRental\\CarRental.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\CarRental\\CarRental.csproj",
+        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\CarRental\\CarRental.csproj",
         "projectName": "CarRental",
-        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\CarRental\\CarRental.csproj",
+        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\CarRental\\CarRental.csproj",
         "packagesPath": "C:\\Users\\Hieu Pham\\.nuget\\packages\\",
-        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\CarRental\\obj\\",
+        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\CarRental\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -106,11 +106,14 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\BUS\\BUS.csproj": {
-                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\BUS\\BUS.csproj"
+              "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\BUS.csproj": {
+                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\BUS.csproj"
               },
-              "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\DTO.csproj": {
-                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\DTO.csproj"
+              "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj": {
+                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj"
+              },
+              "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj": {
+                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj"
               }
             }
           }
@@ -125,43 +128,23 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
-            "FontAwesome": {
-              "target": "Package",
-              "version": "[4.7.0, )"
-            },
-            "FontAwesome.Sharp.Pro": {
+            "FontAwesome.Sharp": {
               "target": "Package",
               "version": "[6.3.0, )"
             },
-            "HIC.System.Windows.Forms.DataVisualization": {
+            "MaterialSkin.2": {
               "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "MaterialSkin": {
-              "target": "Package",
-              "version": "[0.2.1, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[2.3.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.12, )"
-            },
-            "ModernUI": {
-              "target": "Package",
-              "version": "[2.0.0, )"
-            },
-            "WinForms.DataVisualization": {
-              "target": "Package",
-              "version": "[1.9.0, )"
+              "version": "[7.0.13, )"
             }
           },
           "imports": [
@@ -187,14 +170,14 @@
         }
       }
     },
-    "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DAL\\DAL.csproj": {
+    "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DAL\\DAL.csproj",
+        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DAL\\DAL.csproj",
+        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\Hieu Pham\\.nuget\\packages\\",
-        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DAL\\obj\\",
+        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -211,8 +194,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\DTO.csproj": {
-                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\DTO.csproj"
+              "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj": {
+                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj"
               }
             }
           }
@@ -227,19 +210,19 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "MaterialSkin.2": {
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[2.3.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.13, )"
             }
           },
           "imports": [
@@ -262,14 +245,14 @@
         }
       }
     },
-    "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\DTO.csproj": {
+    "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\DTO.csproj",
+        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\DTO.csproj",
+        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj",
         "packagesPath": "C:\\Users\\Hieu Pham\\.nuget\\packages\\",
-        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\obj\\",
+        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -298,19 +281,19 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "MaterialSkin.2": {
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[2.3.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.13, )"
             }
           },
           "imports": [

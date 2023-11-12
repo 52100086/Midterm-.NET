@@ -83,19 +83,9 @@ namespace CarRental.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap car_hatchback_4_seats1 {
+        internal static System.Drawing.Bitmap car_mini {
             get {
-                object obj = ResourceManager.GetObject("car_hatchback_4_seats1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap car_mini_4_seats {
-            get {
-                object obj = ResourceManager.GetObject("car_mini_4_seats", resourceCulture);
+                object obj = ResourceManager.GetObject("car_mini", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,16 +106,6 @@ namespace CarRental.Properties {
         internal static System.Drawing.Bitmap car_suv_5_seats {
             get {
                 object obj = ResourceManager.GetObject("car_suv_5_seats", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap lukaku {
-            get {
-                object obj = ResourceManager.GetObject("lukaku", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

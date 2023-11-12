@@ -40,34 +40,11 @@
           }
         }
       },
-      "FontAwesome/4.7.0": {},
       "FontAwesome.Sharp/6.3.0": {
         "runtime": {
           "lib/net6.0-windows7.0/FontAwesome.Sharp.dll": {
             "assemblyVersion": "6.3.0.0",
             "fileVersion": "6.3.0.0"
-          }
-        }
-      },
-      "FontAwesome.Sharp.Pro/6.3.0": {
-        "dependencies": {
-          "FontAwesome.Sharp": "6.3.0"
-        },
-        "runtime": {
-          "lib/net6.0-windows7.0/FontAwesome.Sharp.Pro.dll": {
-            "assemblyVersion": "6.3.0.0",
-            "fileVersion": "6.3.0.0"
-          }
-        }
-      },
-      "HIC.System.Windows.Forms.DataVisualization/1.0.1": {
-        "dependencies": {
-          "Microsoft.Data.SqlClient": "5.1.1"
-        },
-        "runtime": {
-          "lib/net5.0-windows7.0/System.Windows.Forms.DataVisualization.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -79,11 +56,11 @@
           }
         }
       },
-      "MaterialSkin/0.2.1": {
+      "MaterialSkin.2/2.3.1": {
         "runtime": {
-          "lib/MaterialSkin.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+          "lib/net5.0-windows7.0/MaterialSkin.dll": {
+            "assemblyVersion": "2.3.1.0",
+            "fileVersion": "2.3.1.0"
           }
         }
       },
@@ -157,71 +134,71 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/7.0.12": {
+      "Microsoft.EntityFrameworkCore/7.0.13": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.12",
-          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.12",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.13",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.13",
           "Microsoft.Extensions.Caching.Memory": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {
-            "assemblyVersion": "7.0.12.0",
-            "fileVersion": "7.0.1223.47811"
+            "assemblyVersion": "7.0.13.0",
+            "fileVersion": "7.0.1323.51806"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/7.0.12": {
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.13": {
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
-            "assemblyVersion": "7.0.12.0",
-            "fileVersion": "7.0.1223.47811"
+            "assemblyVersion": "7.0.13.0",
+            "fileVersion": "7.0.1323.51806"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/7.0.12": {},
-      "Microsoft.EntityFrameworkCore.Design/7.0.12": {
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.13": {},
+      "Microsoft.EntityFrameworkCore.Design/7.0.13": {
         "dependencies": {
           "Humanizer.Core": "2.14.1",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.12",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.13",
           "Microsoft.Extensions.DependencyModel": "7.0.0",
           "Mono.TextTemplating": "2.2.1"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "7.0.12.0",
-            "fileVersion": "7.0.1223.47811"
+            "assemblyVersion": "7.0.13.0",
+            "fileVersion": "7.0.1323.51806"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/7.0.12": {
+      "Microsoft.EntityFrameworkCore.Relational/7.0.13": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.12",
+          "Microsoft.EntityFrameworkCore": "7.0.13",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "assemblyVersion": "7.0.12.0",
-            "fileVersion": "7.0.1223.47811"
+            "assemblyVersion": "7.0.13.0",
+            "fileVersion": "7.0.1323.51806"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/7.0.12": {
+      "Microsoft.EntityFrameworkCore.SqlServer/7.0.13": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.1.1",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.12"
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.13"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
-            "assemblyVersion": "7.0.12.0",
-            "fileVersion": "7.0.1223.47811"
+            "assemblyVersion": "7.0.13.0",
+            "fileVersion": "7.0.1323.51806"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/7.0.12": {
+      "Microsoft.EntityFrameworkCore.Tools/7.0.13": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "7.0.12"
+          "Microsoft.EntityFrameworkCore.Design": "7.0.13"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
@@ -452,17 +429,6 @@
             "assetType": "runtime",
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
-          }
-        }
-      },
-      "ModernUI/2.0.0": {
-        "dependencies": {
-          "System.Drawing.Common": "6.0.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/MetroFramework.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
           }
         }
       },
@@ -761,18 +727,6 @@
             "fileVersion": "6.0.21.52210"
           }
         }
-      },
-      "WinForms.DataVisualization/1.9.0": {
-        "runtime": {
-          "lib/net6.0-windows7.0/WinForms.DataVisualization.Utilities.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.9.0.0"
-          },
-          "lib/net6.0-windows7.0/WinForms.DataVisualization.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.9.0.0"
-          }
-        }
       }
     }
   },
@@ -791,33 +745,12 @@
       "path": "azure.identity/1.7.0",
       "hashPath": "azure.identity.1.7.0.nupkg.sha512"
     },
-    "FontAwesome/4.7.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
-      "path": "fontawesome/4.7.0",
-      "hashPath": "fontawesome.4.7.0.nupkg.sha512"
-    },
     "FontAwesome.Sharp/6.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-3/Fb0N04yYK8An07oox5ISlUyNgsnWildHfoP69uqTEOsemQemRyciphMkXZOcdBupjUD+lVsRE3FqG41/dzPA==",
       "path": "fontawesome.sharp/6.3.0",
       "hashPath": "fontawesome.sharp.6.3.0.nupkg.sha512"
-    },
-    "FontAwesome.Sharp.Pro/6.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OnocgtWLmfGsQYP6yazZSYixYU01VY0NMLsUTDBJV6y7e6aVjWMu/RrNa4otcF7j9Wo1T6xtatg6bSOCPlKo5g==",
-      "path": "fontawesome.sharp.pro/6.3.0",
-      "hashPath": "fontawesome.sharp.pro.6.3.0.nupkg.sha512"
-    },
-    "HIC.System.Windows.Forms.DataVisualization/1.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2iErCJov37VIGLATCcI8tAaFemn8KJW/b4686foj+CslKTSGa2NcQgvVCYF+kR4+6d9cg09X1xrcoIgnVlznsA==",
-      "path": "hic.system.windows.forms.datavisualization/1.0.1",
-      "hashPath": "hic.system.windows.forms.datavisualization.1.0.1.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -826,12 +759,12 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
-    "MaterialSkin/0.2.1": {
+    "MaterialSkin.2/2.3.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/6AEh6qIeNKbxsha7IHBb5s50tyvB0iZuGQPB9mjyR+mRdfQ7vnKTklwI26Y/DbrymTcg+aBHSgCgAT7/qLIrQ==",
-      "path": "materialskin/0.2.1",
-      "hashPath": "materialskin.0.2.1.nupkg.sha512"
+      "sha512": "sha512-w2vFxLNk4InCDU7pXDfBqPfv55HhBtuu8HRfEqQpeS3sNTS1pUzDs/hS0b5JW2/tKvt+P1of9OINP8a9omWDBg==",
+      "path": "materialskin.2/2.3.1",
+      "hashPath": "materialskin.2.2.3.1.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
@@ -861,54 +794,54 @@
       "path": "microsoft.data.sqlclient.sni.runtime/5.1.0",
       "hashPath": "microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore/7.0.12": {
+    "Microsoft.EntityFrameworkCore/7.0.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HRge/bJ5SKMNeqybC4NnRwWZn69QBjVVoVmwhmJ8xgQ50Ye+jTOOf2mef/y4Lrq1HUeMg8cu+3JeFdnp+Y8skA==",
-      "path": "microsoft.entityframeworkcore/7.0.12",
-      "hashPath": "microsoft.entityframeworkcore.7.0.12.nupkg.sha512"
+      "sha512": "sha512-fACONzJtzLJQ29soFqBr0OzgmIYMHV7y9AEZ18hqGx2K0FMJNqezAcfzovc4WI+kT9IvOFQKhDNTl5DMimgkMA==",
+      "path": "microsoft.entityframeworkcore/7.0.13",
+      "hashPath": "microsoft.entityframeworkcore.7.0.13.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/7.0.12": {
+    "Microsoft.EntityFrameworkCore.Abstractions/7.0.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GDlY3DzUbpagqb0683NUM2RK9eJFjTfmlLJd5YtvzBf8T4dwanIOSjd2vN7dXJihyZ0JlYaCetyHgxzbrxiUOw==",
-      "path": "microsoft.entityframeworkcore.abstractions/7.0.12",
-      "hashPath": "microsoft.entityframeworkcore.abstractions.7.0.12.nupkg.sha512"
+      "sha512": "sha512-VxChscv7EsedfuhMAqJ82IxWBYyScCnMwMb1j4+264rIZteeWhj0CJX+u139JCCE9TcvoT97IsCmbb5Jcav5tg==",
+      "path": "microsoft.entityframeworkcore.abstractions/7.0.13",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/7.0.12": {
+    "Microsoft.EntityFrameworkCore.Analyzers/7.0.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-feFe61uKUNoHJfo9tnO65BTzcpWEYIr34xWikhYgZl5c9RiiUJLuCoTqoGc9fuuKy+xk9aUa1NwgDGMC4KmBig==",
-      "path": "microsoft.entityframeworkcore.analyzers/7.0.12",
-      "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.12.nupkg.sha512"
+      "sha512": "sha512-3GiAd0b30L+31/86mtpLDf0Hf4Fnze4yx7hVXaW4wBd6KomIqacGaf+s9rMYNdJZEyKvUJPaBsghY+FgKOoAHg==",
+      "path": "microsoft.entityframeworkcore.analyzers/7.0.13",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.13.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Design/7.0.12": {
+    "Microsoft.EntityFrameworkCore.Design/7.0.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5UoOLj+qJGkEoL379wi1cSq1bBCCZQZRO5w/wE89ZakQT6qx8juAlJLg4fFwfrg0tYWP12iUAholwcuDM38s7g==",
-      "path": "microsoft.entityframeworkcore.design/7.0.12",
-      "hashPath": "microsoft.entityframeworkcore.design.7.0.12.nupkg.sha512"
+      "sha512": "sha512-3DlpSAxQhuxlhblySbM5ujxHALRi5m25ORPGnKKW4LCY1CPleCStdMSRnUB53vnhWDJUX12eIIvprajN++c2Ag==",
+      "path": "microsoft.entityframeworkcore.design/7.0.13",
+      "hashPath": "microsoft.entityframeworkcore.design.7.0.13.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Relational/7.0.12": {
+    "Microsoft.EntityFrameworkCore.Relational/7.0.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-apLzFyjM3s/voBiaMCJPwIOk5SxA1N6GmSbhqthfbUDn8mX+kxZl4RXNdaoBLzPKfUg4EoqCtt0YON/g9YXruQ==",
-      "path": "microsoft.entityframeworkcore.relational/7.0.12",
-      "hashPath": "microsoft.entityframeworkcore.relational.7.0.12.nupkg.sha512"
+      "sha512": "sha512-lIms3oaIW7XiQy3bLUB2+hcSZ4ISmdh3HKKuNSnewS3wurYaopqBEhYaQdhZeW6itl3skWyqybPGGxIlJrKqFA==",
+      "path": "microsoft.entityframeworkcore.relational/7.0.13",
+      "hashPath": "microsoft.entityframeworkcore.relational.7.0.13.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/7.0.12": {
+    "Microsoft.EntityFrameworkCore.SqlServer/7.0.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jwh9C/RzCZPTYNL5YOvxUJDfzRtrpbWl5qLWYRBxeYTKDRRH9n2vWCV+s2URGfOKCufZEx1wrlFSEZ2TJPb4Gw==",
-      "path": "microsoft.entityframeworkcore.sqlserver/7.0.12",
-      "hashPath": "microsoft.entityframeworkcore.sqlserver.7.0.12.nupkg.sha512"
+      "sha512": "sha512-86lPGt6HpkUgL+FHnu1nPmBmwvuBRqtYZPgj+sIhsF2OqRWOeQiXUjy3pspNgl1CK5goK5icjBAIlrl3LkMFuw==",
+      "path": "microsoft.entityframeworkcore.sqlserver/7.0.13",
+      "hashPath": "microsoft.entityframeworkcore.sqlserver.7.0.13.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Tools/7.0.12": {
+    "Microsoft.EntityFrameworkCore.Tools/7.0.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4ZW43BJzV5aY8rkrSxhej1xiiDr1dLfFl/MitpHn4a5QJpQqctJ0kl/MF1U3CAIKnkeC4RaC9ZjJjODDbHtdeQ==",
-      "path": "microsoft.entityframeworkcore.tools/7.0.12",
-      "hashPath": "microsoft.entityframeworkcore.tools.7.0.12.nupkg.sha512"
+      "sha512": "sha512-Z2edRVeoCqvWdNNHHoqbiNhRBetXfh/GBAga6bXM0mmRWzYZ0Y8F+jUFWF/8BUdnbv/8RAafIkWLVMT0jdxMLQ==",
+      "path": "microsoft.entityframeworkcore.tools/7.0.13",
+      "hashPath": "microsoft.entityframeworkcore.tools.7.0.13.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
       "type": "package",
@@ -1063,13 +996,6 @@
       "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
-    },
-    "ModernUI/2.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-uFs5caxyT0YXJ08jXI80LlP7TE7LpMUXB2duD1TU697zUl+QCJAFCiu+b9wmzwUFkjsNvmed7okNK94yKv6pVA==",
-      "path": "modernui/2.0.0",
-      "hashPath": "modernui.2.0.0.nupkg.sha512"
     },
     "Mono.TextTemplating/2.2.1": {
       "type": "package",
@@ -1238,13 +1164,6 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
-    },
-    "WinForms.DataVisualization/1.9.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lRhRPS40V3o5dY38NwaIZyOPrD+bbFq+UjNCa/eAucMICrSFVUE9rO6H2G73xx65mZ94Q7lYw4BSaZRPlcxhxQ==",
-      "path": "winforms.datavisualization/1.9.0",
-      "hashPath": "winforms.datavisualization.1.9.0.nupkg.sha512"
     }
   }
 }

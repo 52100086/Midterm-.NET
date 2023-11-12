@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\DTO.csproj": {}
+    "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj": {}
   },
   "projects": {
-    "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\DTO.csproj": {
+    "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\DTO.csproj",
+        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\DTO.csproj",
+        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj",
         "packagesPath": "C:\\Users\\Hieu Pham\\.nuget\\packages\\",
-        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_2\\Midterm-.NET\\DTO\\obj\\",
+        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,19 +40,19 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "MaterialSkin.2": {
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[2.3.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.13, )"
             }
           },
           "imports": [
