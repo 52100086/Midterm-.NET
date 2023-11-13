@@ -49,7 +49,23 @@ namespace CarRental.Admin
 			{
 				MessageBox.Show("No data to display");
 			}
-			
+		}
+
+		private void btn_addtoorder_Click(object sender, EventArgs e)
+		{
+			if (dgv_cartype.SelectedRows.Count > 0)
+			{
+				DataGridViewRow selectedRow = dgv_cartype.SelectedRows[0];
+				int xeOtoId = Convert.ToInt32(selectedRow.Cells["XeOtoId"].Value);
+				FormCarRentalOrder carDetailsForm = new FormCarRentalOrder(xeOtoId);
+
+				// Hiển thị form CarDetailsForm
+				carDetailsForm.Show();
+			}
+			else
+			{
+				MessageBox.Show("No row selected");
+			}
 		}
 	}
 }

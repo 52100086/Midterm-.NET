@@ -26,10 +26,10 @@ namespace DAL
             return await _context.KhachHangs.FindAsync(id);
         }
 
-        public async Task<KhachHang> CreateKhachHangAsync(KhachHang khachHang)
+        public KhachHang CreateKhachHangAsync(KhachHang khachHang)
         {
             _context.KhachHangs.Add(khachHang);
-            await _context.SaveChangesAsync();
+            _context.SaveChangesAsync();
             return khachHang;
         }
 

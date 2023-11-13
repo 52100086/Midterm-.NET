@@ -48,5 +48,15 @@ namespace DAL
 				_context.SaveChanges();
 			}
 		}
+		public void AddDonDatXe_TinhNang(int donDatXeId, int tinhNangId)
+		{
+			var donDatXe_TinhNang = new DonDatXe_TinhNang
+			{
+				DonDatXeId = donDatXeId,
+				TinhNangId = tinhNangId
+			};
+			_context.DonDatXe_TinhNangs.Add(donDatXe_TinhNang);
+			_context.SaveChanges();
+		}
 	}
 }

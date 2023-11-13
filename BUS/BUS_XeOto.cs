@@ -11,9 +11,9 @@ namespace BUS
     {
         private readonly DAL_XeOto _dalXeOto;
 
-        public BUS_XeOto(DAL_XeOto dalXeOto)
+        public BUS_XeOto()
         {
-            _dalXeOto = dalXeOto;
+            _dalXeOto = new DAL_XeOto(new CarRentalDBContext());
         }
 
         public Task<List<XeOto>> GetAllXeOtosAsync()

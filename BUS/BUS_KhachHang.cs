@@ -10,9 +10,9 @@ namespace BUS
     {
         private readonly DAL_KhachHang _dalKhachHang;
 
-        public BUS_KhachHang(DAL_KhachHang dalKhachHang)
+        public BUS_KhachHang()
         {
-            _dalKhachHang = dalKhachHang;
+            _dalKhachHang = new DAL_KhachHang(new CarRentalDBContext());
         }
 
         public Task<List<KhachHang>> GetAllKhachHangsAsync()
@@ -25,7 +25,7 @@ namespace BUS
             return _dalKhachHang.GetKhachHangByIdAsync(id);
         }
 
-        public Task<KhachHang> CreateKhachHangAsync(KhachHang khachHang)
+        public KhachHang CreateKhachHangAsync(KhachHang khachHang)
         {
             return _dalKhachHang.CreateKhachHangAsync(khachHang);
         }

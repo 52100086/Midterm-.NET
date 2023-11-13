@@ -13,9 +13,8 @@ namespace CarRental
 		{
 			// To customize application configuration such as set high DPI settings or default font,
 			// see https://aka.ms/applicationconfiguration.
-			var context = new CarRentalDBContext();
-			var bus = new BUS_XeOto(new DAL_XeOto(context));
-			var busKH = new BUS_KhachHang(new DAL_KhachHang(context));
+			var bus = new BUS_XeOto();
+			var busKH = new BUS_KhachHang();
 			ApplicationConfiguration.Initialize();
 			Application.Run(new FormAdminLayout(bus,busKH));
 		}
