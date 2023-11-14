@@ -20,7 +20,7 @@ namespace BUS
             return _dalKhachHang.GetAllKhachHangsAsync();
         }
 
-        public Task<KhachHang> GetKhachHangByIdAsync(int id)
+        public KhachHang GetKhachHangByIdAsync(int id)
         {
             return _dalKhachHang.GetKhachHangByIdAsync(id);
         }

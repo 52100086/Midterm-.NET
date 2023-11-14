@@ -14,15 +14,20 @@ namespace CarRental.Admin
 {
 	public partial class FormListCarType : Form
 	{
-		private readonly BUS_XeOto _busXeOto;
+		private readonly BUS_XeOto _busXeOto = new BUS_XeOto();
 		private int loaixeId;
-		public FormListCarType(BUS_XeOto bus_XeOto, int loaixeId)
+		private int khachHangId;
+		public FormListCarType(int loaixeId)
 		{
 			InitializeComponent();
-			_busXeOto = bus_XeOto;
 			this.loaixeId = loaixeId;
 		}
-
+		public FormListCarType(int loaixeId, int khachHangId)
+		{
+			InitializeComponent();
+			this.loaixeId = loaixeId;
+			this.khachHangId = khachHangId;
+		}
 		private void FormListCarType_Load(object sender, EventArgs e)
 		{
 			materialTextBox1.Text = loaixeId.ToString();
@@ -57,10 +62,19 @@ namespace CarRental.Admin
 			{
 				DataGridViewRow selectedRow = dgv_cartype.SelectedRows[0];
 				int xeOtoId = Convert.ToInt32(selectedRow.Cells["XeOtoId"].Value);
-				FormCarRentalOrder carDetailsForm = new FormCarRentalOrder(xeOtoId);
+				if (khachHangId == null)
+				{
+					FormCarRentalOrder carDetailsForm = new FormCarRentalOrder(xeOtoId);
 
-				// Hiển thị form CarDetailsForm
-				carDetailsForm.Show();
+					// Hiển thị form CarDetailsForm
+					carDetailsForm.Show();
+				}
+				else
+				{
+					FormCarRentalOrder carDetailsForm = new FormCarRentalOrder(xeOtoId, khachHangId);
+					// Hiển thị form CarDetailsForm
+					carDetailsForm.Show();
+				}
 			}
 			else
 			{

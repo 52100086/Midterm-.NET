@@ -25,9 +25,9 @@ namespace DAL
                 .ToListAsync();
         }
 
-        public async Task<XeOto> GetXeOtoByIdAsync(int id)
+        public XeOto GetXeOtoById(int id)
         {
-            return await _context.XeOtos.FindAsync(id);
+            return _context.XeOtos.Find(id);
         }
 
         public async Task<XeOto> CreateXeOtoAsync(XeOto xeOto)

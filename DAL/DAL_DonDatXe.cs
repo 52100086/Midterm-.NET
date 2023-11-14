@@ -1,6 +1,9 @@
-﻿using DTO;
+﻿using DAL;
+using DTO;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Linq;
-
+using System.Threading.Tasks;
 namespace DAL
 {
 	public class DAL_DonDatXe
@@ -11,9 +14,13 @@ namespace DAL
 		{
 			_context = context;
 		}
-		public List<DonDatXe> ListAllDonDatXe()
+		public async Task<List<DonDatXe>> ListAllDonDatXe()
 		{
-			return _context.DonDatXes.ToList();
+			return await _context.DonDatXes
+					.Include(x => x.NhienLieu)
+					.Include(x => x.KhachHang)
+					.Include(x => x.XeOto)
+					.ToListAsync();
 		}
 
 		public DonDatXe GetDonDatXeById(int donDatXeId)

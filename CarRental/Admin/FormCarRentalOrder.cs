@@ -11,6 +11,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Windows.Media;
 
 namespace CarRental.Admin
 {
@@ -18,9 +20,11 @@ namespace CarRental.Admin
 	{
 		readonly MaterialSkin.MaterialSkinManager materialSkinManager;
 		private int xeOtoId;
+		private int khachhangId;
 		private readonly BUS_KhachHang _busKhachHang = new BUS_KhachHang();
+		private readonly BUS_XeOto _busXeOto = new BUS_XeOto();
 		private readonly BUS_DonDatXe _busDonDatXe = new BUS_DonDatXe();
-
+		private readonly BUS_TinhNangXe _busTinhNang = new BUS_TinhNangXe();
 		public FormCarRentalOrder(int xeOtoId)
 		{
 			InitializeComponent();
@@ -31,31 +35,183 @@ namespace CarRental.Admin
 			materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
 			this.xeOtoId = xeOtoId;
 		}
+		public FormCarRentalOrder(int xeOtoId, int khachhangId)
+		{
+			InitializeComponent();
+			materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
+			materialSkinManager.EnforceBackcolorOnAllComponents = true;
+			materialSkinManager.AddFormToManage(this);
+			materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+			materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+			this.xeOtoId = xeOtoId;
+			this.khachhangId = khachhangId;
+		}
 
 		private void btn_add_Click(object sender, EventArgs e)
 		{
-			var khachHang = new KhachHang
+			if (khachhangId == 0)
 			{
-				Ten = txt_hoten.Text,
-				Email = txt_email.Text,
-				DiaChi = txt_diachi.Text,
-				SoDienThoai = txt_sdt.Text
-			};
-			
-			var createKH = _busKhachHang.CreateKhachHangAsync(khachHang);
-			if (createKH != null)
-			{
-				MessageBox.Show("thanh cong");
+				Dictionary<int, bool> tinhNangXeValues = new Dictionary<int, bool>
+				{
+					{ 1, cb_bando.Checked },
+					{ 2, cb_bluetooth.Checked },
+					{ 3, cb_cameralui.Checked },
+					{ 4, cb_cameracaple.Checked },
+					{ 5, cb_camerahanhtrinh.Checked },
+					{ 6, cb_canhbaotocdo.Checked },
+					{ 7, cb_cambienlop.Checked },
+					{8, cb_cambienvacham.Checked },
+					{9, cb_cuasotroi.Checked },
+					{10, cb_dinhvigps.Checked },
+					{11, cb_khecamusb.Checked },
+					{12, cb_lopduphong.Checked },
+					{13, cb_napthungxebantai.Checked },
+					{14, cb_camera360.Checked }
+				};
+				var khachHang = new KhachHang
+				{
+					Ten = txt_hoten.Text,
+					Email = txt_email.Text,
+					DiaChi = txt_diachi.Text,
+					SoDienThoai = txt_sdt.Text
+				};
+
+				var createKH = _busKhachHang.CreateKhachHangAsync(khachHang);
+				if (createKH != null)
+				{
+					MessageBox.Show("thanh cong");
+				}
+				var xeOto = _busXeOto.GetXeOtoById(xeOtoId);
+				xeOto.TrangThai = "Đang thuê";
+				var update = _busXeOto.UpdateXeOto(xeOto);
+
+				var donDatXe = new DonDatXe
+				{
+					KhachHangId = khachHang.KhachHangId,
+					XeOtoId = xeOtoId,
+					NgayLap = DateTime.Today,
+					TrangThai = "Chưa thanh toán",
+					Thue = Double.Parse(lb_thuengay.Text),
+					GiaThue = Double.Parse(lb_tongcong.Text),
+					ThoiGianThue = DateTime.Today.AddDays(Int32.Parse(txt_ngay.Text))
+				};
+
+
+				if (rb_xang.Checked)
+				{
+					donDatXe.NhienLieuId = 1;
+				}
+				else if (rb_dien.Checked)
+				{
+					donDatXe.NhienLieuId = 2;
+				}
+				else if (rb_dau.Checked)
+				{
+					donDatXe.NhienLieuId = 3;
+				}
+				_busDonDatXe.AddDonDatXe(donDatXe);
+				foreach (var tinhNangXe in tinhNangXeValues)
+				{
+					if (tinhNangXe.Value)
+					{
+						_busDonDatXe.AddDonDatXe_TinhNang(donDatXe.DonDatXeId, tinhNangXe.Key);
+					}
+				}
+				MessageBox.Show("Thêm hóa đơn thành công");
+				this.Close();
 			}
-			var donDatXe = new DonDatXe
+			else
 			{
-				KhachHangId = khachHang.KhachHangId,
-				XeOtoId = xeOtoId,
-				NgayLap = DateTime.Today,
-				TrangThai = "Chưa thanh toán",
-				Thue = 0.08
-			};
+				var khachHang = new KhachHang
+				{
+					KhachHangId = khachhangId,
+					Ten = txt_hoten.Text,
+					Email = txt_email.Text,
+					DiaChi = txt_diachi.Text,
+					SoDienThoai = txt_sdt.Text
+				};
+
+				var updateKH = _busKhachHang.UpdateKhachHang(khachHang);
+				if (updateKH != null)
+				{
+					MessageBox.Show("thanh cong");
+				}
+				var xeOto = _busXeOto.GetXeOtoById(xeOtoId);
+				xeOto.TrangThai = "Đang thuê";
+				var update = _busXeOto.UpdateXeOto(xeOto);
+				var donDatXe = new DonDatXe
+				{
+					KhachHangId = khachHang.KhachHangId,
+					XeOtoId = xeOtoId,
+					NgayLap = DateTime.Today,
+					TrangThai = "Chưa thanh toán",
+					Thue = Double.Parse(lb_thuengay.Text),
+					GiaThue = Double.Parse(lb_tongcong.Text),
+					ThoiGianThue = DateTime.Today.AddDays(Int32.Parse(txt_ngay.Text))
+				};
+
+				Dictionary<int, bool> tinhNangXeValues = new Dictionary<int, bool>
+				{
+					{ 1, cb_bando.Checked },
+					{ 2, cb_bluetooth.Checked },
+					{ 3, cb_cameralui.Checked },
+					{ 4, cb_cameracaple.Checked },
+					{ 5, cb_camerahanhtrinh.Checked },
+					{ 6, cb_canhbaotocdo.Checked },
+					{ 7, cb_cambienlop.Checked },
+					{8, cb_cambienvacham.Checked },
+					{9, cb_cuasotroi.Checked },
+					{10, cb_dinhvigps.Checked },
+					{11, cb_khecamusb.Checked },
+					{12, cb_lopduphong.Checked },
+					{13, cb_napthungxebantai.Checked },
+					{14, cb_camera360.Checked }
+				};
+				if (rb_xang.Checked)
+				{
+					donDatXe.NhienLieuId = 1;
+				}
+				else if (rb_dien.Checked)
+				{
+					donDatXe.NhienLieuId = 2;
+				}
+				else if (rb_dau.Checked)
+				{
+					donDatXe.NhienLieuId = 3;
+				}
+				_busDonDatXe.AddDonDatXe(donDatXe);
+				foreach (var tinhNangXe in tinhNangXeValues)
+				{
+					if (tinhNangXe.Value)
+					{
+						_busDonDatXe.AddDonDatXe_TinhNang(donDatXe.DonDatXeId, tinhNangXe.Key);
+					}
+				}
+				MessageBox.Show("Thêm hóa đơn thành công");
+				this.Close();
+			}
+		}
+
+		private void FormCarRentalOrder_Load(object sender, EventArgs e)
+		{
+			if (khachhangId != 0)
+			{
+				var khachhang = _busKhachHang.GetKhachHangByIdAsync(khachhangId);
+				txt_hoten.Text = khachhang.Ten;
+				txt_email.Text = khachhang.Email;
+				txt_diachi.Text = khachhang.DiaChi;
+				txt_sdt.Text = khachhang.SoDienThoai;
+			}
 			
+		}
+
+		private void btn_preview_Click(object sender, EventArgs e)
+		{
+			double tongtien = 0;
+			double thue = 0;
+			var xe = _busXeOto.GetXeOtoById(xeOtoId);
+			double thuengay = xe.GiaThue;
+			double tongngay = 0;
 			Dictionary<int, bool> tinhNangXeValues = new Dictionary<int, bool>
 			{
 				{ 1, cb_bando.Checked },
@@ -65,36 +221,37 @@ namespace CarRental.Admin
 				{ 5, cb_camerahanhtrinh.Checked },
 				{ 6, cb_canhbaotocdo.Checked },
 				{ 7, cb_cambienlop.Checked },
-				{8, cb_cambienvacham.Checked },
-				{9, cb_cuasotroi.Checked },
-				{10, cb_dinhvigps.Checked },
-				{11, cb_khecamusb.Checked },
-				{12, cb_lopduphong.Checked },
-				{13, cb_napthungxebantai.Checked },
-				{14, cb_camera360.Checked }
+				{ 8, cb_cambienvacham.Checked },
+				{ 9, cb_cuasotroi.Checked },
+				{ 10, cb_dinhvigps.Checked },
+				{ 11, cb_khecamusb.Checked },
+				{ 12, cb_lopduphong.Checked },
+				{ 13, cb_napthungxebantai.Checked },
+				{ 14, cb_camera360.Checked }
 			};
-			if (rb_xang.Checked)
-			{
-				donDatXe.NhienLieuId = 1;
-			}
-			else if (rb_dien.Checked)
-			{
-				donDatXe.NhienLieuId = 2;
-			}
-			else if (rb_dau.Checked)
-			{
-				donDatXe.NhienLieuId = 3;
-			}
-			_busDonDatXe.AddDonDatXe(donDatXe);
 			foreach (var tinhNangXe in tinhNangXeValues)
 			{
 				if (tinhNangXe.Value)
 				{
-					_busDonDatXe.AddDonDatXe_TinhNang(donDatXe.DonDatXeId, tinhNangXe.Key);
+					var tinhnang = _busTinhNang.GetTinhNangXeById(tinhNangXe.Key);
+					thuengay += tinhnang.GiaThue;
 				}
 			}
-			MessageBox.Show("Thêm hóa đơn thành công");
-			this.Close();
+			lb_tienthuengay.Text = thuengay.ToString();
+			lb_thuengay.Text = (thuengay * 0.08).ToString();
+			lb_tongngay.Text = (thuengay * 1.08 * 1.0).ToString();
+
+			double tongcong;
+			if (Double.TryParse(txt_ngay.Text, out double ngay) && Double.TryParse(lb_tongngay.Text, out double tongngayParsed))
+			{
+				tongcong = ngay * tongngayParsed;
+				lb_tongcong.Text = tongcong.ToString();
+			}
+			else
+			{
+				// Xử lý trường hợp không thể chuyển đổi giá trị thành số
+				MessageBox.Show("Ngày không hợp lệ.");
+			}
 		}
 	}
 }

@@ -21,9 +21,9 @@ namespace BUS
             return _dalXeOto.GetAllXeOtosAsync();
         }
 
-        public Task<XeOto> GetXeOtoByIdAsync(int id)
+        public XeOto GetXeOtoById(int id)
         {
-            return _dalXeOto.GetXeOtoByIdAsync(id);
+            return _dalXeOto.GetXeOtoById(id);
         }
 
         public Task<XeOto> CreateXeOtoAsync(XeOto xeOto)

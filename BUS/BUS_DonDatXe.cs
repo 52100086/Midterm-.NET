@@ -2,6 +2,12 @@
 using DTO;
 using System.Collections.Generic;
 
+using DAL;
+using DTO;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 namespace BUS
 {
 	public class BUS_DonDatXe
@@ -13,7 +19,7 @@ namespace BUS
 			_dalDonDatXe = new DAL_DonDatXe(new CarRentalDBContext());
 		}
 
-		public List<DonDatXe> GetAllDonDatXe()
+		public Task<List<DonDatXe>> GetAllDonDatXe()
 		{
 			return _dalDonDatXe.ListAllDonDatXe();
 		}

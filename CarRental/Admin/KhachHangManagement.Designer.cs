@@ -71,6 +71,7 @@
 			btn_addorder.TabIndex = 7;
 			btn_addorder.Text = "Thêm hóa đơn";
 			btn_addorder.UseVisualStyleBackColor = true;
+			btn_addorder.Click += btn_addorder_Click;
 			// 
 			// btn_export
 			// 

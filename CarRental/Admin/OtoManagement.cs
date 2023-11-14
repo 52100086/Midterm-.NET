@@ -16,9 +16,9 @@ namespace CarRental.Admin
 	public partial class OtoManagement : Form
 	{
 
-		private readonly BUS_XeOto _busXeOto;
+		private readonly BUS_XeOto _busXeOto = new BUS_XeOto();
 
-		public OtoManagement(BUS_XeOto bus_XeOto)
+		public OtoManagement()
 		{
 			InitializeComponent();
 			//materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
@@ -26,7 +26,7 @@ namespace CarRental.Admin
 			//materialSkinManager.AddFormToManage(this);
 			//materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
 			//materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
-			_busXeOto = bus_XeOto;
+			
 		}
 
 		private void btn_add_Click(object sender, EventArgs e)
@@ -86,7 +86,23 @@ namespace CarRental.Admin
 
 		private void btn_update_Click(object sender, EventArgs e)
 		{
+			if (dgv_car.SelectedRows.Count > 0)
+			{
+				// Lấy hàng được chọn
+				DataGridViewRow selectedRow = dgv_car.SelectedRows[0];
 
+				// Lấy giá trị của cột XeOtoId trong hàng được chọn
+				int xeOtoId = Convert.ToInt32(selectedRow.Cells["XeOtoId"].Value);
+				FormUpdateOto formUpdateOto = new FormUpdateOto(xeOtoId);
+				formUpdateOto.ShowDialog();
+
+				// Refresh DataGridView để cập nhật danh sách sau khi xóa
+				dgv_car.Refresh();
+			}
+			else
+			{
+				MessageBox.Show("Vui lòng chọn một xe ô tô để cap nhat");
+			}
 		}
 	}
 }

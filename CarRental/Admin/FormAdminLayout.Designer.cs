@@ -151,6 +151,7 @@
 			DrawerShowIconsWhenHidden = true;
 			DrawerTabControl = tabControl;
 			Name = "FormAdminLayout";
+			Load += FormAdminLayout_Load;
 			tabControl.ResumeLayout(false);
 			ResumeLayout(false);
 		}

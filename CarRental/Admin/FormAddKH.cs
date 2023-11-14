@@ -18,8 +18,8 @@ namespace CarRental
 	{
 
 		readonly MaterialSkin.MaterialSkinManager materialSkinManager;
-		private readonly BUS_KhachHang _busKhachHang;
-		public FormAddKH(BUS_KhachHang bus_KhachHang)
+		private readonly BUS_KhachHang _busKhachHang = new BUS_KhachHang();
+		public FormAddKH()
 		{
 			InitializeComponent();
 			materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
@@ -27,7 +27,7 @@ namespace CarRental
 			materialSkinManager.AddFormToManage(this);
 			materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
 			materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
-			_busKhachHang = bus_KhachHang;
+
 		}
 
 		private void btn_add_Click(object sender, EventArgs e)

@@ -17,12 +17,12 @@ namespace CarRental
 	public partial class FormUpdateOto : MaterialForm
 	{
 		readonly MaterialSkin.MaterialSkinManager materialSkinManager;
-		public event EventHandler OtoUpdated;
-		private readonly BUS_XeOto _busXeOto;
-		private readonly XeOto _xeOto;
+		private readonly BUS_XeOto _busXeOto = new BUS_XeOto();
+		private int _xeOtoId;
 		private PictureBox selectedPictureBox; // Biến tham chiếu đến PictureBox được chọn
 		private MaterialLabel selectedMaterialLabel;
-		public FormUpdateOto(BUS_XeOto busXeOto, XeOto xeOto)
+		//private 
+		public FormUpdateOto(int xeOtoId)
 		{
 			InitializeComponent();
 			materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
@@ -30,11 +30,7 @@ namespace CarRental
 			materialSkinManager.AddFormToManage(this);
 			materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
 			materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
-			_busXeOto = busXeOto;
-			_xeOto = xeOto;
-			selectedPictureBox = pictureBox1;
-			selectedMaterialLabel = txt_1;
-			PopulateComboBoxes();
+			_xeOtoId = xeOtoId;
 		}
 		private void pictureBox_Click(object sender, EventArgs e)
 		{
@@ -115,86 +111,129 @@ namespace CarRental
 
 		private async void FormUpdateOto_Load(object sender, EventArgs e)
 		{
-			hy.Text = _xeOto.TrangThai;
-			txt_GiaThue.Text = _xeOto.GiaThue.ToString();
-			// Hiển thị và chọn giá trị cho các ComboBox LoaiXe, HangXe, MauXe
 			await PopulateComboBoxes();
+			XeOto xeOto = _busXeOto.GetXeOtoById(_xeOtoId);
+			txt_GiaThue.Text = xeOto.GiaThue.ToString();
+			cbx_hangxe.SelectedItem = cbx_hangxe.Items.Cast<HangXe>().FirstOrDefault(h => h.HangXeId == xeOto.HangXeId);
+			cbx_model.SelectedItem = cbx_model.Items.Cast<MauXe>().FirstOrDefault(m => m.MauXeId == xeOto.MauXeId);
+			cbx_TrangThai.SelectedItem = xeOto.TrangThai;
+
+			SelectPictureBoxByLoaiXeId(xeOto.LoaiXeId);
+		}
+
+		private void SelectPictureBoxByLoaiXeId(int loaiXeId)
+		{
+			// Bỏ viền của PictureBox trước đó (nếu có)
+			if (selectedPictureBox != null)
+			{
+				selectedPictureBox.BorderStyle = BorderStyle.None;
+				selectedMaterialLabel.Font = new Font(selectedMaterialLabel.Font, FontStyle.Regular);
+			}
+
+			// Chọn PictureBox tương ứng với loaiXeId
+			switch (loaiXeId)
+			{
+				case 1:
+					selectedPictureBox = pictureBox1;
+					selectedMaterialLabel = txt_1;
+					break;
+				case 2:
+					selectedPictureBox = pictureBox2;
+					selectedMaterialLabel = txt_2;
+					break;
+				case 3:
+					selectedPictureBox = pictureBox3;
+					selectedMaterialLabel = txt_3;
+					break;
+				case 4:
+					selectedPictureBox = pictureBox4;
+					selectedMaterialLabel = txt_4;
+					break;
+				case 5:
+					selectedPictureBox = pictureBox5;
+					selectedMaterialLabel = txt_5;
+					break;
+				case 6:
+					selectedPictureBox = pictureBox6;
+					selectedMaterialLabel = txt_6;
+					break;
+				default:
+					selectedPictureBox = pictureBox7;
+					selectedMaterialLabel = txt_7;
+					break;
+			}
+
+			// Đặt viền cho PictureBox mới được chọn
+			selectedPictureBox.BorderStyle = BorderStyle.FixedSingle;
+			selectedMaterialLabel.Font = new Font(selectedMaterialLabel.Font, FontStyle.Bold);
 		}
 
 		private void btn_Update_Click(object sender, EventArgs e)
 		{
-			////string trangThai = hy.Text;
-			//string trangThai = cbx_TrangThai.SelectedItem?.ToString();
-			//int giaThue;
-			//if (!Int32.TryParse(txt_GiaThue.Text, out giaThue))
-			//{
-			//	MessageBox.Show("Giá thuê không hợp lệ");
-			//	return;
-			//}
-			//int loaiXeId;
-			//if (selectedPictureBox == pictureBox1)
-			//{
-			//	loaiXeId = 1;
-			//}
-			//else if (selectedPictureBox == pictureBox2)
-			//{
-			//	loaiXeId = 2;
-			//}
-			//else if (selectedPictureBox == pictureBox3)
-			//{
-			//	loaiXeId = 3;
-			//}
-			//else if (selectedPictureBox == pictureBox4)
-			//{
-			//	loaiXeId = 4;
-			//}
-			//else if (selectedPictureBox == pictureBox5)
-			//{
-			//	loaiXeId = 5;
-			//}
-			//else if (selectedPictureBox == pictureBox6)
-			//{
-			//	loaiXeId = 6;
-			//}
-			//else
-			//{
-			//	loaiXeId = 7;
-			//}
-
-			//int hangXeId = (int)cbx_hangxe.SelectedValue;
-			//int mauXeId = (int)cbx_model.SelectedValue;
-
-			//// Cập nhật thông tin của xeOto
-			//_xeOto.TrangThai = trangThai;
-			//_xeOto.GiaThue = giaThue;
-			//_xeOto.LoaiXeId = loaiXeId;
-			//_xeOto.HangXeId = hangXeId;
-			//_xeOto.MauXeId = mauXeId;
-
-			//try
-			//{
-			//	// Gọi phương thức cập nhật xe từ BUS
-			//	await _busXeOto.UpdateXeOtoAsync(_xeOto);
-
-			//	// Gọi sự kiện OtoUpdated để thông báo cập nhật thành công
-			//	OnOtoUpdated();
-
-			//	// Đóng form cập nhật
-			//	this.Close();
-			//}
-			//catch (Exception ex)
-			//{
-			//	MessageBox.Show("Lỗi cập nhật xe: " + ex.Message);
-			//}
-		}
-		private void OnOtoUpdated()
-		{
-			// Kiểm tra xem có người đăng ký sự kiện OtoUpdated hay không
-			if (OtoUpdated != null)
+			try
 			{
-				// Gửi sự kiện OtoUpdated
-				OtoUpdated(this, EventArgs.Empty);
+				int loaiXeId;
+				if (selectedPictureBox == pictureBox1)
+				{
+					loaiXeId = 1;
+				}
+				else if (selectedPictureBox == pictureBox2)
+				{
+					loaiXeId = 2;
+				}
+				else if (selectedPictureBox == pictureBox3)
+				{
+					loaiXeId = 3;
+				}
+				else if (selectedPictureBox == pictureBox4)
+				{
+					loaiXeId = 4;
+				}
+				else if (selectedPictureBox == pictureBox5)
+				{
+					loaiXeId = 5;
+				}
+				else if (selectedPictureBox == pictureBox6)
+				{
+					loaiXeId = 6;
+				}
+				else
+				{
+					loaiXeId = 7;
+				}
+				// Create a new XeOto object
+				var update = new XeOto
+				{
+					XeOtoId = _xeOtoId,
+					GiaThue = Int32.Parse(txt_GiaThue.Text),
+					TrangThai = cbx_TrangThai.SelectedItem.ToString(),
+					LoaiXeId = loaiXeId,
+					HangXeId = ((HangXe)cbx_hangxe.SelectedItem).HangXeId,
+					MauXeId = ((MauXe)cbx_model.SelectedItem).MauXeId
+					// Set other properties as needed
+				};
+
+				// Call the CreateXeOtoAsync method in your BUS_XeOto class
+				var createdOto = _busXeOto.UpdateXeOto(update);
+
+				if (createdOto != null)
+				{
+					MessageBox.Show("XeOto is updated successfully");
+				}
+				else
+				{
+					// Failed to create the XeOto object
+					MessageBox.Show("Failed to update XeOto");
+				}
 			}
+			catch (Exception ex)
+			{
+				// Handle any exceptions that occur during the operation
+				MessageBox.Show("An error occurred: " + ex.Message);
+			}
+
+			// Optionally, you can close the form or perform other actions after the creation
+			this.Close();
 		}
 	}
 }

@@ -18,10 +18,9 @@ namespace CarRental
 	public partial class FormAdminLayout : MaterialForm
 	{
 		readonly MaterialSkin.MaterialSkinManager materialSkinManager;
-		private readonly BUS_XeOto _busXeOto;
-		private readonly BUS_KhachHang _busKhachHang;
+		//private readonly BUS_XeOto _busXeOto = new BUS_XeOto();
 
-		public FormAdminLayout(BUS_XeOto bus_XeOto, BUS_KhachHang bus_KhachHang)
+		public FormAdminLayout()
 		{
 			InitializeComponent();
 			materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
@@ -36,8 +35,6 @@ namespace CarRental
 				TextShade.WHITE);
 			FormCarType formCarType = new FormCarType();
 			openForm(formCarType, tabPage_Home);
-			_busXeOto = bus_XeOto;
-			_busKhachHang = bus_KhachHang;
 		}
 
 		private void openForm(Form form, TabPage tab)
@@ -54,7 +51,7 @@ namespace CarRental
 		}
 		public void startFormCarTypeList(int id)
 		{
-			FormListCarType formListCarType = new FormListCarType(_busXeOto, id);
+			FormListCarType formListCarType = new FormListCarType(id);
 			openForm(formListCarType, tabPage_Home);
 		}
 		private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
@@ -66,11 +63,11 @@ namespace CarRental
 					openForm(form0, tabPage_Home);
 					break;
 				case 1:
-					Form form1 = new OtoManagement(_busXeOto);
+					Form form1 = new OtoManagement();
 					openForm(form1, tabPage_QLXe);
 					break;
 				case 2:
-					Form form2 = new KhachHangManagement(_busKhachHang);
+					Form form2 = new KhachHangManagement();
 					openForm(form2, tabPage_QLKhachHang);
 					break;
 				case 3:
@@ -88,6 +85,11 @@ namespace CarRental
 				default:
 					break;
 			}
+		}
+
+		private void FormAdminLayout_Load(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

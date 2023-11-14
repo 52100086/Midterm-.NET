@@ -242,3 +242,4 @@ E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormCarType.resources
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormListCarType.resources
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormCarRentalOrder.resources
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormUpdateKhachHang.resources

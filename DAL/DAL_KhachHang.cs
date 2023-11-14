@@ -21,9 +21,9 @@ namespace DAL
             return await _context.KhachHangs.ToListAsync();
         }
 
-        public async Task<KhachHang> GetKhachHangByIdAsync(int id)
+        public KhachHang GetKhachHangByIdAsync(int id)
         {
-            return await _context.KhachHangs.FindAsync(id);
+            return _context.KhachHangs.Find(id);
         }
 
         public KhachHang CreateKhachHangAsync(KhachHang khachHang)
