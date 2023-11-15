@@ -47,5 +47,9 @@ namespace BUS
 		{
 			_dalDonDatXe.AddDonDatXe_TinhNang(donDatXeId, tinhNangId);
 		}
+		public List<int> getListTinhNangcuaDonDatXe(int donDatXeId)
+		{
+			return _dalDonDatXe.getListTinhNangcuaDonDatXe(donDatXeId);
+		}
 	}
 }

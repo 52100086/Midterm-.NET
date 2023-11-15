@@ -65,5 +65,18 @@ namespace DAL
 			_context.DonDatXe_TinhNangs.Add(donDatXe_TinhNang);
 			_context.SaveChanges();
 		}
+		public List<int> getListTinhNangcuaDonDatXe(int donDatXeId)
+		{
+			var donDatXe = _context.DonDatXes
+				.Include(x => x.DonDatXe_TinhNangs)
+				.FirstOrDefault(x => x.DonDatXeId == donDatXeId);
+
+			if (donDatXe != null)
+			{
+				return donDatXe.DonDatXe_TinhNangs.Select(d => d.TinhNangId).ToList();
+			}
+
+			return new List<int>();
+		}
 	}
 }

@@ -176,6 +176,7 @@
 			btn_chitiet.TabIndex = 1;
 			btn_chitiet.Text = "Xem chi tiết";
 			btn_chitiet.UseVisualStyleBackColor = true;
+			btn_chitiet.Click += btn_chitiet_Click;
 			// 
 			// FormOrderManagement
 			// 

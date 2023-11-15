@@ -54,5 +54,25 @@ namespace CarRental.Admin
 		{
 
 		}
+
+		private void btn_chitiet_Click(object sender, EventArgs e)
+		{
+			if (dgv_order.SelectedRows.Count > 0)
+			{
+				// Lấy hàng được chọn
+				DataGridViewRow selectedRow = dgv_order.SelectedRows[0];
+
+				// Lấy giá trị của cột KhachHangId trong hàng được chọn
+				int DonDatXeId = Convert.ToInt32(selectedRow.Cells["DonDatXeId"].Value);
+				var DonDatXe = _busDonDatXe.GetDonDatXeById(DonDatXeId);
+				FormCarRentalOrder formCarRentalOrder = new FormCarRentalOrder(DonDatXe);
+				formCarRentalOrder.ShowDialog();
+				dgv_order.Refresh();
+			}
+			else
+			{
+				MessageBox.Show("Vui lòng chọn một đơn đặt xe để cap nhat");
+			}
+		}
 	}
 }

@@ -25,6 +25,7 @@ namespace CarRental.Admin
 		private readonly BUS_XeOto _busXeOto = new BUS_XeOto();
 		private readonly BUS_DonDatXe _busDonDatXe = new BUS_DonDatXe();
 		private readonly BUS_TinhNangXe _busTinhNang = new BUS_TinhNangXe();
+		private DonDatXe DonDatXe;
 		public FormCarRentalOrder(int xeOtoId)
 		{
 			InitializeComponent();
@@ -46,7 +47,16 @@ namespace CarRental.Admin
 			this.xeOtoId = xeOtoId;
 			this.khachhangId = khachhangId;
 		}
-
+		public FormCarRentalOrder(DonDatXe donDatXe)
+		{
+			InitializeComponent();
+			materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
+			materialSkinManager.EnforceBackcolorOnAllComponents = true;
+			materialSkinManager.AddFormToManage(this);
+			materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+			materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+			this.DonDatXe = donDatXe;
+		}
 		private void btn_add_Click(object sender, EventArgs e)
 		{
 			if (khachhangId == 0)
@@ -146,7 +156,7 @@ namespace CarRental.Admin
 					NgayLap = DateTime.Today,
 					TrangThai = "Chưa thanh toán",
 					Thue = Double.Parse(lb_thuengay.Text),
-					GiaThue = Double.Parse(lb_tongcong.Text),
+					GiaThue = Double.Parse(lb_tongngay.Text),
 					ThoiGianThue = DateTime.Today.AddDays(Int32.Parse(txt_ngay.Text))
 				};
 
@@ -202,7 +212,44 @@ namespace CarRental.Admin
 				txt_diachi.Text = khachhang.DiaChi;
 				txt_sdt.Text = khachhang.SoDienThoai;
 			}
-			
+			if (DonDatXe != null)
+			{
+				txt_hoten.Text = DonDatXe.KhachHang.Ten;
+				txt_email.Text = DonDatXe.KhachHang.Email;
+				txt_diachi.Text = DonDatXe.KhachHang.DiaChi;
+				txt_sdt.Text = DonDatXe.KhachHang.SoDienThoai;
+				txt_ngay.Text = DonDatXe.ThoiGianThue.ToString();
+				if (DonDatXe.NhienLieuId == 1)
+				{
+					rb_xang.Checked = true;
+				}
+				else if (DonDatXe.NhienLieuId == 2)
+				{
+					rb_dien.Checked = true;
+				}
+				else if (DonDatXe.NhienLieuId == 3)
+				{
+					rb_dau.Checked = true;
+				}
+				lb_thuengay.Text = DonDatXe.GiaThue.ToString();
+				lb_tienthuengay.Text = DonDatXe.Thue.ToString();
+				List<int> tinhNangIds = _busDonDatXe.getListTinhNangcuaDonDatXe(DonDatXe.DonDatXeId);
+				// Kiểm tra và thiết lập giá trị checked cho các checkbox tương ứng với tính năng
+				cb_bando.Checked = tinhNangIds.Contains(1);
+				cb_bluetooth.Checked = tinhNangIds.Contains(2);
+				cb_cameralui.Checked = tinhNangIds.Contains(3);
+				cb_cameracaple.Checked = tinhNangIds.Contains(4);
+				cb_camerahanhtrinh.Checked = tinhNangIds.Contains(5);
+				cb_canhbaotocdo.Checked = tinhNangIds.Contains(6);
+				cb_cambienlop.Checked = tinhNangIds.Contains(7);
+				cb_cambienvacham.Checked = tinhNangIds.Contains(8);
+				cb_cuasotroi.Checked = tinhNangIds.Contains(9);
+				cb_dinhvigps.Checked = tinhNangIds.Contains(10);
+				cb_khecamusb.Checked = tinhNangIds.Contains(11);
+				cb_lopduphong.Checked = tinhNangIds.Contains(12);
+				cb_napthungxebantai.Checked = tinhNangIds.Contains(13);
+				cb_camera360.Checked = tinhNangIds.Contains(14);
+			}
 		}
 
 		private void btn_preview_Click(object sender, EventArgs e)
