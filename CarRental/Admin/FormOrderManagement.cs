@@ -34,6 +34,7 @@ namespace CarRental.Admin
 					x.KhachHang.Ten,
 					x.GiaThue,
 					x.Thue,
+					x.TongCong,
 					x.NhienLieu.NhienLieuName,
 					x.ThoiGianThue,
 					x.NgayLap,

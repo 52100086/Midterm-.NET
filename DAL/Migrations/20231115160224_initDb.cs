@@ -153,6 +153,7 @@ namespace DAL.Migrations
                     XeOtoId = table.Column<int>(type: "int", nullable: false),
                     GiaThue = table.Column<double>(type: "float", nullable: false),
                     Thue = table.Column<double>(type: "float", nullable: false),
+                    TongCong = table.Column<double>(type: "float", nullable: false),
                     NhienLieuId = table.Column<int>(type: "int", nullable: false),
                     ThoiGianThue = table.Column<DateTime>(type: "datetime2", nullable: false),
                     NgayLap = table.Column<DateTime>(type: "datetime2", nullable: false),

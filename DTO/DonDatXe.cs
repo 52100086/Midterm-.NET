@@ -7,6 +7,7 @@
         public int XeOtoId { get; set; }
         public double GiaThue { get; set; }
         public double Thue { get; set; }
+        public double TongCong { get; set; }
         public int NhienLieuId { get; set; }
         public DateTime ThoiGianThue { get; set; }
         public DateTime NgayLap { get; set; }

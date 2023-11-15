@@ -28,8 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-			DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+			DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+			DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
 			panel1 = new Panel();
 			dgv_schedule = new DataGridView();
 			panel3 = new Panel();
@@ -58,14 +58,14 @@
 			dgv_schedule.BackgroundColor = SystemColors.ActiveCaption;
 			dgv_schedule.BorderStyle = BorderStyle.None;
 			dgv_schedule.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-			dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle3.BackColor = SystemColors.MenuHighlight;
-			dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-			dataGridViewCellStyle3.ForeColor = Color.White;
-			dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-			dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-			dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-			dgv_schedule.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle1.BackColor = SystemColors.MenuHighlight;
+			dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+			dataGridViewCellStyle1.ForeColor = Color.White;
+			dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+			dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+			dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+			dgv_schedule.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			dgv_schedule.ColumnHeadersHeight = 29;
 			dgv_schedule.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			dgv_schedule.Dock = DockStyle.Fill;
@@ -75,11 +75,11 @@
 			dgv_schedule.Name = "dgv_schedule";
 			dgv_schedule.RowHeadersVisible = false;
 			dgv_schedule.RowHeadersWidth = 51;
-			dataGridViewCellStyle4.BackColor = SystemColors.ActiveCaption;
-			dataGridViewCellStyle4.ForeColor = Color.White;
-			dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-			dataGridViewCellStyle4.SelectionForeColor = Color.White;
-			dgv_schedule.RowsDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle2.BackColor = SystemColors.ActiveCaption;
+			dataGridViewCellStyle2.ForeColor = Color.White;
+			dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = Color.White;
+			dgv_schedule.RowsDefaultCellStyle = dataGridViewCellStyle2;
 			dgv_schedule.RowTemplate.Height = 29;
 			dgv_schedule.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 			dgv_schedule.Size = new Size(1065, 439);
@@ -116,7 +116,7 @@
 			txt_search.AnimateReadOnly = false;
 			txt_search.BorderStyle = BorderStyle.None;
 			txt_search.Depth = 0;
-			txt_search.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+			txt_search.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
 			txt_search.LeadingIcon = null;
 			txt_search.Location = new Point(367, 38);
 			txt_search.MaxLength = 50;
@@ -151,6 +151,7 @@
 			btn_update.TabIndex = 3;
 			btn_update.Text = "Cập nhật";
 			btn_update.UseVisualStyleBackColor = true;
+			btn_update.Click += btn_update_Click;
 			// 
 			// btn_delete
 			// 

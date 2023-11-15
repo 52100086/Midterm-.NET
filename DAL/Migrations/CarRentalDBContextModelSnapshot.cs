@@ -76,6 +76,9 @@ namespace DAL.Migrations
                     b.Property<double>("Thue")
                         .HasColumnType("float");
 
+                    b.Property<double>("TongCong")
+                        .HasColumnType("float");
+
                     b.Property<string>("TrangThai")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

@@ -102,7 +102,8 @@ namespace CarRental.Admin
 					NgayLap = DateTime.Today,
 					TrangThai = "Chưa thanh toán",
 					Thue = Double.Parse(lb_thuengay.Text),
-					GiaThue = Double.Parse(lb_tongcong.Text),
+					GiaThue = Double.Parse(lb_tienthuengay.Text),
+					TongCong = Double.Parse(lb_tongcong.Text),
 					ThoiGianThue = DateTime.Today.AddDays(Int32.Parse(txt_ngay.Text))
 				};
 
@@ -156,7 +157,8 @@ namespace CarRental.Admin
 					NgayLap = DateTime.Today,
 					TrangThai = "Chưa thanh toán",
 					Thue = Double.Parse(lb_thuengay.Text),
-					GiaThue = Double.Parse(lb_tongngay.Text),
+					GiaThue = Double.Parse(lb_tienthuengay.Text),
+					TongCong = Double.Parse(lb_tongcong.Text),
 					ThoiGianThue = DateTime.Today.AddDays(Int32.Parse(txt_ngay.Text))
 				};
 

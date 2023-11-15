@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAL.Migrations
 {
     [DbContext(typeof(CarRentalDBContext))]
-    [Migration("20231111153526_initDb")]
+    [Migration("20231115160224_initDb")]
     partial class initDb
     {
         /// <inheritdoc />
@@ -77,6 +77,9 @@ namespace DAL.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<double>("Thue")
+                        .HasColumnType("float");
+
+                    b.Property<double>("TongCong")
                         .HasColumnType("float");
 
                     b.Property<string>("TrangThai")
