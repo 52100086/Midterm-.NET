@@ -84,6 +84,7 @@
 			btn_export.TabIndex = 6;
 			btn_export.Text = "Xuất excel";
 			btn_export.UseVisualStyleBackColor = true;
+			btn_export.Click += btn_export_Click;
 			// 
 			// txt_searchKH
 			// 
@@ -113,6 +114,7 @@
 			btn_searchKH.TabIndex = 4;
 			btn_searchKH.Text = "Tìm kiếm";
 			btn_searchKH.UseVisualStyleBackColor = true;
+			btn_searchKH.Click += btn_searchKH_Click;
 			// 
 			// btn_updateKH
 			// 

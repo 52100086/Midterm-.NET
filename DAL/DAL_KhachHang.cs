@@ -55,19 +55,11 @@ namespace DAL
 		}
 
 
-		public async Task<List<KhachHang>> SearchByNameAsync(string name)
-        {
-            return await _context.KhachHangs.Where(k => k.Ten == name).ToListAsync();
-        }
-
-        public async Task<List<KhachHang>> SearchByPhoneAsync(string phone)
-        {
-            return await _context.KhachHangs.Where(k => k.SoDienThoai == phone).ToListAsync();
-        }
-
-        public async Task<List<KhachHang>> SearchByAddressAsync(string address)
-        {
-            return await _context.KhachHangs.Where(k => k.DiaChi == address).ToListAsync();
-        }
-    }
+		public List<KhachHang> SearchKhachHang(string keyword)
+		{
+			return _context.KhachHangs
+				.Where(x => x.Ten.Contains(keyword) || x.SoDienThoai.Contains(keyword) || x.DiaChi.Contains(keyword))
+				.ToList();
+		}
+	}
 }

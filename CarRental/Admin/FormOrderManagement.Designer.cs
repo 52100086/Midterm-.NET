@@ -28,8 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-			DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+			DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+			DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
 			panel1 = new Panel();
 			dgv_order = new DataGridView();
 			panel3 = new Panel();
@@ -58,14 +58,14 @@
 			dgv_order.BackgroundColor = SystemColors.ActiveCaption;
 			dgv_order.BorderStyle = BorderStyle.None;
 			dgv_order.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-			dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle5.BackColor = SystemColors.MenuHighlight;
-			dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-			dataGridViewCellStyle5.ForeColor = Color.White;
-			dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-			dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-			dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-			dgv_order.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+			dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle1.BackColor = SystemColors.MenuHighlight;
+			dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+			dataGridViewCellStyle1.ForeColor = Color.White;
+			dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+			dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+			dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+			dgv_order.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			dgv_order.ColumnHeadersHeight = 29;
 			dgv_order.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			dgv_order.Dock = DockStyle.Fill;
@@ -75,11 +75,11 @@
 			dgv_order.Name = "dgv_order";
 			dgv_order.RowHeadersVisible = false;
 			dgv_order.RowHeadersWidth = 51;
-			dataGridViewCellStyle6.BackColor = SystemColors.ActiveCaption;
-			dataGridViewCellStyle6.ForeColor = Color.White;
-			dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-			dataGridViewCellStyle6.SelectionForeColor = Color.White;
-			dgv_order.RowsDefaultCellStyle = dataGridViewCellStyle6;
+			dataGridViewCellStyle2.BackColor = SystemColors.ActiveCaption;
+			dataGridViewCellStyle2.ForeColor = Color.White;
+			dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = Color.White;
+			dgv_order.RowsDefaultCellStyle = dataGridViewCellStyle2;
 			dgv_order.RowTemplate.Height = 29;
 			dgv_order.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 			dgv_order.Size = new Size(1098, 388);
@@ -116,7 +116,7 @@
 			txt_search.AnimateReadOnly = false;
 			txt_search.BorderStyle = BorderStyle.None;
 			txt_search.Depth = 0;
-			txt_search.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+			txt_search.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
 			txt_search.LeadingIcon = null;
 			txt_search.Location = new Point(367, 38);
 			txt_search.MaxLength = 50;
@@ -151,6 +151,7 @@
 			btn_update.TabIndex = 3;
 			btn_update.Text = "Cập nhật";
 			btn_update.UseVisualStyleBackColor = true;
+			btn_update.Click += btn_update_Click;
 			// 
 			// btn_delete
 			// 

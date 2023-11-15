@@ -39,6 +39,7 @@
 			btn_update = new FontAwesome.Sharp.IconButton();
 			btn_delete = new FontAwesome.Sharp.IconButton();
 			btn_add = new FontAwesome.Sharp.IconButton();
+			btn_export = new FontAwesome.Sharp.IconButton();
 			panel1.SuspendLayout();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)dgv_car).BeginInit();
@@ -52,7 +53,7 @@
 			panel1.Dock = DockStyle.Fill;
 			panel1.Location = new Point(0, 0);
 			panel1.Name = "panel1";
-			panel1.Size = new Size(991, 567);
+			panel1.Size = new Size(1051, 567);
 			panel1.TabIndex = 0;
 			// 
 			// panel3
@@ -61,7 +62,7 @@
 			panel3.Dock = DockStyle.Fill;
 			panel3.Location = new Point(0, 96);
 			panel3.Name = "panel3";
-			panel3.Size = new Size(991, 471);
+			panel3.Size = new Size(1051, 471);
 			panel3.TabIndex = 2;
 			// 
 			// dgv_car
@@ -93,11 +94,12 @@
 			dgv_car.RowsDefaultCellStyle = dataGridViewCellStyle2;
 			dgv_car.RowTemplate.Height = 29;
 			dgv_car.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-			dgv_car.Size = new Size(991, 471);
+			dgv_car.Size = new Size(1051, 471);
 			dgv_car.TabIndex = 0;
 			// 
 			// panel2
 			// 
+			panel2.Controls.Add(btn_export);
 			panel2.Controls.Add(txt_search);
 			panel2.Controls.Add(btn_search);
 			panel2.Controls.Add(btn_update);
@@ -106,7 +108,7 @@
 			panel2.Dock = DockStyle.Top;
 			panel2.Location = new Point(0, 0);
 			panel2.Name = "panel2";
-			panel2.Size = new Size(991, 96);
+			panel2.Size = new Size(1051, 96);
 			panel2.TabIndex = 1;
 			// 
 			// txt_search
@@ -137,6 +139,7 @@
 			btn_search.TabIndex = 4;
 			btn_search.Text = "Tìm kiếm";
 			btn_search.UseVisualStyleBackColor = true;
+			btn_search.Click += btn_search_Click;
 			// 
 			// btn_update
 			// 
@@ -177,11 +180,24 @@
 			btn_add.UseVisualStyleBackColor = true;
 			btn_add.Click += btn_add_Click;
 			// 
+			// btn_export
+			// 
+			btn_export.IconChar = FontAwesome.Sharp.IconChar.None;
+			btn_export.IconColor = Color.Black;
+			btn_export.IconFont = FontAwesome.Sharp.IconFont.Auto;
+			btn_export.Location = new Point(897, 48);
+			btn_export.Name = "btn_export";
+			btn_export.Size = new Size(94, 29);
+			btn_export.TabIndex = 6;
+			btn_export.Text = "Xuất Excel";
+			btn_export.UseVisualStyleBackColor = true;
+			btn_export.Click += btn_export_Click;
+			// 
 			// OtoManagement
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(991, 567);
+			ClientSize = new Size(1051, 567);
 			Controls.Add(panel1);
 			Name = "OtoManagement";
 			StartPosition = FormStartPosition.CenterScreen;
@@ -205,5 +221,6 @@
 		private FontAwesome.Sharp.IconButton btn_add;
 		private Panel panel3;
 		private DataGridView dgv_car;
+		private FontAwesome.Sharp.IconButton btn_export;
 	}
 }

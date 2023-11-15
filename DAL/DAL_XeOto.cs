@@ -81,16 +81,14 @@ namespace DAL
 				.ToList();
 		}
 
-		public async Task<List<XeOto>> SearchByBrandAsync(string brand)
-        {
-            return await _context.XeOtos.Where(x => x.HangXe.TenHangXe == brand).ToListAsync();
-        }
-
-
-        public async Task<List<XeOto>> SearchByTypeAsync(string type)
-        {
-            // Assuming you have a Type property in XeOto
-            return await _context.XeOtos.Where(x => x.LoaiXe.TenLoaiXe == type).ToListAsync();
-        }
-    }
+		public List<XeOto> SearchByHangXeOrMauXe(string keyword)
+		{
+			return _context.XeOtos
+				.Where(x => x.HangXe.TenHangXe.Contains(keyword) || x.MauXe.TenMauXe.Contains(keyword))
+				.Include(x => x.LoaiXe)
+				.Include(x => x.HangXe)
+				.Include(x => x.MauXe)
+				.ToList();
+		}
+	}
 }

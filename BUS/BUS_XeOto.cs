@@ -57,16 +57,9 @@ namespace BUS
 		{
 			_dalXeOto.DeleteXeOto(id);
 		}
-
-		public Task<List<XeOto>> SearchByBrandAsync(string brand)
-        {
-            return _dalXeOto.SearchByBrandAsync(brand);
-        }
-
-
-        public Task<List<XeOto>> SearchByTypeAsync(string type)
-        {
-            return _dalXeOto.SearchByTypeAsync(type);
-        }
-    }
+		public List<XeOto> SearchByHangXeOrMauXe(string keyword)
+		{
+			return _dalXeOto.SearchByHangXeOrMauXe(keyword);
+		}
+	}
 }

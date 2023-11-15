@@ -44,6 +44,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.102.1, )"
+            },
+            "ExcelPackage": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "MaterialSkin.2": {
               "target": "Package",
               "version": "[2.3.1, )"
@@ -115,6 +123,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.102.1, )"
+            },
+            "ExcelPackage": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "MaterialSkin.2": {
               "target": "Package",
               "version": "[2.3.1, )"

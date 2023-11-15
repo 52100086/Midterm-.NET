@@ -40,19 +40,9 @@ namespace BUS
 			_dalKhachHang.DeleteKhachHang(id);
 		}
 
-		public Task<List<KhachHang>> SearchByNameAsync(string name)
-        {
-            return _dalKhachHang.SearchByNameAsync(name);
-        }
-
-        public Task<List<KhachHang>> SearchByPhoneAsync(string phone)
-        {
-            return _dalKhachHang.SearchByPhoneAsync(phone);
-        }
-
-        public Task<List<KhachHang>> SearchByAddressAsync(string address)
-        {
-            return _dalKhachHang.SearchByAddressAsync(address);
-        }
-    }
+		public List<KhachHang> SearchKhachHang(string keyword)
+		{
+			return _dalKhachHang.SearchKhachHang(keyword);
+		}
+	}
 }
