@@ -23,7 +23,11 @@ namespace CarRental.Admin
 
 		private async void FormOrderManagement_Load(object sender, EventArgs e)
 		{
-			var dondatxes = await _busDonDatXe.GetAllDonDatXe();
+
+            dgv_order.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+
+            var dondatxes = await _busDonDatXe.GetAllDonDatXe();
 
 			if (dondatxes != null && dondatxes.Count > 0)
 			{

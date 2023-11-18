@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\CarRental\\CarRental.csproj": {}
+    "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\CarRental\\CarRental.csproj": {}
   },
   "projects": {
-    "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\BUS.csproj": {
+    "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\BUS\\BUS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\BUS.csproj",
+        "projectUniqueName": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\BUS\\BUS.csproj",
         "projectName": "BUS",
-        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\BUS.csproj",
-        "packagesPath": "C:\\Users\\Hieu Pham\\.nuget\\packages\\",
-        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\obj\\",
+        "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\BUS\\BUS.csproj",
+        "packagesPath": "C:\\Users\\phuho\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\BUS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\phuho\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj": {
-                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj"
+              "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DAL\\DAL.csproj"
               },
-              "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj": {
-                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj"
+              "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\DTO.csproj"
               }
             }
           }
@@ -86,21 +86,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\CarRental\\CarRental.csproj": {
+    "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\CarRental\\CarRental.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\CarRental\\CarRental.csproj",
+        "projectUniqueName": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\CarRental\\CarRental.csproj",
         "projectName": "CarRental",
-        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\CarRental\\CarRental.csproj",
-        "packagesPath": "C:\\Users\\Hieu Pham\\.nuget\\packages\\",
-        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\CarRental\\obj\\",
+        "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\CarRental\\CarRental.csproj",
+        "packagesPath": "C:\\Users\\phuho\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\CarRental\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\phuho\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -114,14 +114,14 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\BUS.csproj": {
-                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\BUS.csproj"
+              "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\BUS\\BUS.csproj": {
+                "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\BUS\\BUS.csproj"
               },
-              "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj": {
-                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj"
+              "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DAL\\DAL.csproj"
               },
-              "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj": {
-                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj"
+              "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\DTO.csproj"
               }
             }
           }
@@ -165,6 +165,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.13, )"
+            },
+            "ScottPlot.WinForms": {
+              "target": "Package",
+              "version": "[4.1.68, )"
+            },
+            "System.Windows.Forms.DataVisualization": {
+              "target": "Package",
+              "version": "[1.0.0-prerelease.20110.1, )"
             }
           },
           "imports": [
@@ -186,21 +194,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj": {
+    "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\Hieu Pham\\.nuget\\packages\\",
-        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\obj\\",
+        "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\phuho\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\phuho\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -214,8 +222,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj": {
-                "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj"
+              "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\DTO.csproj"
               }
             }
           }
@@ -269,21 +277,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj": {
+    "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj",
+        "projectUniqueName": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj",
-        "packagesPath": "C:\\Users\\Hieu Pham\\.nuget\\packages\\",
-        "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\obj\\",
+        "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\phuho\\.nuget\\packages\\",
+        "outputPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\phuho\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -348,7 +356,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

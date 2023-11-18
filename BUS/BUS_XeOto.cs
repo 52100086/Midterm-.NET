@@ -1,5 +1,6 @@
 ﻿using BUS;
 using DAL;
+using DocumentFormat.OpenXml.InkML;
 using DTO;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -61,5 +62,22 @@ namespace BUS
 		{
 			return _dalXeOto.SearchByHangXeOrMauXe(keyword);
 		}
-	}
+
+
+        public async Task<int?> GetTypeIdByNameAsync(string name)
+        {
+            return await _dalXeOto.GetTypeIdByNameAsync(name);
+        }
+
+        public async Task<int?> GetBrandIdByNameAsync(string name)
+        {
+            return await _dalXeOto.GetBrandIdByNameAsync(name);
+        }
+
+
+        public async Task<int?> GetModelIdByNameAsync(string name)
+        {
+            return await _dalXeOto.GetModelIdByNameAsync(name);
+        }
+    }
 }

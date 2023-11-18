@@ -32,7 +32,10 @@ namespace CarRental.Admin
 
 		private async void KhachHangManagement_Load(object sender, EventArgs e)
 		{
-			var khachHangs = await _busKhachHang.GetAllKhachHangsAsync();
+
+            dgv_khachhang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            var khachHangs = await _busKhachHang.GetAllKhachHangsAsync();
 
 			if (khachHangs != null && khachHangs.Count > 0)
 			{

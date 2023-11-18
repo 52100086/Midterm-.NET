@@ -55,3 +55,22 @@ C:\Users\Hieu Pham\Downloads\Midterm-.NET\BUS\obj\Debug\net6.0\refint\BUS.dll
 C:\Users\Hieu Pham\Downloads\Midterm-.NET\BUS\obj\Debug\net6.0\BUS.pdb
 C:\Users\Hieu Pham\Downloads\Midterm-.NET\BUS\obj\Debug\net6.0\BUS.genruntimeconfig.cache
 C:\Users\Hieu Pham\Downloads\Midterm-.NET\BUS\obj\Debug\net6.0\ref\BUS.dll
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\bin\Debug\net6.0\BUS.deps.json
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\bin\Debug\net6.0\BUS.runtimeconfig.json
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\bin\Debug\net6.0\BUS.dll
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\bin\Debug\net6.0\BUS.pdb
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\bin\Debug\net6.0\DAL.dll
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\bin\Debug\net6.0\DTO.dll
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\bin\Debug\net6.0\DAL.pdb
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\bin\Debug\net6.0\DTO.pdb
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\obj\Debug\net6.0\BUS.csproj.AssemblyReference.cache
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\obj\Debug\net6.0\BUS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\obj\Debug\net6.0\BUS.AssemblyInfoInputs.cache
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\obj\Debug\net6.0\BUS.AssemblyInfo.cs
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\obj\Debug\net6.0\BUS.csproj.CoreCompileInputs.cache
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\obj\Debug\net6.0\BUS.csproj.CopyComplete
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\obj\Debug\net6.0\BUS.dll
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\obj\Debug\net6.0\refint\BUS.dll
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\obj\Debug\net6.0\BUS.pdb
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\obj\Debug\net6.0\BUS.genruntimeconfig.cache
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\BUS\obj\Debug\net6.0\ref\BUS.dll

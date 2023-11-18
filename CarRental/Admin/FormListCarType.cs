@@ -1,4 +1,5 @@
 ﻿using BUS;
+using DAL;
 using DTO;
 using System;
 using System.Collections.Generic;
@@ -30,7 +31,9 @@ namespace CarRental.Admin
 		}
 		private void FormListCarType_Load(object sender, EventArgs e)
 		{
-			materialTextBox1.Text = loaixeId.ToString();
+            dgv_cartype.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            materialTextBox1.Text = loaixeId.ToString();
 			var xeOtos = _busXeOto.GetXeOtosByType(loaixeId);
 			if (xeOtos != null && xeOtos.Count > 0)
 			{

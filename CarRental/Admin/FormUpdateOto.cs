@@ -1,4 +1,5 @@
 ﻿using BUS;
+using CarRental.Admin;
 using DTO;
 using MaterialSkin;
 using MaterialSkin.Controls;
@@ -21,8 +22,9 @@ namespace CarRental
 		private int _xeOtoId;
 		private PictureBox selectedPictureBox; // Biến tham chiếu đến PictureBox được chọn
 		private MaterialLabel selectedMaterialLabel;
+		private OtoManagement mainForm;
 		//private 
-		public FormUpdateOto(int xeOtoId)
+		public FormUpdateOto(OtoManagement mainForm, int xeOtoId)
 		{
 			InitializeComponent();
 			materialSkinManager = MaterialSkin.MaterialSkinManager.Instance;
@@ -31,7 +33,8 @@ namespace CarRental
 			materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
 			materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
 			_xeOtoId = xeOtoId;
-		}
+            this.mainForm = mainForm;
+        }
 		private void pictureBox_Click(object sender, EventArgs e)
 		{
 
@@ -168,7 +171,7 @@ namespace CarRental
 			selectedMaterialLabel.Font = new Font(selectedMaterialLabel.Font, FontStyle.Bold);
 		}
 
-		private void btn_Update_Click(object sender, EventArgs e)
+		private async void btn_Update_Click(object sender, EventArgs e)
 		{
 			try
 			{
@@ -219,8 +222,10 @@ namespace CarRental
 				if (createdOto != null)
 				{
 					MessageBox.Show("XeOto is updated successfully");
-				}
-				else
+                    await mainForm.BindDataToDataGridView();
+
+                }
+                else
 				{
 					// Failed to create the XeOto object
 					MessageBox.Show("Failed to update XeOto");
@@ -232,8 +237,9 @@ namespace CarRental
 				MessageBox.Show("An error occurred: " + ex.Message);
 			}
 
-			// Optionally, you can close the form or perform other actions after the creation
-			this.Close();
+            // Optionally, you can close the form or perform other actions after the creation
+
+            this.Close();
 		}
 	}
 }

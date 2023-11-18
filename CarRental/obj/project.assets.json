@@ -1145,6 +1145,38 @@
           }
         }
       },
+      "ScottPlot/4.1.68": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "4.7.2",
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "compile": {
+          "lib/net6.0/ScottPlot.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ScottPlot.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ScottPlot.WinForms/4.1.68": {
+        "type": "package",
+        "dependencies": {
+          "ScottPlot": "4.1.68"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/ScottPlot.WinForms.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/ScottPlot.WinForms.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
       "SixLabors.Fonts/1.0.0": {
         "type": "package",
         "compile": {
@@ -2518,6 +2550,20 @@
             "rid": "win"
           }
         }
+      },
+      "System.Windows.Forms.DataVisualization/1.0.0-prerelease.20110.1": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll": {
+            "related": ".pdb"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.NETCore.App"
+        ]
       },
       "System.Xml.ReaderWriter/4.3.0": {
         "type": "package",
@@ -4171,6 +4217,44 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
+      ]
+    },
+    "ScottPlot/4.1.68": {
+      "sha512": "3ECJcKrX/VRv32kesrPRCH29q4+eHjZGxhsy09ssKBwif7WNoLs97xTYWFbpgq5Agwkk3M8k/GEQ4BZ06Vrsyg==",
+      "type": "package",
+      "path": "scottplot/4.1.68",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.ico",
+        "icon.png",
+        "lib/net462/ScottPlot.dll",
+        "lib/net462/ScottPlot.xml",
+        "lib/net6.0/ScottPlot.dll",
+        "lib/net6.0/ScottPlot.xml",
+        "lib/netstandard2.0/ScottPlot.dll",
+        "lib/netstandard2.0/ScottPlot.xml",
+        "scottplot.4.1.68.nupkg.sha512",
+        "scottplot.nuspec"
+      ]
+    },
+    "ScottPlot.WinForms/4.1.68": {
+      "sha512": "amBcSIycxIxls+sn8eJduyBRutqvCJXom9f2njZnlL+oIvbmeAlsYGFiRhkcTDUClCch/mdK/4xHF/Nij9Gwpw==",
+      "type": "package",
+      "path": "scottplot.winforms/4.1.68",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net461/ScottPlot.WinForms.dll",
+        "lib/net472/ScottPlot.WinForms.dll",
+        "lib/net48/ScottPlot.WinForms.dll",
+        "lib/net6.0-windows7.0/ScottPlot.WinForms.dll",
+        "lib/netcoreapp3.1/ScottPlot.WinForms.dll",
+        "scottplot.winforms.4.1.68.nupkg.sha512",
+        "scottplot.winforms.nuspec"
       ]
     },
     "SixLabors.Fonts/1.0.0": {
@@ -7791,6 +7875,22 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Windows.Forms.DataVisualization/1.0.0-prerelease.20110.1": {
+      "sha512": "1EdLFl/I5QobO4shpqUNslDGWTeRbpt3pLMSkiLQYzdWBDqf44/8TM5hXMtkA8ktHU80aVZYVEuxr8vJqcB1Ig==",
+      "type": "package",
+      "path": "system.windows.forms.datavisualization/1.0.0-prerelease.20110.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll",
+        "lib/netcoreapp3.0/System.Windows.Forms.DataVisualization.pdb",
+        "ref/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll",
+        "system.windows.forms.datavisualization.1.0.0-prerelease.20110.1.nupkg.sha512",
+        "system.windows.forms.datavisualization.nuspec"
+      ]
+    },
     "System.Xml.ReaderWriter/4.3.0": {
       "sha512": "GrprA+Z0RUXaR4N7/eW71j1rgMnEnEVlgii49GZyAjTH7uliMnrOU3HNFBr6fEDBCJCIdlVNq9hHbaDR621XBA==",
       "type": "package",
@@ -7974,23 +8074,25 @@
       "FontAwesome.Sharp >= 6.3.0",
       "MaterialSkin.2 >= 2.3.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.13",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.13"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.13",
+      "ScottPlot.WinForms >= 4.1.68",
+      "System.Windows.Forms.DataVisualization >= 1.0.0-prerelease.20110.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hieu Pham\\.nuget\\packages\\": {}
+    "C:\\Users\\phuho\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\CarRental\\CarRental.csproj",
+      "projectUniqueName": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\CarRental\\CarRental.csproj",
       "projectName": "CarRental",
-      "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\CarRental\\CarRental.csproj",
-      "packagesPath": "C:\\Users\\Hieu Pham\\.nuget\\packages\\",
-      "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\CarRental\\obj\\",
+      "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\CarRental\\CarRental.csproj",
+      "packagesPath": "C:\\Users\\phuho\\.nuget\\packages\\",
+      "outputPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\CarRental\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\phuho\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8004,14 +8106,14 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\BUS.csproj": {
-              "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\BUS\\BUS.csproj"
+            "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\BUS\\BUS.csproj": {
+              "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\BUS\\BUS.csproj"
             },
-            "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj": {
-              "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DAL\\DAL.csproj"
+            "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DAL\\DAL.csproj"
             },
-            "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj": {
-              "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj"
+            "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\DTO.csproj"
             }
           }
         }
@@ -8055,6 +8157,14 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.13, )"
+          },
+          "ScottPlot.WinForms": {
+            "target": "Package",
+            "version": "[4.1.68, )"
+          },
+          "System.Windows.Forms.DataVisualization": {
+            "target": "Package",
+            "version": "[1.0.0-prerelease.20110.1, )"
           }
         },
         "imports": [
@@ -8076,7 +8186,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   },

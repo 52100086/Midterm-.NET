@@ -1,4 +1,5 @@
 ﻿using BUS;
+using CarRental.Admin;
 using DTO;
 using MaterialSkin;
 using MaterialSkin.Controls;
@@ -20,11 +21,13 @@ namespace CarRental
 
 		private PictureBox selectedPictureBox; // Biến tham chiếu đến PictureBox được chọn
 		private MaterialLabel selectedMaterialLabel;
-		public FormAddOto(BUS_XeOto bus_XeOto)
+        private OtoManagement mainForm;
+        public FormAddOto(OtoManagement mainForm, BUS_XeOto bus_XeOto)
 		{
 			InitializeComponent();
 			_busXeOto = bus_XeOto;
-			selectedPictureBox = pictureBox1;
+            this.mainForm = mainForm;
+            selectedPictureBox = pictureBox1;
 			selectedMaterialLabel = txt_1;
 			PopulateComboBoxes();
 		}
@@ -154,11 +157,14 @@ namespace CarRental
 				if (createdOto != null)
 				{
 					MessageBox.Show("XeOto created successfully");
+					await mainForm.BindDataToDataGridView();
+
 				}
 				else
 				{
 					// Failed to create the XeOto object
 					MessageBox.Show("Failed to create XeOto");
+
 				}
 			}
 			catch (Exception ex)
@@ -169,6 +175,7 @@ namespace CarRental
 
 			// Optionally, you can close the form or perform other actions after the creation
 			this.Close();
-		}
+           
+        }
 	}
 }

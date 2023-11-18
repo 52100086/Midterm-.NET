@@ -7319,19 +7319,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hieu Pham\\.nuget\\packages\\": {}
+    "C:\\Users\\phuho\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj",
+      "projectUniqueName": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\DTO.csproj",
       "projectName": "DTO",
-      "projectPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\DTO.csproj",
-      "packagesPath": "C:\\Users\\Hieu Pham\\.nuget\\packages\\",
-      "outputPath": "E:\\Student\\HK5\\ASP\\mid_term_last\\Midterm-.NET\\DTO\\obj\\",
+      "projectPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\DTO.csproj",
+      "packagesPath": "C:\\Users\\phuho\\.nuget\\packages\\",
+      "outputPath": "C:\\Programming\\Web\\ASP.NET\\midterm\\git\\Midterm-.NET\\DTO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Hieu Pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\phuho\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7396,7 +7396,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   },

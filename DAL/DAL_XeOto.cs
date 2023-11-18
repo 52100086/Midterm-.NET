@@ -90,5 +90,54 @@ namespace DAL
 				.Include(x => x.MauXe)
 				.ToList();
 		}
-	}
+
+        public async Task<int?> GetTypeIdByNameAsync(string name)
+        {
+            var loaiXe = await _context.LoaiXes
+                .FirstOrDefaultAsync(x => x.TenLoaiXe == name);
+
+            if (loaiXe != null)
+            {
+                return loaiXe.LoaiXeId;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public async Task<int?> GetBrandIdByNameAsync(string name)
+        {
+            var hangXe = await _context.HangXes
+                .FirstOrDefaultAsync(x => x.TenHangXe == name);
+
+            if (hangXe != null)
+            {
+                return hangXe.HangXeId;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
+        public async Task<int?> GetModelIdByNameAsync(string name)
+        {
+            var mauXe = await _context.MauXes
+                .FirstOrDefaultAsync(x => x.TenMauXe == name);
+
+            if (mauXe != null)
+            {
+                return mauXe.MauXeId;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
+
+    }
 }
