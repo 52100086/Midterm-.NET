@@ -33,30 +33,57 @@ namespace CarRental.Admin
 		private async void KhachHangManagement_Load(object sender, EventArgs e)
 		{
 
-            dgv_khachhang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
+			dgv_khachhang.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+			await BindDataToDataGridview();
+			foreach (DataGridViewColumn column in dgv_khachhang.Columns)
+			{
+				if(column.Name == "KhachHangId")
+				{
+                    column.HeaderText = "ID";
+                }
+				else if(column.Name == "Ten")
+				{
+					column.HeaderText = "Tên khách hàng";
+				}
+                else if (column.Name == "SoDienThoai")
+                {
+                    column.HeaderText = "Số điện thoại";
+                }
+                else if (column.Name == "Email")
+                {
+                    column.HeaderText = "Email";
+                }
+                else if (column.Name == "DiaChi")
+                {
+                    column.HeaderText = "Địa chỉ";
+                }
+            }
+		} 
+		private async Task BindDataToDataGridview()
+		{
             var khachHangs = await _busKhachHang.GetAllKhachHangsAsync();
 
-			if (khachHangs != null && khachHangs.Count > 0)
-			{
-				dgv_khachhang.DataSource = khachHangs;
-				var data = khachHangs.Select(x => new
-				{
-					x.KhachHangId,
-					x.Ten,
-					x.SoDienThoai,
-					x.Email,
-					x.DiaChi
-				}).ToList();
+            if (khachHangs != null && khachHangs.Count > 0)
+            {
+                dgv_khachhang.DataSource = khachHangs;
+                var data = khachHangs.Select(x => new
+                {
+                    x.KhachHangId,
+                    x.Ten,
+                    x.SoDienThoai,
+                    x.Email,
+                    x.DiaChi
+                }).ToList();
 
-				dgv_khachhang.DataSource = data;
-				dgv_khachhang.Refresh();
-			}
-			else
-			{
-				MessageBox.Show("No data to display");
-			}
-		}
+                dgv_khachhang.DataSource = data;
+                dgv_khachhang.Refresh();
+            }
+            else
+            {
+                dgv_khachhang.DataSource = null;
+
+            }
+        }
 
 		private void btn_deleteKH_Click(object sender, EventArgs e)
 		{

@@ -113,6 +113,26 @@ namespace CarRental.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap grey_mercedes_amg_car_wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("grey-mercedes-amg-car-wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HD_wallpaper_black_thar_frontlook_black_car_mahindra {
+            get {
+                object obj = ResourceManager.GetObject("HD-wallpaper-black-thar-frontlook-black-car-mahindra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mpv {
             get {
                 object obj = ResourceManager.GetObject("mpv", resourceCulture);

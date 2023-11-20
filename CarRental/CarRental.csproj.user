@@ -16,9 +16,6 @@
     <Compile Update="Admin\FormOrderManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Admin\FormRentCar.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Admin\FormSchedulerManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -38,6 +35,21 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Admin\FormAdminLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employee\FormCarRentalOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employee\FormCarType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employee\FormEmployeeLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employee\FormListKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Employee\FormListSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormLogin.cs">

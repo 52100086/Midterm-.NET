@@ -1,4 +1,5 @@
 using BUS;
+using CarRental.Employee;
 using DAL;
 
 namespace CarRental

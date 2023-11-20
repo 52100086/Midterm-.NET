@@ -238,7 +238,6 @@ C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\ref
 C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.pdb
 C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.genruntimeconfig.cache
 C:\Users\Hieu Pham\Downloads\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\ref\CarRental.dll
-E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormRentCar.resources
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormCarType.resources
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormListCarType.resources
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormCarRentalOrder.resources
@@ -369,3 +368,11 @@ C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-w
 C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\ScottPlot.dll
 C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.Windows.Forms.DataVisualization.dll
 C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\ScottPlot.WinForms.dll
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\ScottPlot.dll
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\ScottPlot.WinForms.dll
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\bin\Debug\net6.0-windows\System.Windows.Forms.DataVisualization.dll
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Employee.FormCarRentalOrder.resources
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Employee.FormCarType.resources
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Employee.FormEmployeeLayout.resources
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Employee.FormListKhachHang.resources
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Employee.FormListSchedule.resources
