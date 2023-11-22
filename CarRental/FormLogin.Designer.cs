@@ -128,6 +128,7 @@
             btn_Login.Text = "Đăng nhập";
             btn_Login.TextImageRelation = TextImageRelation.TextBeforeImage;
             btn_Login.UseVisualStyleBackColor = false;
+            btn_Login.Click += btn_Login_Click;
             // 
             // pictureBox1
             // 

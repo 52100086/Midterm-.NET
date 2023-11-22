@@ -27,7 +27,7 @@ namespace CarRental.Admin
             dgv_order.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             await BindDataToDataGridView();
-            foreach (DataGridViewColumn column in dgv_schedule.Columns)
+            foreach (DataGridViewColumn column in dgv_order.Columns)
             {
                 if (column.Name == "DonDatXeId")
                 {

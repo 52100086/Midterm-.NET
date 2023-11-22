@@ -346,7 +346,6 @@ C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-w
 C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormChart.resources
 C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormListCarType.resources
 C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormOrderManagement.resources
-C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormRentCar.resources
 C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormSchedulerManagement.resources
 C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormUpdateKhachHang.resources
 C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.FormUpdateOto.resources
@@ -376,3 +375,11 @@ E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Employee.FormEmployeeLayout.resources
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Employee.FormListKhachHang.resources
 E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Employee.FormListSchedule.resources
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Employee.FormCarRentalOrder.resources
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Employee.FormCarType.resources
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Employee.FormEmployeeLayout.resources
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Employee.FormListKhachHang.resources
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Employee.FormListSchedule.resources
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormEmployeeManagement.resources
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormAddNV.resources
+C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormUpdateNV.resources

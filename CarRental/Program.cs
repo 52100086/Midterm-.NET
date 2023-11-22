@@ -1,5 +1,6 @@
 using BUS;
 using CarRental.Employee;
+using CarRental.Admin;
 using DAL;
 
 namespace CarRental
@@ -15,7 +16,7 @@ namespace CarRental
 			// To customize application configuration such as set high DPI settings or default font,
 			// see https://aka.ms/applicationconfiguration.
 			ApplicationConfiguration.Initialize();
-			Application.Run(new FormAdminLayout());
+			Application.Run(new FormEmployeeManagement());
 		}
 	}
 }

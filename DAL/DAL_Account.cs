@@ -41,5 +41,48 @@ namespace DAL
         }
 
 
+        public async Task<bool> CheckAccountExistsAsync(string username)
+        {
+            var account = await _context.Accounts.SingleOrDefaultAsync(a => a.Username == username);
+            return account != null;
+        }
+
+        public async Task<List<Account>> GetEmployeeAccountsAsync()
+        {
+            return await _context.Accounts.Where(a => a.Role == "employee").ToListAsync();
+        }
+
+        public async Task UpdateAccountAsync(Account account)
+        {
+            _context.Accounts.Update(account);
+            await _context.SaveChangesAsync();
+        }
+
+
+
+        public async Task DeleteSelectedAccountAsync(int accountId)
+        {
+            var account = await _context.Accounts.SingleOrDefaultAsync(a => a.AccountId == accountId);
+            if (account != null)
+            {
+                _context.Accounts.Remove(account);
+                await _context.SaveChangesAsync();
+            }
+        }
+
+
+
+        public async Task UpdateUsernameAsync(string username, string newUsername)
+        {
+            var account = await _context.Accounts.SingleOrDefaultAsync(a => a.Username == username);
+            if (account != null)
+            {
+                account.Username = newUsername;
+                await _context.SaveChangesAsync();
+            }
+        }
+
+
+
     }
 }
