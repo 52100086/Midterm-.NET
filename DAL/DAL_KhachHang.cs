@@ -29,7 +29,7 @@ namespace DAL
         public KhachHang CreateKhachHangAsync(KhachHang khachHang)
         {
             _context.KhachHangs.Add(khachHang);
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
             return khachHang;
         }
 

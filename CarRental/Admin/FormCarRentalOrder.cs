@@ -92,7 +92,7 @@ namespace CarRental.Admin
 
                 var donDatXe = new DonDatXe
                 {
-                    KhachHangId = khachHang.KhachHangId,
+                    KhachHangId = createKH.KhachHangId,
                     XeOtoId = xeOtoId,
                     NgayLap = DateTime.Today,
                     TrangThai = "Chưa thanh toán",

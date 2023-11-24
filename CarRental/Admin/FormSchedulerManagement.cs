@@ -75,14 +75,14 @@ namespace CarRental.Admin
                     .Where(x => x.TrangThai == "Chưa thanh toán")
                     .Select(x => new
                     {
-                        x.DonDatXeId,
-                        x.KhachHang.Ten,
-                        x.GiaThue,
-                        x.Thue,
-                        x.TongCong,
-                        x.ThoiGianThue,
-                        x.NgayLap,
-                        x.NgayThanhToan
+                        DonDatXeId = x.DonDatXeId,
+                        TenKhachHang = x.KhachHang.Ten,
+                        GiaThue = Math.Round(x.GiaThue, 2),
+                        Thue = Math.Round(x.Thue),
+                        TongCong = Math.Round(x.TongCong, 2),
+                        ThoiGianThue = x.ThoiGianThue,
+                        NgayLap = x.NgayLap,
+                        NgayThanhToan = x.NgayThanhToan
                     }).ToList();
 
                 dgv_schedule.DataSource = data;

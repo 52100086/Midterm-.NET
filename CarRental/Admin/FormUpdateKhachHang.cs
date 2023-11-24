@@ -80,11 +80,20 @@ namespace CarRental.Admin
                 label4.Visible = false;
 
             }
-            if (_busKhachHang.IsPhoneNumberExists(txt_sdt.Text))
+            var khachhangup = _busKhachHang.GetKhachHangByIdAsync(_khachHangId);
+            if (khachhangup.SoDienThoai == txt_sdt.Text)
             {
-                MessageBox.Show("Số điện thoại đã tồn tại");
-                return;
+                
             }
+            else
+            {
+                if (_busKhachHang.IsPhoneNumberExists(txt_sdt.Text))
+                {
+                    MessageBox.Show("Số điện thoại đã tồn tại");
+                    return;
+                }
+            }
+            
             var khachhang = new KhachHang
             {
                 KhachHangId = _khachHangId,

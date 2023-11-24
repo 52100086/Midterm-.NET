@@ -83,16 +83,16 @@ namespace CarRental.Admin
                 dgv_order.DataSource = dondatxes;
                 var data = dondatxes.Select(x => new
                 {
-                    x.DonDatXeId,
-                    x.KhachHang.Ten,
-                    x.GiaThue,
-                    x.Thue,
-                    x.TongCong,
-                    x.NhienLieu.NhienLieuName,
-                    x.ThoiGianThue,
-                    x.NgayLap,
-                    x.NgayThanhToan,
-                    x.TrangThai
+                    DonDatXeId = x.DonDatXeId,
+                    TenKhachHang = x.KhachHang.Ten,
+                    GiaThue = Math.Round(x.GiaThue, 2),
+                    Thue = Math.Round(x.Thue),
+                    TongCong = Math.Round(x.TongCong,2),
+                    NhienLieuName = x.NhienLieu.NhienLieuName,
+                    ThoiGianThue = x.ThoiGianThue,
+                    NgayLap = x.NgayLap,
+                    NgayThanhToan = x.NgayThanhToan,
+                    TrangThai = x.TrangThai
                 }).ToList();
 
                 dgv_order.DataSource = data;
