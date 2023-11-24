@@ -61,5 +61,9 @@ namespace DAL
 				.Where(x => x.Ten.Contains(keyword) || x.SoDienThoai.Contains(keyword) || x.DiaChi.Contains(keyword))
 				.ToList();
 		}
-	}
+        public bool IsPhoneNumberExists(string phoneNumber)
+        {
+            return _context.KhachHangs.Any(x => x.SoDienThoai == phoneNumber);
+        }
+    }
 }

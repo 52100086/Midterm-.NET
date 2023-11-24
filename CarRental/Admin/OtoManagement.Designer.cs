@@ -54,7 +54,7 @@
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1051, 567);
+            panel1.Size = new Size(1061, 411);
             panel1.TabIndex = 0;
             // 
             // panel3
@@ -63,7 +63,7 @@
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(0, 96);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1051, 471);
+            panel3.Size = new Size(1061, 315);
             panel3.TabIndex = 2;
             // 
             // dgv_car
@@ -95,7 +95,7 @@
             dgv_car.RowsDefaultCellStyle = dataGridViewCellStyle2;
             dgv_car.RowTemplate.Height = 29;
             dgv_car.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgv_car.Size = new Size(1051, 471);
+            dgv_car.Size = new Size(1061, 315);
             dgv_car.TabIndex = 0;
             // 
             // panel2
@@ -110,33 +110,41 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1051, 96);
+            panel2.Size = new Size(1061, 96);
             panel2.TabIndex = 1;
             // 
             // import_excel
             // 
-            import_excel.IconChar = FontAwesome.Sharp.IconChar.None;
-            import_excel.IconColor = Color.Black;
+            import_excel.BackColor = SystemColors.Highlight;
+            import_excel.FlatStyle = FlatStyle.Flat;
+            import_excel.IconChar = FontAwesome.Sharp.IconChar.FileImport;
+            import_excel.IconColor = Color.DeepSkyBlue;
             import_excel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            import_excel.Location = new Point(899, 48);
+            import_excel.IconSize = 20;
+            import_excel.ImageAlign = ContentAlignment.MiddleRight;
+            import_excel.Location = new Point(837, 12);
             import_excel.Name = "import_excel";
-            import_excel.Size = new Size(94, 29);
+            import_excel.Size = new Size(125, 35);
             import_excel.TabIndex = 7;
             import_excel.Text = "Nhập Excel";
-            import_excel.UseVisualStyleBackColor = true;
+            import_excel.UseVisualStyleBackColor = false;
             import_excel.Click += import_excel_Click;
             // 
             // btn_export
             // 
-            btn_export.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_export.IconColor = Color.Black;
+            btn_export.BackColor = SystemColors.Highlight;
+            btn_export.FlatStyle = FlatStyle.Flat;
+            btn_export.IconChar = FontAwesome.Sharp.IconChar.Table;
+            btn_export.IconColor = Color.DeepSkyBlue;
             btn_export.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_export.Location = new Point(899, 12);
+            btn_export.IconSize = 20;
+            btn_export.ImageAlign = ContentAlignment.MiddleRight;
+            btn_export.Location = new Point(837, 53);
             btn_export.Name = "btn_export";
-            btn_export.Size = new Size(94, 29);
+            btn_export.Size = new Size(125, 33);
             btn_export.TabIndex = 6;
             btn_export.Text = "Xuất Excel";
-            btn_export.UseVisualStyleBackColor = true;
+            btn_export.UseVisualStyleBackColor = false;
             btn_export.Click += btn_export_Click;
             // 
             // txt_search
@@ -158,61 +166,77 @@
             // 
             // btn_search
             // 
-            btn_search.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_search.IconColor = Color.Black;
+            btn_search.BackColor = SystemColors.Highlight;
+            btn_search.FlatStyle = FlatStyle.Flat;
+            btn_search.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            btn_search.IconColor = Color.DeepSkyBlue;
             btn_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_search.Location = new Point(293, 37);
+            btn_search.IconSize = 30;
+            btn_search.ImageAlign = ContentAlignment.MiddleRight;
+            btn_search.Location = new Point(293, 27);
             btn_search.Name = "btn_search";
-            btn_search.Size = new Size(94, 29);
+            btn_search.Size = new Size(129, 50);
             btn_search.TabIndex = 4;
             btn_search.Text = "Tìm kiếm";
-            btn_search.UseVisualStyleBackColor = true;
+            btn_search.UseVisualStyleBackColor = false;
             btn_search.Click += btn_search_Click;
             // 
             // btn_update
             // 
-            btn_update.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_update.IconColor = Color.Black;
+            btn_update.BackColor = SystemColors.Highlight;
+            btn_update.FlatStyle = FlatStyle.Flat;
+            btn_update.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            btn_update.IconColor = Color.DeepSkyBlue;
             btn_update.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_update.Location = new Point(591, 37);
+            btn_update.IconSize = 30;
+            btn_update.ImageAlign = ContentAlignment.MiddleRight;
+            btn_update.Location = new Point(580, 27);
             btn_update.Name = "btn_update";
-            btn_update.Size = new Size(94, 29);
+            btn_update.Size = new Size(123, 50);
             btn_update.TabIndex = 3;
             btn_update.Text = "Cập nhật";
-            btn_update.UseVisualStyleBackColor = true;
+            btn_update.UseVisualStyleBackColor = false;
             btn_update.Click += btn_update_Click;
             // 
             // btn_delete
             // 
-            btn_delete.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_delete.IconColor = Color.Black;
+            btn_delete.BackColor = SystemColors.Highlight;
+            btn_delete.FlatStyle = FlatStyle.Flat;
+            btn_delete.IconChar = FontAwesome.Sharp.IconChar.Backspace;
+            btn_delete.IconColor = Color.DeepSkyBlue;
             btn_delete.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_delete.Location = new Point(706, 37);
+            btn_delete.IconSize = 30;
+            btn_delete.ImageAlign = ContentAlignment.MiddleRight;
+            btn_delete.Location = new Point(718, 27);
             btn_delete.Name = "btn_delete";
-            btn_delete.Size = new Size(94, 29);
+            btn_delete.Size = new Size(113, 50);
             btn_delete.TabIndex = 2;
             btn_delete.Text = "Xóa xe";
-            btn_delete.UseVisualStyleBackColor = true;
+            btn_delete.UseVisualStyleBackColor = false;
             btn_delete.Click += btn_delete_Click;
             // 
             // btn_add
             // 
-            btn_add.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_add.IconColor = Color.Black;
+            btn_add.BackColor = SystemColors.Highlight;
+            btn_add.FlatStyle = FlatStyle.Flat;
+            btn_add.IconChar = FontAwesome.Sharp.IconChar.Add;
+            btn_add.IconColor = Color.DeepSkyBlue;
             btn_add.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_add.Location = new Point(477, 37);
+            btn_add.IconSize = 30;
+            btn_add.ImageAlign = ContentAlignment.MiddleRight;
+            btn_add.Location = new Point(437, 27);
             btn_add.Name = "btn_add";
-            btn_add.Size = new Size(94, 29);
+            btn_add.Size = new Size(127, 50);
             btn_add.TabIndex = 1;
             btn_add.Text = "Thêm xe";
-            btn_add.UseVisualStyleBackColor = true;
+            btn_add.UseVisualStyleBackColor = false;
             btn_add.Click += btn_add_Click;
             // 
             // OtoManagement
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1051, 567);
+            ClientSize = new Size(1061, 411);
             Controls.Add(panel1);
             Name = "OtoManagement";
             StartPosition = FormStartPosition.CenterScreen;

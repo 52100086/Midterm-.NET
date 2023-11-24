@@ -36,6 +36,7 @@
             // 
             // btn_cancel
             // 
+            btn_cancel.BackColor = SystemColors.Highlight;
             btn_cancel.IconChar = FontAwesome.Sharp.IconChar.None;
             btn_cancel.IconColor = Color.Black;
             btn_cancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -44,7 +45,7 @@
             btn_cancel.Size = new Size(134, 63);
             btn_cancel.TabIndex = 35;
             btn_cancel.Text = "Hủy";
-            btn_cancel.UseVisualStyleBackColor = true;
+            btn_cancel.UseVisualStyleBackColor = false;
             // 
             // materialLabel2
             // 
@@ -77,6 +78,7 @@
             // 
             // btn_add
             // 
+            btn_add.BackColor = SystemColors.Highlight;
             btn_add.IconChar = FontAwesome.Sharp.IconChar.None;
             btn_add.IconColor = Color.Black;
             btn_add.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -85,13 +87,14 @@
             btn_add.Size = new Size(134, 63);
             btn_add.TabIndex = 32;
             btn_add.Text = "Cập nhật";
-            btn_add.UseVisualStyleBackColor = true;
+            btn_add.UseVisualStyleBackColor = false;
             btn_add.Click += btn_add_Click;
             // 
             // FormUpdateNV
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(526, 567);
             Controls.Add(btn_cancel);
             Controls.Add(materialLabel2);

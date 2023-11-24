@@ -33,10 +33,13 @@
             materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            btn_Login = new FontAwesome.Sharp.IconButton();
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
+            lbl_warning_password = new Label();
+            lb_warning_username = new Label();
+            btn_Login = new MaterialSkin.Controls.MaterialButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // txt_Username
@@ -47,7 +50,7 @@
             txt_Username.Depth = 0;
             txt_Username.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txt_Username.LeadingIcon = null;
-            txt_Username.Location = new Point(279, 179);
+            txt_Username.Location = new Point(276, 115);
             txt_Username.MaxLength = 50;
             txt_Username.MouseState = MaterialSkin.MouseState.OUT;
             txt_Username.Multiline = false;
@@ -65,7 +68,7 @@
             txt_Password.Depth = 0;
             txt_Password.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txt_Password.LeadingIcon = null;
-            txt_Password.Location = new Point(279, 275);
+            txt_Password.Location = new Point(276, 222);
             txt_Password.MaxLength = 50;
             txt_Password.MouseState = MaterialSkin.MouseState.OUT;
             txt_Password.Multiline = false;
@@ -81,7 +84,7 @@
             materialLabel1.BackColor = SystemColors.Highlight;
             materialLabel1.Depth = 0;
             materialLabel1.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialLabel1.Location = new Point(373, 119);
+            materialLabel1.Location = new Point(372, 36);
             materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             materialLabel1.Name = "materialLabel1";
             materialLabel1.Size = new Size(79, 19);
@@ -93,7 +96,7 @@
             materialLabel2.AutoSize = true;
             materialLabel2.Depth = 0;
             materialLabel2.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialLabel2.Location = new Point(279, 157);
+            materialLabel2.Location = new Point(276, 83);
             materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             materialLabel2.Name = "materialLabel2";
             materialLabel2.Size = new Size(109, 19);
@@ -105,30 +108,12 @@
             materialLabel3.AutoSize = true;
             materialLabel3.Depth = 0;
             materialLabel3.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialLabel3.Location = new Point(279, 253);
+            materialLabel3.Location = new Point(276, 200);
             materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             materialLabel3.Name = "materialLabel3";
             materialLabel3.Size = new Size(68, 19);
             materialLabel3.TabIndex = 4;
             materialLabel3.Text = "Mật khẩu";
-            // 
-            // btn_Login
-            // 
-            btn_Login.BackColor = Color.Orange;
-            btn_Login.FlatAppearance.BorderSize = 0;
-            btn_Login.FlatStyle = FlatStyle.Flat;
-            btn_Login.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
-            btn_Login.IconColor = Color.Blue;
-            btn_Login.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            btn_Login.IconSize = 25;
-            btn_Login.Location = new Point(358, 355);
-            btn_Login.Name = "btn_Login";
-            btn_Login.Size = new Size(126, 53);
-            btn_Login.TabIndex = 5;
-            btn_Login.Text = "Đăng nhập";
-            btn_Login.TextImageRelation = TextImageRelation.TextBeforeImage;
-            btn_Login.UseVisualStyleBackColor = false;
-            btn_Login.Click += btn_Login_Click;
             // 
             // pictureBox1
             // 
@@ -143,12 +128,60 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.DeepSkyBlue;
+            panel1.BackColor = Color.Azure;
+            panel1.Controls.Add(lbl_warning_password);
+            panel1.Controls.Add(lb_warning_username);
+            panel1.Controls.Add(materialLabel1);
+            panel1.Controls.Add(materialLabel2);
+            panel1.Controls.Add(txt_Username);
+            panel1.Controls.Add(materialLabel3);
+            panel1.Controls.Add(btn_Login);
+            panel1.Controls.Add(txt_Password);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(3, 64);
             panel1.Name = "panel1";
             panel1.Size = new Size(622, 383);
             panel1.TabIndex = 7;
+            // 
+            // lbl_warning_password
+            // 
+            lbl_warning_password.AutoSize = true;
+            lbl_warning_password.ForeColor = Color.Red;
+            lbl_warning_password.Location = new Point(276, 275);
+            lbl_warning_password.Name = "lbl_warning_password";
+            lbl_warning_password.Size = new Size(214, 20);
+            lbl_warning_password.TabIndex = 5;
+            lbl_warning_password.Text = "Mật khẩu không được để trống";
+            // 
+            // lb_warning_username
+            // 
+            lb_warning_username.AutoSize = true;
+            lb_warning_username.ForeColor = Color.Red;
+            lb_warning_username.Location = new Point(276, 168);
+            lb_warning_username.Name = "lb_warning_username";
+            lb_warning_username.Size = new Size(251, 20);
+            lb_warning_username.TabIndex = 1;
+            lb_warning_username.Text = "Tên đăng nhập không được để trống";
+            // 
+            // btn_Login
+            // 
+            btn_Login.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btn_Login.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btn_Login.Depth = 0;
+            btn_Login.HighEmphasis = true;
+            btn_Login.Icon = null;
+            btn_Login.Location = new Point(361, 316);
+            btn_Login.Margin = new Padding(4, 6, 4, 6);
+            btn_Login.MouseState = MaterialSkin.MouseState.HOVER;
+            btn_Login.Name = "btn_Login";
+            btn_Login.NoAccentTextColor = Color.Empty;
+            btn_Login.Size = new Size(105, 36);
+            btn_Login.TabIndex = 0;
+            btn_Login.Text = "Đăng nhập";
+            btn_Login.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            btn_Login.UseAccentColor = false;
+            btn_Login.UseVisualStyleBackColor = true;
+            btn_Login.Click += btn_Login_Click_1;
             // 
             // FormLogin
             // 
@@ -157,17 +190,13 @@
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(628, 450);
             Controls.Add(pictureBox1);
-            Controls.Add(btn_Login);
-            Controls.Add(materialLabel3);
-            Controls.Add(materialLabel2);
-            Controls.Add(materialLabel1);
-            Controls.Add(txt_Password);
-            Controls.Add(txt_Username);
             Controls.Add(panel1);
             Name = "FormLogin";
+            Load += FormLogin_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -177,8 +206,10 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private FontAwesome.Sharp.IconButton btn_Login;
         private PictureBox pictureBox1;
         private Panel panel1;
+        private MaterialSkin.Controls.MaterialButton btn_Login;
+        private Label lbl_warning_password;
+        private Label lb_warning_username;
     }
 }

@@ -32,12 +32,12 @@ namespace CarRental.Admin
 
             if (accountExists)
             {
-                MessageBox.Show("Account already existed");
+                MessageBox.Show("Tài khoản đã tổn tại");
             }
             else
             {
                 await _busAccount.RegisterAsync(sdt, birthday, "employee");
-                MessageBox.Show("Account created successfully");
+                MessageBox.Show("Tạo tài khoản thành công");
                 mainForm.BindDataToDataGridview();
                 this.Close();
             }

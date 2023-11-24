@@ -218,7 +218,7 @@ namespace CarRental.Admin
             using (var package = new ExcelPackage(new FileInfo(filePath)))
             {
                 ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
-                var worksheet = package.Workbook.Worksheets[0]; 
+                var worksheet = package.Workbook.Worksheets[0];
                 for (int row = 2; row <= worksheet.Dimension.End.Row; row++)
                 {
                     var typeId = await _busXeOto.GetTypeIdByNameAsync(worksheet.Cells[row, 3].Value.ToString());
@@ -236,9 +236,9 @@ namespace CarRental.Admin
                         continue;
                     }
 
-                    LoaiXe lx = new LoaiXe { LoaiXeId = (int) typeId, TenLoaiXe = typeName };
-                    HangXe hx = new HangXe { HangXeId = (int) brandId, TenHangXe = brandName };
-                    MauXe mx = new MauXe { MauXeId = (int) modelId, TenMauXe = modelName };
+                    LoaiXe lx = new LoaiXe { LoaiXeId = (int)typeId, TenLoaiXe = typeName };
+                    HangXe hx = new HangXe { HangXeId = (int)brandId, TenHangXe = brandName };
+                    MauXe mx = new MauXe { MauXeId = (int)modelId, TenMauXe = modelName };
 
                     var xeOto = new XeOto
                     {
@@ -265,7 +265,7 @@ namespace CarRental.Admin
                 if (xeOto.LoaiXe == null)
                 {
                     xeOto.LoaiXe = new LoaiXe();
-                    
+
                 }
                 if (xeOto.HangXe == null)
                 {

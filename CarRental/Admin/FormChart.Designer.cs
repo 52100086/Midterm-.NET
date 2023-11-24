@@ -33,20 +33,20 @@
             // 
             // plt_1
             // 
-            plt_1.Location = new Point(197, 95);
+            plt_1.Location = new Point(247, 107);
             plt_1.Margin = new Padding(5, 4, 5, 4);
             plt_1.Name = "plt_1";
-            plt_1.Size = new Size(668, 576);
+            plt_1.Size = new Size(528, 301);
             plt_1.TabIndex = 0;
             // 
             // FormChart
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1133, 740);
+            ClientSize = new Size(1079, 458);
             Controls.Add(plt_1);
             Name = "FormChart";
-            Text = "FormChart";
+            Text = "Thống kê";
             Load += FormChart_Load;
             ResumeLayout(false);
         }

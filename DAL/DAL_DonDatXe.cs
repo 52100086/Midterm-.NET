@@ -78,5 +78,14 @@ namespace DAL
 
 			return new List<int>();
 		}
-	}
+        public List<DonDatXe> GetDonDatXeByKhachHangId(int khachHangId)
+        {
+            return _context.DonDatXes
+                .Include(x => x.NhienLieu)
+                .Include(x => x.KhachHang)
+                .Include(x => x.XeOto)
+                .Where(x => x.KhachHangId == khachHangId)
+                .ToList();
+        }
+    }
 }

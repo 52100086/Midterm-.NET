@@ -29,14 +29,25 @@ namespace CarRental
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+
         }
 
-        private async void btn_Login_Click(object sender, EventArgs e)
+
+        private async void btn_Login_Click_1(object sender, EventArgs e)
         {
+
+            if (txt_Username.Text == "")
+            {
+                lb_warning_username.Visible = true;
+                return;
+            }
+            if (txt_Password.Text == "")
+            {
+                lbl_warning_password.Visible = true;
+                return;
+            }
             string username = txt_Username.Text;
             string password = txt_Password.Text;
-
-
             Account account = await _busAccount.LoginAsync(username, password);
 
             if (account != null)
@@ -58,7 +69,14 @@ namespace CarRental
             {
                 MessageBox.Show("Invalid username or password");
             }
+        }
 
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+            lb_warning_username.Visible = false;
+            lb_warning_username.ForeColor = Color.Red;
+            lbl_warning_password.Visible = false;
+            lbl_warning_password.ForeColor = Color.Red;
 
         }
     }

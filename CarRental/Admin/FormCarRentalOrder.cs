@@ -12,8 +12,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-using System.Windows.Media;
-
 namespace CarRental.Admin
 {
     public partial class FormCarRentalOrder : MaterialForm
@@ -87,10 +85,7 @@ namespace CarRental.Admin
                 };
 
                 var createKH = _busKhachHang.CreateKhachHangAsync(khachHang);
-                if (createKH != null)
-                {
-                    MessageBox.Show("thanh cong");
-                }
+
                 var xeOto = _busXeOto.GetXeOtoById(xeOtoId);
                 xeOto.TrangThai = "Đang thuê";
                 var update = _busXeOto.UpdateXeOto(xeOto);
@@ -106,8 +101,6 @@ namespace CarRental.Admin
                     TongCong = Double.Parse(lb_tongcong.Text),
                     ThoiGianThue = DateTime.Today.AddDays(Int32.Parse(txt_ngay.Text))
                 };
-
-
                 if (rb_xang.Checked)
                 {
                     donDatXe.NhienLieuId = 1;
@@ -123,6 +116,7 @@ namespace CarRental.Admin
                 else
                 {
                     txt_warn.Visible = true;
+                    return;
                 }
                 _busDonDatXe.AddDonDatXe(donDatXe);
                 foreach (var tinhNangXe in tinhNangXeValues)
@@ -132,6 +126,8 @@ namespace CarRental.Admin
                         _busDonDatXe.AddDonDatXe_TinhNang(donDatXe.DonDatXeId, tinhNangXe.Key);
                     }
                 }
+
+
                 MessageBox.Show("Thêm hóa đơn thành công");
                 this.Close();
             }
@@ -147,7 +143,7 @@ namespace CarRental.Admin
                 };
 
                 var updateKH = _busKhachHang.UpdateKhachHang(khachHang);
-                
+
                 var xeOto = _busXeOto.GetXeOtoById(xeOtoId);
                 xeOto.TrangThai = "Đang thuê";
                 var update = _busXeOto.UpdateXeOto(xeOto);
@@ -157,9 +153,9 @@ namespace CarRental.Admin
                     XeOtoId = xeOtoId,
                     NgayLap = DateTime.Today,
                     TrangThai = "Chưa thanh toán",
-                    Thue = Double.Parse(lb_thuengay.Text),
-                    GiaThue = Double.Parse(lb_tienthuengay.Text),
-                    TongCong = Double.Parse(lb_tongcong.Text),
+                    Thue = Math.Round(Double.Parse(lb_thuengay.Text), 2),
+                    GiaThue = Math.Round(Double.Parse(lb_tienthuengay.Text), 2),
+                    TongCong = Math.Round(Double.Parse(lb_tongcong.Text), 2),
                     ThoiGianThue = DateTime.Today.AddDays(Int32.Parse(txt_ngay.Text))
                 };
 
@@ -192,6 +188,11 @@ namespace CarRental.Admin
                 {
                     donDatXe.NhienLieuId = 3;
                 }
+                else
+                {
+                    txt_warn.Visible = true;
+                    return;
+                }
                 _busDonDatXe.AddDonDatXe(donDatXe);
                 foreach (var tinhNangXe in tinhNangXeValues)
                 {
@@ -214,9 +215,13 @@ namespace CarRental.Admin
                 txt_email.Text = khachhang.Email;
                 txt_diachi.Text = khachhang.DiaChi;
                 txt_sdt.Text = khachhang.SoDienThoai;
+                txt_warn.Visible = false;
+                txt_warn.ForeColor = System.Drawing.Color.Red;
             }
             if (DonDatXe != null)
             {
+                txt_warn.Visible = false;
+                txt_warn.ForeColor = System.Drawing.Color.Red;
                 txt_hoten.Text = DonDatXe.KhachHang.Ten;
                 txt_email.Text = DonDatXe.KhachHang.Email;
                 txt_diachi.Text = DonDatXe.KhachHang.DiaChi;

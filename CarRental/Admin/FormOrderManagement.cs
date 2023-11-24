@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace CarRental.Admin
 {
@@ -104,7 +105,36 @@ namespace CarRental.Admin
         }
         private void btn_update_Click(object sender, EventArgs e)
         {
+            if (dgv_order.SelectedRows.Count > 0)
+            {
+                // Lấy hàng được chọn
+                DataGridViewRow selectedRow = dgv_order.SelectedRows[0];
 
+                // Lấy giá trị của cột KhachHangId trong hàng được chọn
+                int DonDatXeId = Convert.ToInt32(selectedRow.Cells["DonDatXeId"].Value);
+                var DonDatXe = _busDonDatXe.GetDonDatXeById(DonDatXeId);
+                DonDatXe.TrangThai = "Đã thanh toán";
+                DonDatXe.NgayThanhToan = DateTime.Today;
+                DonDatXe.XeOto.TrangThai = "Sẵn sàng";
+                var update = _busDonDatXe.UpdateDonDatXe(DonDatXe);
+
+                if (update != null)
+                {
+                    MessageBox.Show("XeOto is updated successfully");
+                    dgv_order.Refresh();
+
+                }
+                else
+                {
+                    // Failed to create the XeOto object
+                    MessageBox.Show("Failed to update XeOto");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một đơn đặt xe để xem chi tiết");
+            }
         }
 
         private void btn_chitiet_Click(object sender, EventArgs e)
@@ -123,13 +153,9 @@ namespace CarRental.Admin
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn một đơn đặt xe để cap nhat");
+                MessageBox.Show("Vui lòng chọn một đơn đặt xe để xem chi tiết");
             }
         }
 
-        private void btn_search_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

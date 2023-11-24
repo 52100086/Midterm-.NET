@@ -43,7 +43,7 @@
             txt_email = new MaterialSkin.Controls.MaterialTextBox();
             btn_add = new FontAwesome.Sharp.IconButton();
             panel3 = new Panel();
-            txt_warn = new MaterialSkin.Controls.MaterialLabel();
+            txt_warn = new Label();
             panel2 = new Panel();
             materialLabel20 = new MaterialSkin.Controls.MaterialLabel();
             lb_tongcong = new MaterialSkin.Controls.MaterialLabel();
@@ -85,6 +85,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.SeaShell;
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(materialLabel17);
             panel1.Controls.Add(txt_ngay);
@@ -291,6 +292,7 @@
             // 
             // panel3
             // 
+            panel3.BackColor = Color.SeaShell;
             panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Controls.Add(txt_warn);
             panel3.Controls.Add(panel2);
@@ -321,13 +323,10 @@
             // txt_warn
             // 
             txt_warn.AutoSize = true;
-            txt_warn.Depth = 0;
-            txt_warn.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
             txt_warn.ForeColor = Color.Red;
-            txt_warn.Location = new Point(171, 236);
-            txt_warn.MouseState = MaterialSkin.MouseState.HOVER;
+            txt_warn.Location = new Point(162, 235);
             txt_warn.Name = "txt_warn";
-            txt_warn.Size = new Size(175, 19);
+            txt_warn.Size = new Size(171, 20);
             txt_warn.TabIndex = 20;
             txt_warn.Text = "Bạn phải chọn nhiên liệu";
             txt_warn.Visible = false;
@@ -806,6 +805,7 @@
             // 
             // panel4
             // 
+            panel4.BackColor = SystemColors.ButtonFace;
             panel4.Dock = DockStyle.Fill;
             panel4.Location = new Point(3, 64);
             panel4.Name = "panel4";
@@ -822,7 +822,7 @@
             Controls.Add(panel1);
             Controls.Add(panel4);
             Name = "FormCarRentalOrder";
-            Text = "FormCarRentalOrder";
+            Text = "Đơn đặt xe";
             Load += FormCarRentalOrder_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -884,6 +884,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel20;
         private MaterialSkin.Controls.MaterialLabel lb_tongcong;
         private Panel panel4;
-        private MaterialSkin.Controls.MaterialLabel txt_warn;
+        private Label txt_warn;
     }
 }

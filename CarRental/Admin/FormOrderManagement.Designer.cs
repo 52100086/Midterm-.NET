@@ -34,10 +34,9 @@
             dgv_order = new DataGridView();
             panel3 = new Panel();
             btn_export = new FontAwesome.Sharp.IconButton();
-            txt_search = new MaterialSkin.Controls.MaterialTextBox();
-            btn_search = new FontAwesome.Sharp.IconButton();
             btn_update = new FontAwesome.Sharp.IconButton();
             btn_chitiet = new FontAwesome.Sharp.IconButton();
+            label1 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_order).BeginInit();
             panel3.SuspendLayout();
@@ -49,7 +48,7 @@
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 101);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1098, 388);
+            panel1.Size = new Size(1061, 310);
             panel1.TabIndex = 6;
             // 
             // dgv_order
@@ -80,95 +79,86 @@
             dgv_order.RowsDefaultCellStyle = dataGridViewCellStyle2;
             dgv_order.RowTemplate.Height = 29;
             dgv_order.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgv_order.Size = new Size(1098, 388);
+            dgv_order.Size = new Size(1061, 310);
             dgv_order.TabIndex = 1;
             // 
             // panel3
             // 
+            panel3.Controls.Add(label1);
             panel3.Controls.Add(btn_export);
-            panel3.Controls.Add(txt_search);
-            panel3.Controls.Add(btn_search);
             panel3.Controls.Add(btn_update);
             panel3.Controls.Add(btn_chitiet);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1098, 101);
+            panel3.Size = new Size(1061, 101);
             panel3.TabIndex = 5;
             // 
             // btn_export
             // 
-            btn_export.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_export.IconColor = Color.Black;
+            btn_export.BackColor = SystemColors.Highlight;
+            btn_export.FlatStyle = FlatStyle.Flat;
+            btn_export.IconChar = FontAwesome.Sharp.IconChar.Table;
+            btn_export.IconColor = Color.DeepSkyBlue;
             btn_export.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_export.Location = new Point(915, 59);
+            btn_export.IconSize = 30;
+            btn_export.ImageAlign = ContentAlignment.MiddleRight;
+            btn_export.Location = new Point(821, 38);
             btn_export.Name = "btn_export";
-            btn_export.Size = new Size(136, 29);
+            btn_export.Size = new Size(140, 50);
             btn_export.TabIndex = 6;
             btn_export.Text = "Xuất excel";
-            btn_export.UseVisualStyleBackColor = true;
-            // 
-            // txt_search
-            // 
-            txt_search.AnimateReadOnly = false;
-            txt_search.BorderStyle = BorderStyle.None;
-            txt_search.Depth = 0;
-            txt_search.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            txt_search.LeadingIcon = null;
-            txt_search.Location = new Point(367, 38);
-            txt_search.MaxLength = 50;
-            txt_search.MouseState = MaterialSkin.MouseState.OUT;
-            txt_search.Multiline = false;
-            txt_search.Name = "txt_search";
-            txt_search.Size = new Size(266, 50);
-            txt_search.TabIndex = 5;
-            txt_search.Text = "";
-            txt_search.TrailingIcon = null;
-            // 
-            // btn_search
-            // 
-            btn_search.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_search.IconColor = Color.Black;
-            btn_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_search.Location = new Point(656, 59);
-            btn_search.Name = "btn_search";
-            btn_search.Size = new Size(94, 29);
-            btn_search.TabIndex = 4;
-            btn_search.Text = "Tìm kiếm";
-            btn_search.UseVisualStyleBackColor = true;
-            btn_search.Click += btn_search_Click;
+            btn_export.UseVisualStyleBackColor = false;
             // 
             // btn_update
             // 
-            btn_update.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_update.IconColor = Color.Black;
+            btn_update.BackColor = SystemColors.Highlight;
+            btn_update.FlatStyle = FlatStyle.Flat;
+            btn_update.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            btn_update.IconColor = Color.DeepSkyBlue;
             btn_update.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_update.Location = new Point(250, 59);
+            btn_update.IconSize = 30;
+            btn_update.ImageAlign = ContentAlignment.MiddleRight;
+            btn_update.Location = new Point(209, 38);
             btn_update.Name = "btn_update";
-            btn_update.Size = new Size(94, 29);
+            btn_update.Size = new Size(135, 50);
             btn_update.TabIndex = 3;
             btn_update.Text = "Cập nhật";
-            btn_update.UseVisualStyleBackColor = true;
+            btn_update.UseVisualStyleBackColor = false;
             btn_update.Click += btn_update_Click;
             // 
             // btn_chitiet
             // 
-            btn_chitiet.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_chitiet.IconColor = Color.Black;
+            btn_chitiet.BackColor = SystemColors.Highlight;
+            btn_chitiet.FlatStyle = FlatStyle.Flat;
+            btn_chitiet.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            btn_chitiet.IconColor = Color.DeepSkyBlue;
             btn_chitiet.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_chitiet.Location = new Point(19, 59);
+            btn_chitiet.IconSize = 30;
+            btn_chitiet.ImageAlign = ContentAlignment.MiddleRight;
+            btn_chitiet.Location = new Point(19, 38);
             btn_chitiet.Name = "btn_chitiet";
-            btn_chitiet.Size = new Size(123, 29);
+            btn_chitiet.Size = new Size(156, 50);
             btn_chitiet.TabIndex = 1;
             btn_chitiet.Text = "Xem chi tiết";
-            btn_chitiet.UseVisualStyleBackColor = true;
+            btn_chitiet.UseVisualStyleBackColor = false;
             btn_chitiet.Click += btn_chitiet_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(476, 38);
+            label1.Name = "label1";
+            label1.Size = new Size(172, 41);
+            label1.TabIndex = 7;
+            label1.Text = "Đơn đặt xe";
             // 
             // FormOrderManagement
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1098, 489);
+            ClientSize = new Size(1061, 411);
             Controls.Add(panel1);
             Controls.Add(panel3);
             Name = "FormOrderManagement";
@@ -177,6 +167,7 @@
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgv_order).EndInit();
             panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -186,9 +177,8 @@
         private DataGridView dgv_order;
         private Panel panel3;
         private FontAwesome.Sharp.IconButton btn_export;
-        private MaterialSkin.Controls.MaterialTextBox txt_search;
-        private FontAwesome.Sharp.IconButton btn_search;
         private FontAwesome.Sharp.IconButton btn_update;
         private FontAwesome.Sharp.IconButton btn_chitiet;
+        private Label label1;
     }
 }

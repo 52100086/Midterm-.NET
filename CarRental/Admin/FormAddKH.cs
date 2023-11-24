@@ -34,6 +34,38 @@ namespace CarRental
         {
             try
             {
+                if (txt_hoten.Text == "")
+                {
+                    label1.Visible = true;
+                    label1.ForeColor = Color.Red;
+                    return;
+                }
+                if (txt_sdt.Text == "")
+                {
+                    label2.Visible = true;
+                    label2.ForeColor = Color.Red;
+
+                    return;
+                }
+                if (txt_email.Text == "")
+                {
+                    label3.Visible = true;
+                    label3.ForeColor = Color.Red;
+
+                    return;
+                }
+                if (txt_diachi.Text == "")
+                {
+                    label4.Visible = true;
+                    label4.ForeColor = Color.Red;
+
+                    return;
+                }
+                if (_busKhachHang.IsPhoneNumberExists(txt_sdt.Text))
+                {
+                    MessageBox.Show("Số điện thoại đã tồn tại");
+                    return;
+                }
                 var new_KH = new KhachHang
                 {
                     Ten = txt_hoten.Text,
@@ -44,12 +76,12 @@ namespace CarRental
                 var createKH = _busKhachHang.CreateKhachHangAsync(new_KH);
                 if (createKH != null)
                 {
-                    MessageBox.Show("Khach hang created successfully");
+                    MessageBox.Show("Tạo khách hàng thành công");
                 }
                 else
                 {
                     // Failed to create the XeOto object
-                    MessageBox.Show("Failed to create Khach hang");
+                    MessageBox.Show("Tạo thất bại");
                 }
             }
             catch (Exception ex)

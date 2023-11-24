@@ -60,15 +60,19 @@
             // 
             // btn_export
             // 
-            btn_export.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_export.IconColor = Color.Black;
+            btn_export.BackColor = SystemColors.HotTrack;
+            btn_export.FlatStyle = FlatStyle.Flat;
+            btn_export.IconChar = FontAwesome.Sharp.IconChar.Table;
+            btn_export.IconColor = Color.DeepSkyBlue;
             btn_export.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_export.Location = new Point(907, 59);
+            btn_export.IconSize = 30;
+            btn_export.ImageAlign = ContentAlignment.MiddleRight;
+            btn_export.Location = new Point(907, 38);
             btn_export.Name = "btn_export";
-            btn_export.Size = new Size(136, 29);
+            btn_export.Size = new Size(136, 50);
             btn_export.TabIndex = 6;
             btn_export.Text = "Xuất excel";
-            btn_export.UseVisualStyleBackColor = true;
+            btn_export.UseVisualStyleBackColor = false;
             // 
             // txt_searchKH
             // 
@@ -77,7 +81,7 @@
             txt_searchKH.Depth = 0;
             txt_searchKH.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             txt_searchKH.LeadingIcon = null;
-            txt_searchKH.Location = new Point(367, 38);
+            txt_searchKH.Location = new Point(475, 38);
             txt_searchKH.MaxLength = 50;
             txt_searchKH.MouseState = MaterialSkin.MouseState.OUT;
             txt_searchKH.Multiline = false;
@@ -89,53 +93,69 @@
             // 
             // btn_searchNV
             // 
-            btn_searchNV.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_searchNV.IconColor = Color.Black;
+            btn_searchNV.BackColor = SystemColors.HotTrack;
+            btn_searchNV.FlatStyle = FlatStyle.Flat;
+            btn_searchNV.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            btn_searchNV.IconColor = Color.DeepSkyBlue;
             btn_searchNV.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_searchNV.Location = new Point(656, 59);
+            btn_searchNV.IconSize = 30;
+            btn_searchNV.ImageAlign = ContentAlignment.MiddleRight;
+            btn_searchNV.Location = new Point(764, 38);
             btn_searchNV.Name = "btn_searchNV";
-            btn_searchNV.Size = new Size(94, 29);
+            btn_searchNV.Size = new Size(126, 50);
             btn_searchNV.TabIndex = 4;
             btn_searchNV.Text = "Tìm kiếm";
-            btn_searchNV.UseVisualStyleBackColor = true;
+            btn_searchNV.UseVisualStyleBackColor = false;
             // 
             // btn_updateNV
             // 
-            btn_updateNV.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_updateNV.IconColor = Color.Black;
+            btn_updateNV.BackColor = SystemColors.HotTrack;
+            btn_updateNV.FlatStyle = FlatStyle.Flat;
+            btn_updateNV.IconChar = FontAwesome.Sharp.IconChar.Pen;
+            btn_updateNV.IconColor = Color.DeepSkyBlue;
             btn_updateNV.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_updateNV.Location = new Point(250, 59);
+            btn_updateNV.IconSize = 30;
+            btn_updateNV.ImageAlign = ContentAlignment.MiddleRight;
+            btn_updateNV.Location = new Point(326, 38);
             btn_updateNV.Name = "btn_updateNV";
-            btn_updateNV.Size = new Size(94, 29);
+            btn_updateNV.Size = new Size(112, 50);
             btn_updateNV.TabIndex = 3;
             btn_updateNV.Text = "Cập nhật";
-            btn_updateNV.UseVisualStyleBackColor = true;
+            btn_updateNV.UseVisualStyleBackColor = false;
             btn_updateNV.Click += btn_updateNV_Click;
             // 
             // btn_deleteNV
             // 
-            btn_deleteNV.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_deleteNV.IconColor = Color.Black;
+            btn_deleteNV.BackColor = SystemColors.HotTrack;
+            btn_deleteNV.FlatStyle = FlatStyle.Flat;
+            btn_deleteNV.IconChar = FontAwesome.Sharp.IconChar.Backspace;
+            btn_deleteNV.IconColor = Color.DeepSkyBlue;
             btn_deleteNV.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_deleteNV.Location = new Point(137, 59);
+            btn_deleteNV.IconSize = 30;
+            btn_deleteNV.ImageAlign = ContentAlignment.MiddleRight;
+            btn_deleteNV.Location = new Point(210, 38);
             btn_deleteNV.Name = "btn_deleteNV";
-            btn_deleteNV.Size = new Size(94, 29);
+            btn_deleteNV.Size = new Size(110, 50);
             btn_deleteNV.TabIndex = 2;
             btn_deleteNV.Text = "Xóa";
-            btn_deleteNV.UseVisualStyleBackColor = true;
+            btn_deleteNV.UseVisualStyleBackColor = false;
             btn_deleteNV.Click += btn_deleteNV_Click;
             // 
             // btn_addNV
             // 
-            btn_addNV.IconChar = FontAwesome.Sharp.IconChar.None;
-            btn_addNV.IconColor = Color.Black;
+            btn_addNV.BackColor = SystemColors.HotTrack;
+            btn_addNV.FlatStyle = FlatStyle.Flat;
+            btn_addNV.IconChar = FontAwesome.Sharp.IconChar.Add;
+            btn_addNV.IconColor = Color.DeepSkyBlue;
             btn_addNV.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_addNV.Location = new Point(19, 59);
+            btn_addNV.IconSize = 30;
+            btn_addNV.ImageAlign = ContentAlignment.MiddleRight;
+            btn_addNV.Location = new Point(19, 38);
             btn_addNV.Name = "btn_addNV";
-            btn_addNV.Size = new Size(94, 29);
+            btn_addNV.Size = new Size(185, 50);
             btn_addNV.TabIndex = 1;
             btn_addNV.Text = "Thêm khách hàng";
-            btn_addNV.UseVisualStyleBackColor = true;
+            btn_addNV.UseVisualStyleBackColor = false;
             btn_addNV.Click += btn_addNV_Click;
             // 
             // panel1

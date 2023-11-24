@@ -28,14 +28,14 @@ namespace CarRental.Admin
 
         private async void btn_add_Click(object sender, EventArgs e)
         {
-            
+
             string newUsername = txt_sdt.Text;
 
             await _busAccount.UpdateUsernameAsync(Username, newUsername);
 
             await mainForm.BindDataToDataGridview();
             this.Close();
-            
+
         }
 
 

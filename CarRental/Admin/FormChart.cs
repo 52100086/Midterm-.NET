@@ -43,11 +43,11 @@ namespace CarRental.Admin
             }
 
             double[] revenuesArray = revenues.ToArray(); //
-            double[] datesArray = dates.Select(d => d.ToOADate()).ToArray(); 
+            double[] datesArray = dates.Select(d => d.ToOADate()).ToArray();
 
             // Plot the data
             plt_1.Plot.AddScatter(datesArray, revenuesArray);
-            
+
             plt_1.Refresh();
         }
 
@@ -55,4 +55,3 @@ namespace CarRental.Admin
 
     }
 }
-    

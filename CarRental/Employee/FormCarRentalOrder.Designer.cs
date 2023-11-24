@@ -83,6 +83,7 @@
             // 
             // panel3
             // 
+            panel3.BackColor = Color.Bisque;
             panel3.Controls.Add(panel2);
             panel3.Controls.Add(materialLabel2);
             panel3.Controls.Add(materialLabel1);
@@ -582,6 +583,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.Bisque;
             panel1.Controls.Add(materialLabel17);
             panel1.Controls.Add(txt_ngay);
             panel1.Controls.Add(materialLabel16);
@@ -643,6 +645,7 @@
             // 
             // btn_preview
             // 
+            btn_preview.BackColor = Color.LightYellow;
             btn_preview.IconChar = FontAwesome.Sharp.IconChar.None;
             btn_preview.IconColor = Color.Black;
             btn_preview.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -651,7 +654,7 @@
             btn_preview.Size = new Size(127, 50);
             btn_preview.TabIndex = 19;
             btn_preview.Text = "Xem giá";
-            btn_preview.UseVisualStyleBackColor = true;
+            btn_preview.UseVisualStyleBackColor = false;
             btn_preview.Click += btn_preview_Click;
             // 
             // materialLabel12
@@ -772,6 +775,7 @@
             // 
             // btn_add
             // 
+            btn_add.BackColor = Color.DeepSkyBlue;
             btn_add.IconChar = FontAwesome.Sharp.IconChar.None;
             btn_add.IconColor = Color.Black;
             btn_add.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -780,7 +784,7 @@
             btn_add.Size = new Size(127, 50);
             btn_add.TabIndex = 10;
             btn_add.Text = "Thêm";
-            btn_add.UseVisualStyleBackColor = true;
+            btn_add.UseVisualStyleBackColor = false;
             btn_add.Click += btn_add_Click;
             // 
             // FormCarRentalOrder
@@ -792,7 +796,7 @@
             Controls.Add(panel3);
             Controls.Add(panel1);
             Name = "FormCarRentalOrder";
-            Text = "FormCarRentalOrder";
+            Text = "Đơn đặt xe";
             Load += FormCarRentalOrder_Load;
             panel3.ResumeLayout(false);
             panel3.PerformLayout();

@@ -44,5 +44,10 @@ namespace BUS
 		{
 			return _dalKhachHang.SearchKhachHang(keyword);
 		}
-	}
+        public bool IsPhoneNumberExists(string phoneNumber)
+        {
+            return _dalKhachHang.IsPhoneNumberExists(phoneNumber);
+        }
+
+    }
 }

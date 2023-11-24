@@ -38,6 +38,7 @@
             // 
             // btn_cancel
             // 
+            btn_cancel.BackColor = SystemColors.Highlight;
             btn_cancel.IconChar = FontAwesome.Sharp.IconChar.None;
             btn_cancel.IconColor = Color.Black;
             btn_cancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -46,7 +47,7 @@
             btn_cancel.Size = new Size(134, 63);
             btn_cancel.TabIndex = 29;
             btn_cancel.Text = "Hủy";
-            btn_cancel.UseVisualStyleBackColor = true;
+            btn_cancel.UseVisualStyleBackColor = false;
             btn_cancel.Click += btn_cancel_Click;
             // 
             // materialLabel2
@@ -80,6 +81,7 @@
             // 
             // btn_add
             // 
+            btn_add.BackColor = SystemColors.Highlight;
             btn_add.IconChar = FontAwesome.Sharp.IconChar.None;
             btn_add.IconColor = Color.Black;
             btn_add.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -88,7 +90,7 @@
             btn_add.Size = new Size(134, 63);
             btn_add.TabIndex = 20;
             btn_add.Text = "Thêm";
-            btn_add.UseVisualStyleBackColor = true;
+            btn_add.UseVisualStyleBackColor = false;
             btn_add.Click += btn_add_Click;
             // 
             // dtp_bd
@@ -114,6 +116,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(517, 450);
             Controls.Add(materialLabel1);
             Controls.Add(dtp_bd);
@@ -122,7 +125,7 @@
             Controls.Add(txt_sdt);
             Controls.Add(btn_add);
             Name = "FormAddNV";
-            Text = "FormAddNV";
+            Text = "Thêm nhân viên";
             ResumeLayout(false);
             PerformLayout();
         }
