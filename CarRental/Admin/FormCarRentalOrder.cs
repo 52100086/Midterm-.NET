@@ -120,6 +120,10 @@ namespace CarRental.Admin
                 {
                     donDatXe.NhienLieuId = 3;
                 }
+                else
+                {
+                    txt_warn.Visible = true;
+                }
                 _busDonDatXe.AddDonDatXe(donDatXe);
                 foreach (var tinhNangXe in tinhNangXeValues)
                 {
@@ -143,10 +147,7 @@ namespace CarRental.Admin
                 };
 
                 var updateKH = _busKhachHang.UpdateKhachHang(khachHang);
-                if (updateKH != null)
-                {
-                    MessageBox.Show("thanh cong");
-                }
+                
                 var xeOto = _busXeOto.GetXeOtoById(xeOtoId);
                 xeOto.TrangThai = "Đang thuê";
                 var update = _busXeOto.UpdateXeOto(xeOto);

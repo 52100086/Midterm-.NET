@@ -65,8 +65,7 @@
             dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgv_order.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgv_order.ColumnHeadersHeight = 29;
-            dgv_order.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgv_order.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv_order.Dock = DockStyle.Fill;
             dgv_order.EnableHeadersVisualStyles = false;
             dgv_order.GridColor = Color.DeepSkyBlue;

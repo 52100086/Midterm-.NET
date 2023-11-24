@@ -383,3 +383,6 @@ C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-w
 C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormEmployeeManagement.resources
 C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormAddNV.resources
 C:\Programming\Web\ASP.NET\midterm\git\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormUpdateNV.resources
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormAddNV.resources
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormEmployeeManagement.resources
+E:\Student\HK5\ASP\mid_term_last\Midterm-.NET\CarRental\obj\Debug\net6.0-windows\CarRental.Admin.FormUpdateNV.resources

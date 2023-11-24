@@ -64,8 +64,7 @@
             dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             dgv_schedule.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            dgv_schedule.ColumnHeadersHeight = 29;
-            dgv_schedule.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dgv_schedule.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv_schedule.Dock = DockStyle.Fill;
             dgv_schedule.EnableHeadersVisualStyles = false;
             dgv_schedule.GridColor = Color.DeepSkyBlue;

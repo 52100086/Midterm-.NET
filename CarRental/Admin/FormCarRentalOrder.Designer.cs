@@ -43,6 +43,7 @@
             txt_email = new MaterialSkin.Controls.MaterialTextBox();
             btn_add = new FontAwesome.Sharp.IconButton();
             panel3 = new Panel();
+            txt_warn = new MaterialSkin.Controls.MaterialLabel();
             panel2 = new Panel();
             materialLabel20 = new MaterialSkin.Controls.MaterialLabel();
             lb_tongcong = new MaterialSkin.Controls.MaterialLabel();
@@ -76,6 +77,7 @@
             cb_cameralui = new MaterialSkin.Controls.MaterialCheckbox();
             cb_bluetooth = new MaterialSkin.Controls.MaterialCheckbox();
             cb_bando = new MaterialSkin.Controls.MaterialCheckbox();
+            panel4 = new Panel();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -83,6 +85,7 @@
             // 
             // panel1
             // 
+            panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(materialLabel17);
             panel1.Controls.Add(txt_ngay);
             panel1.Controls.Add(materialLabel16);
@@ -288,6 +291,8 @@
             // 
             // panel3
             // 
+            panel3.BorderStyle = BorderStyle.FixedSingle;
+            panel3.Controls.Add(txt_warn);
             panel3.Controls.Add(panel2);
             panel3.Controls.Add(materialLabel2);
             panel3.Controls.Add(materialLabel1);
@@ -312,6 +317,20 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(811, 334);
             panel3.TabIndex = 2;
+            // 
+            // txt_warn
+            // 
+            txt_warn.AutoSize = true;
+            txt_warn.Depth = 0;
+            txt_warn.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txt_warn.ForeColor = Color.Red;
+            txt_warn.Location = new Point(171, 236);
+            txt_warn.MouseState = MaterialSkin.MouseState.HOVER;
+            txt_warn.Name = "txt_warn";
+            txt_warn.Size = new Size(175, 19);
+            txt_warn.TabIndex = 20;
+            txt_warn.Text = "Bạn phải chọn nhiên liệu";
+            txt_warn.Visible = false;
             // 
             // panel2
             // 
@@ -785,14 +804,23 @@
             cb_bando.Text = "Bản đồ";
             cb_bando.UseVisualStyleBackColor = true;
             // 
+            // panel4
+            // 
+            panel4.Dock = DockStyle.Fill;
+            panel4.Location = new Point(3, 64);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(898, 606);
+            panel4.TabIndex = 3;
+            // 
             // FormCarRentalOrder
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = Color.Bisque;
             ClientSize = new Size(904, 673);
             Controls.Add(panel3);
             Controls.Add(panel1);
+            Controls.Add(panel4);
             Name = "FormCarRentalOrder";
             Text = "FormCarRentalOrder";
             Load += FormCarRentalOrder_Load;
@@ -855,5 +883,7 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel18;
         private MaterialSkin.Controls.MaterialLabel materialLabel20;
         private MaterialSkin.Controls.MaterialLabel lb_tongcong;
+        private Panel panel4;
+        private MaterialSkin.Controls.MaterialLabel txt_warn;
     }
 }
