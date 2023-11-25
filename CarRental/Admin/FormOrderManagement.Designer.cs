@@ -33,10 +33,10 @@
             panel1 = new Panel();
             dgv_order = new DataGridView();
             panel3 = new Panel();
+            label1 = new Label();
             btn_export = new FontAwesome.Sharp.IconButton();
             btn_update = new FontAwesome.Sharp.IconButton();
             btn_chitiet = new FontAwesome.Sharp.IconButton();
-            label1 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_order).BeginInit();
             panel3.SuspendLayout();
@@ -94,6 +94,16 @@
             panel3.Size = new Size(1061, 101);
             panel3.TabIndex = 5;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(476, 38);
+            label1.Name = "label1";
+            label1.Size = new Size(172, 41);
+            label1.TabIndex = 7;
+            label1.Text = "Đơn đặt xe";
+            // 
             // btn_export
             // 
             btn_export.BackColor = SystemColors.Highlight;
@@ -109,6 +119,7 @@
             btn_export.TabIndex = 6;
             btn_export.Text = "Xuất excel";
             btn_export.UseVisualStyleBackColor = false;
+            btn_export.Click += btn_export_Click;
             // 
             // btn_update
             // 
@@ -143,16 +154,6 @@
             btn_chitiet.Text = "Xem chi tiết";
             btn_chitiet.UseVisualStyleBackColor = false;
             btn_chitiet.Click += btn_chitiet_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(476, 38);
-            label1.Name = "label1";
-            label1.Size = new Size(172, 41);
-            label1.TabIndex = 7;
-            label1.Text = "Đơn đặt xe";
             // 
             // FormOrderManagement
             // 

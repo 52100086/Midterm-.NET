@@ -34,7 +34,6 @@
             dgv_schedule = new DataGridView();
             panel3 = new Panel();
             label1 = new Label();
-            btn_update = new FontAwesome.Sharp.IconButton();
             btn_chitiet = new FontAwesome.Sharp.IconButton();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_schedule).BeginInit();
@@ -85,7 +84,6 @@
             // panel3
             // 
             panel3.Controls.Add(label1);
-            panel3.Controls.Add(btn_update);
             panel3.Controls.Add(btn_chitiet);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
@@ -102,22 +100,6 @@
             label1.Size = new Size(263, 41);
             label1.TabIndex = 7;
             label1.Text = "Lịch trình thuê xe";
-            // 
-            // btn_update
-            // 
-            btn_update.BackColor = SystemColors.Highlight;
-            btn_update.FlatStyle = FlatStyle.Flat;
-            btn_update.IconChar = FontAwesome.Sharp.IconChar.Pen;
-            btn_update.IconColor = Color.DeepSkyBlue;
-            btn_update.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btn_update.IconSize = 30;
-            btn_update.ImageAlign = ContentAlignment.MiddleRight;
-            btn_update.Location = new Point(210, 37);
-            btn_update.Name = "btn_update";
-            btn_update.Size = new Size(139, 51);
-            btn_update.TabIndex = 3;
-            btn_update.Text = "Cập nhật";
-            btn_update.UseVisualStyleBackColor = false;
             // 
             // btn_chitiet
             // 
@@ -157,7 +139,6 @@
         private Panel panel1;
         private DataGridView dgv_schedule;
         private Panel panel3;
-        private FontAwesome.Sharp.IconButton btn_update;
         private FontAwesome.Sharp.IconButton btn_chitiet;
         private Label label1;
     }

@@ -1,4 +1,5 @@
 ﻿using BUS;
+using ClosedXML.Excel;
 using DAL;
 using MaterialSkin.Controls;
 using System;
@@ -87,7 +88,7 @@ namespace CarRental.Admin
                     TenKhachHang = x.KhachHang.Ten,
                     GiaThue = Math.Round(x.GiaThue, 2),
                     Thue = Math.Round(x.Thue),
-                    TongCong = Math.Round(x.TongCong,2),
+                    TongCong = Math.Round(x.TongCong, 2),
                     NhienLieuName = x.NhienLieu.NhienLieuName,
                     ThoiGianThue = x.ThoiGianThue,
                     NgayLap = x.NgayLap,
@@ -120,14 +121,14 @@ namespace CarRental.Admin
 
                 if (update != null)
                 {
-                    MessageBox.Show("XeOto is updated successfully");
+                    MessageBox.Show("Cập nhật trạng thái đơn thành công");
                     dgv_order.Refresh();
 
                 }
                 else
                 {
                     // Failed to create the XeOto object
-                    MessageBox.Show("Failed to update XeOto");
+                    MessageBox.Show("Thất bại");
                 }
 
             }
@@ -157,5 +158,50 @@ namespace CarRental.Admin
             }
         }
 
+        private void btn_export_Click(object sender, EventArgs e)
+        {
+            ExportToExcel(dgv_order);
+        }
+        private void ExportToExcel(DataGridView dataGridView)
+        {
+            // Lấy đường dẫn thư mục gốc của dự án
+            string projectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+
+            // Tạo một workbook mới
+            using (var workbook = new XLWorkbook())
+            {
+                // Tạo một worksheet trong workbook
+                var worksheet = workbook.Worksheets.Add("Danh sách Đơn đặt xe");
+
+                // Ghi dữ liệu vào worksheet
+                worksheet.Cell("A1").Value = "ID";
+                worksheet.Cell("B1").Value = "Tên khách hàng";
+                worksheet.Cell("C1").Value = "Giá thuê/ngày";
+                worksheet.Cell("D1").Value = "Thuế/ngày";
+                worksheet.Cell("E1").Value = "Tổng tiền";
+                worksheet.Cell("F1").Value = "Nhiên liệu";
+                worksheet.Cell("G1").Value = "Thời gian thuê";
+                worksheet.Cell("H1").Value = "Ngày thuê";
+                worksheet.Cell("I1").Value = "Ngày thanh toán";
+                worksheet.Cell("J1").Value = "Trạng thái";
+
+                // Ghi dữ liệu từ DataGridView vào worksheet
+                for (int row = 0; row < dataGridView.Rows.Count; row++)
+                {
+                    for (int col = 0; col < dataGridView.Columns.Count; col++)
+                    {
+                        // Ghi dữ liệu từ cell của DataGridView vào cell tương ứng của worksheet
+                        worksheet.Cell(row + 2, col + 1).Value = dataGridView.Rows[row].Cells[col].Value?.ToString();
+                    }
+                }
+
+                // Chỉnh đường dẫn và tên file Excel trong thư mục của dự án
+                string fileName = $"Export_DonXe_{DateTime.Now.ToString("yyyyMMdd_HHmmss")}.xlsx";
+                string filePath = Path.Combine(projectDirectory, fileName);
+
+                // Lưu workbook vào file Excel
+                workbook.SaveAs(filePath);
+            }
+        }
     }
 }

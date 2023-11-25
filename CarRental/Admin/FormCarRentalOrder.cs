@@ -257,6 +257,19 @@ namespace CarRental.Admin
                 cb_lopduphong.Checked = tinhNangIds.Contains(12);
                 cb_napthungxebantai.Checked = tinhNangIds.Contains(13);
                 cb_camera360.Checked = tinhNangIds.Contains(14);
+                lb_thuengay.Visible = false;
+                lb_tienthuengay.Visible = false;
+                lb_tongcong.Visible = false;
+                lb_tongngay.Visible = false;
+                vcl.Visible = false;
+                hehe.Visible = false;
+                cc.Visible = false;
+                materialLabel18.Visible = false;
+                materialLabel11.Visible = false;
+                materialLabel4.Visible = false;
+                materialLabel6.Visible = false;
+                materialLabel20.Visible = false;
+                materialLabel10.Visible = false;
             }
         }
 

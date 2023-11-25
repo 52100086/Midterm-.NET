@@ -1,4 +1,5 @@
 ﻿using BUS;
+using ClosedXML.Excel;
 using DAL;
 using DTO;
 using System;
@@ -122,5 +123,42 @@ namespace CarRental.Admin
             update.ShowDialog();
         }
 
+        private void btn_export_Click(object sender, EventArgs e)
+        {
+            ExportToExcel(dgv_nhanvien);
+        }
+        private void ExportToExcel(DataGridView dataGridView)
+        {
+            // Lấy đường dẫn thư mục gốc của dự án
+            string projectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+
+            // Tạo một workbook mới
+            using (var workbook = new XLWorkbook())
+            {
+                // Tạo một worksheet trong workbook
+                var worksheet = workbook.Worksheets.Add("Danh sách nhân viên");
+
+                // Ghi dữ liệu vào worksheet
+                worksheet.Cell("A1").Value = "ID";
+                worksheet.Cell("B1").Value = "Số điện thoại";
+
+                // Ghi dữ liệu từ DataGridView vào worksheet
+                for (int row = 0; row < dataGridView.Rows.Count; row++)
+                {
+                    for (int col = 0; col < dataGridView.Columns.Count; col++)
+                    {
+                        // Ghi dữ liệu từ cell của DataGridView vào cell tương ứng của worksheet
+                        worksheet.Cell(row + 2, col + 1).Value = dataGridView.Rows[row].Cells[col].Value?.ToString();
+                    }
+                }
+
+                // Chỉnh đường dẫn và tên file Excel trong thư mục của dự án
+                string fileName = $"Export_NhanVien_{DateTime.Now.ToString("yyyyMMdd_HHmmss")}.xlsx";
+                string filePath = Path.Combine(projectDirectory, fileName);
+
+                // Lưu workbook vào file Excel
+                workbook.SaveAs(filePath);
+            }
+        }
     }
 }

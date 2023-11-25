@@ -118,6 +118,7 @@
             btn_export.TabIndex = 6;
             btn_export.Text = "Xuất excel";
             btn_export.UseVisualStyleBackColor = false;
+            btn_export.Click += btn_export_Click;
             // 
             // btn_chitiet
             // 
