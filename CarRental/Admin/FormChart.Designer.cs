@@ -29,21 +29,31 @@
         private void InitializeComponent()
         {
             plt_1 = new ScottPlot.FormsPlot();
+            plt_2 = new ScottPlot.FormsPlot();
             SuspendLayout();
             // 
             // plt_1
             // 
-            plt_1.Location = new Point(247, 107);
+            plt_1.Location = new Point(34, 117);
             plt_1.Margin = new Padding(5, 4, 5, 4);
             plt_1.Name = "plt_1";
-            plt_1.Size = new Size(528, 301);
+            plt_1.Size = new Size(431, 301);
             plt_1.TabIndex = 0;
+            // 
+            // plt_2
+            // 
+            plt_2.Location = new Point(567, 117);
+            plt_2.Margin = new Padding(5, 4, 5, 4);
+            plt_2.Name = "plt_2";
+            plt_2.Size = new Size(431, 301);
+            plt_2.TabIndex = 1;
             // 
             // FormChart
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1079, 458);
+            Controls.Add(plt_2);
             Controls.Add(plt_1);
             Name = "FormChart";
             Text = "Thống kê";
@@ -54,5 +64,6 @@
         #endregion
 
         private ScottPlot.FormsPlot plt_1;
+        private ScottPlot.FormsPlot plt_2;
     }
 }

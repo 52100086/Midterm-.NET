@@ -20,7 +20,10 @@ namespace DAL
 					.Include(x => x.NhienLieu)
 					.Include(x => x.KhachHang)
 					.Include(x => x.XeOto)
-					.ToListAsync();
+					.Include(x => x.XeOto.HangXe)
+                    .Include(x => x.XeOto.MauXe)
+                    .Include(x => x.XeOto.LoaiXe)
+                    .ToListAsync();
 		}
 
 		public DonDatXe GetDonDatXeById(int donDatXeId)
