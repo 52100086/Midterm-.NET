@@ -51,7 +51,6 @@ namespace CarRental.Admin
             plt_1.Plot.XLabel("Ngày");
             plt_1.Plot.YLabel("Doanh thu");
             plt_1.Plot.Title("Doanh thu theo ngày");
-            plt_1.Plot.XTicks(datesArray);
 
             plt_1.Refresh();
             var groupType = rentals_paid.GroupBy(d => new { d.XeOto.LoaiXe, d.NgayThanhToan });
